@@ -711,10 +711,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.me-4 {
-  margin-inline-end: 1rem;
-}
-
 .me-5 {
   margin-inline-end: 1.25rem;
 }
@@ -1210,6 +1206,11 @@ video {
   padding-bottom: 14px;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .\!pt-\[120px\] {
   padding-top: 120px !important;
 }
@@ -1234,6 +1235,10 @@ video {
   padding-bottom: 68px;
 }
 
+.ps-6 {
+  padding-inline-start: 1.5rem;
+}
+
 .ps-\[60px\] {
   padding-inline-start: 60px;
 }
@@ -1252,6 +1257,10 @@ video {
 
 .pt-\[150px\] {
   padding-top: 150px;
+}
+
+.pe-3 {
+  padding-inline-end: 0.75rem;
 }
 
 .text-left {
@@ -1652,6 +1661,7 @@ video {
 .btn-black {
   min-height: 37px;
   min-width: 123px;
+  max-width: 120px;
   border-radius: 28px;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1669,6 +1679,7 @@ video {
   .btn-black {
     min-height: 50px;
     min-width: 170px;
+    max-width: auto;
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: 15px;
@@ -1969,6 +1980,10 @@ video {
   top: 0;
 }
 
+.slick-slide {
+  overflow: hidden;
+}
+
 .quote-paragraph::after {
   content: '”';
   position: absolute;
@@ -2138,6 +2153,10 @@ video {
 
   .md\:mb-7 {
     margin-bottom: 1.75rem;
+  }
+
+  .md\:me-4 {
+    margin-inline-end: 1rem;
   }
 
   .md\:mt-24 {
@@ -2324,6 +2343,10 @@ video {
     padding-bottom: 40px;
   }
 
+  .md\:ps-0 {
+    padding-inline-start: 0px;
+  }
+
   .md\:pt-0 {
     padding-top: 0px;
   }
@@ -2334,6 +2357,10 @@ video {
 
   .md\:pt-\[80px\] {
     padding-top: 80px;
+  }
+
+  .md\:pe-0 {
+    padding-inline-end: 0px;
   }
 
   .md\:text-start {
