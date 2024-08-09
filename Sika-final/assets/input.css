@@ -250,15 +250,7 @@
     animation: bannerReverse  20s linear infinite;
   }
   
-  @media only screen and (max-width: 767px) {
-    .marquee {
-      animation: bannermove 10s linear infinite;
-    }
-    .marquee.riverse {
-      animation: bannerReverse  10s linear infinite;
-    }
-    
-  }
+
 
 
   .marquee.paused {
@@ -296,6 +288,41 @@
       transform: translateX(0);
     }
   }
+
+
+
+  @media only screen and (max-width: 767px) {
+    .marquee {
+      width: 300%;
+      animation: bannermove 15s linear infinite;
+    }
+    .marquee.riverse {
+      animation: bannerReverse  15s linear infinite;
+    }
+
+    @keyframes bannermove {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+      /* Reverse animation */
+  @keyframes bannerReverse {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+    
+    
+  }
+
+  
 
   .custom-arrow {
     width: 50px;

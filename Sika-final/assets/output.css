@@ -96,7 +96,7 @@ abbr:where([title]) {
 Remove the default font size and weight for headings.
 */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -104,7 +104,7 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: inherit;
-}
+} */
 
 /*
 Reset links to optimize for opt-in styling instead of opt-out.
@@ -1903,16 +1903,6 @@ video {
   animation: bannerReverse  20s linear infinite;
 }
 
-@media only screen and (max-width: 767px) {
-  .marquee {
-    animation: bannermove 10s linear infinite;
-  }
-
-  .marquee.riverse {
-    animation: bannerReverse  10s linear infinite;
-  }
-}
-
 .marquee.paused {
   animation-play-state: paused;
 }
@@ -1950,6 +1940,39 @@ video {
 
   100% {
     transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .marquee {
+    width: 300%;
+    animation: bannermove 15s linear infinite;
+  }
+
+  .marquee.riverse {
+    animation: bannerReverse  15s linear infinite;
+  }
+
+  @keyframes bannermove {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Reverse animation */
+
+  @keyframes bannerReverse {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
   }
 }
 
@@ -2531,10 +2554,6 @@ video {
     max-width: 120px;
   }
 
-  .lg\:max-w-\[340px\] {
-    max-width: 340px;
-  }
-
   .lg\:max-w-\[380px\] {
     max-width: 380px;
   }
@@ -2561,14 +2580,6 @@ video {
 
   .lg\:max-w-\[80\%\] {
     max-width: 80%;
-  }
-
-  .lg\:max-w-\[350px\] {
-    max-width: 350px;
-  }
-
-  .lg\:max-w-\[400px\] {
-    max-width: 400px;
   }
 
   .lg\:grid-cols-4 {
