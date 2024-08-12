@@ -52,20 +52,35 @@ function toggleAccordion(item) {
 
 
 
+// document.addEventListener("DOMContentLoaded", function() {
+//     const urlParams = new URLSearchParams(window.location.search);
+//     const banner = document.getElementById('banner');
+//     const content = document.getElementById('content');
+
+
+//     if (urlParams.has('tab')) {
+//         document.getElementById('tabWraper').style.display = 'none';
+//         banner.classList.add('sub-banner');
+//         content.classList.add('sub-content');
+//     }else {
+
+//         banner.classList.remove('sub-banner');
+//         content.classList.remove('sub-content');
+//     }
+// });
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const urlParams = new URLSearchParams(window.location.search);
-    const banner = document.getElementById('banner');
-    const content = document.getElementById('content');
-
+    const tabHeader = document.getElementById('tabHeader');
 
     if (urlParams.has('tab')) {
-        document.getElementById('tabWraper').style.display = 'none';
-        banner.classList.add('sub-banner');
-        content.classList.add('sub-content');
-    }else {
-
-        banner.classList.remove('sub-banner');
-        content.classList.remove('sub-content');
+        // document.getElementById('tabWrapper').style.display = 'none';
+        tabHeader.classList.remove('hidden');
+    } else {
+        tabHeader.classList.add('hidden');
     }
 });
-
