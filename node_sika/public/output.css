@@ -324,7 +324,7 @@ summary {
 Removes the default spacing and border for appropriate elements.
 */
 
-blockquote,
+/* blockquote,
 dl,
 dd,
 h1,
@@ -338,7 +338,7 @@ figure,
 p,
 pre {
   margin: 0;
-}
+} */
 
 fieldset {
   margin: 0;
@@ -349,13 +349,13 @@ legend {
   padding: 0;
 }
 
-ol,
+/* ol,
 ul,
 menu {
   list-style: none;
   margin: 0;
   padding: 0;
-}
+} */
 
 /*
 Reset default styling for dialogs.
@@ -784,6 +784,10 @@ video {
   display: contents;
 }
 
+.\!hidden {
+  display: none !important;
+}
+
 .hidden {
   display: none;
 }
@@ -932,6 +936,10 @@ video {
   max-width: 552px;
 }
 
+.max-w-\[1500px\] {
+  max-width: 1500px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1046,6 +1054,10 @@ video {
   overflow-wrap: break-word;
 }
 
+.break-keep {
+  word-break: keep-all;
+}
+
 .rounded-\[10px\] {
   border-radius: 10px;
 }
@@ -1099,6 +1111,11 @@ video {
   background-color: rgb(14 14 14 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F7F9FB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 249 251 / var(--tw-bg-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1117,6 +1134,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ff0000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -1139,6 +1161,11 @@ video {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-6 {
@@ -1206,15 +1233,6 @@ video {
   padding-bottom: 14px;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.\!pt-\[120px\] {
-  padding-top: 120px !important;
-}
-
 .\!pt-\[150px\] {
   padding-top: 150px !important;
 }
@@ -1233,6 +1251,10 @@ video {
 
 .pb-\[68px\] {
   padding-bottom: 68px;
+}
+
+.pe-3 {
+  padding-inline-end: 0.75rem;
 }
 
 .ps-6 {
@@ -1257,10 +1279,6 @@ video {
 
 .pt-\[150px\] {
   padding-top: 150px;
-}
-
-.pe-3 {
-  padding-inline-end: 0.75rem;
 }
 
 .text-left {
@@ -1305,6 +1323,10 @@ video {
 
 .text-\[17px\] {
   font-size: 17px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
 }
 
 .text-\[22px\] {
@@ -1423,9 +1445,14 @@ video {
   letter-spacing: 2px;
 }
 
-.text-\[\#909DA2\] {
+.\!text-black {
+  --tw-text-opacity: 1 !important;
+  color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
+}
+
+.text-\[\#5a5a5a\] {
   --tw-text-opacity: 1;
-  color: rgb(144 157 162 / var(--tw-text-opacity));
+  color: rgb(90 90 90 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -1898,16 +1925,6 @@ video {
   animation: bannerReverse  20s linear infinite;
 }
 
-@media only screen and (max-width: 767px) {
-  .marquee {
-    animation: bannermove 10s linear infinite;
-  }
-
-  .marquee.riverse {
-    animation: bannerReverse  10s linear infinite;
-  }
-}
-
 .marquee.paused {
   animation-play-state: paused;
 }
@@ -1945,6 +1962,39 @@ video {
 
   100% {
     transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .marquee {
+    width: 300%;
+    animation: bannermove 15s linear infinite;
+  }
+
+  .marquee.riverse {
+    animation: bannerReverse  15s linear infinite;
+  }
+
+  @keyframes bannermove {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Reverse animation */
+
+  @keyframes bannerReverse {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
   }
 }
 
@@ -2343,6 +2393,10 @@ video {
     padding-bottom: 40px;
   }
 
+  .md\:pe-0 {
+    padding-inline-end: 0px;
+  }
+
   .md\:ps-0 {
     padding-inline-start: 0px;
   }
@@ -2357,10 +2411,6 @@ video {
 
   .md\:pt-\[80px\] {
     padding-top: 80px;
-  }
-
-  .md\:pe-0 {
-    padding-inline-end: 0px;
   }
 
   .md\:text-start {
