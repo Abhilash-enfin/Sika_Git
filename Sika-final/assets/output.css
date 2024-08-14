@@ -131,15 +131,19 @@ strong {
 4. Correct the odd `em` font sizing in all browsers.
 */
 
-/* code,
+code,
 kbd,
 samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
   font-feature-settings: normal;
+  /* 2 */
   font-variation-settings: normal;
+  /* 3 */
   font-size: 1em;
-} */
+  /* 4 */
+}
 
 /*
 Add the correct font size in all browsers.
@@ -319,8 +323,8 @@ summary {
 /*
 Removes the default spacing and border for appropriate elements.
 */
-
-/* blockquote,
+/* 
+blockquote,
 dl,
 dd,
 h1,
@@ -971,6 +975,10 @@ video {
 
 .resize {
   resize: both;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 .grid-cols-1 {
@@ -2057,6 +2065,57 @@ video {
   margin-top: 0 !important;
 }
 
+.logo-slider {
+  --slider-duration: 10s;
+  --slider-gap: max(16px, max(16px, 2vw));
+  --min-width: 320;
+  --max-width: 1400;
+  overflow: hidden;
+  max-width: 1400px;
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  padding-block: 5px;
+  margin: 0 auto;
+}
+
+@keyframes marquee-1 {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - (var(--slider-gap) * 2)));
+  }
+}
+
+.logo-slider > div {
+  display: flex;
+  align-items: center;
+  animation: marquee-1 calc(var(--slider-duration) + (var(--variable-duration, 0s) * 10)) linear infinite;
+  justify-content: space-between;
+  gap: var(--slider-gap);
+}
+
+.logo-slider > div img {
+  height: clamp(50%, 10vw, 100%);
+  max-width: 150px;
+  max-height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
+.logo-slider > div:hover {
+  animation-play-state: paused;
+}
+
+/* @media (min-width: 1000px) {
+  .logo-slider {
+    -webkit-mask-image: linear-gradient(to right, transparent, white 10vw, white calc(100% - 10vw), transparent);
+  }
+} */
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -2497,21 +2556,6 @@ video {
     text-decoration-line: none;
   }
 
-  .md\:before\:h-\[50\%\]::before {
-    content: var(--tw-content);
-    height: 50%;
-  }
-
-  .md\:before\:h-\[40\%\]::before {
-    content: var(--tw-content);
-    height: 40%;
-  }
-
-  .md\:before\:h-\[45\%\]::before {
-    content: var(--tw-content);
-    height: 45%;
-  }
-
   .md\:before\:h-\[42\%\]::before {
     content: var(--tw-content);
     height: 42%;
@@ -2519,16 +2563,12 @@ video {
 }
 
 @media (min-width: 991px) {
-  .lg\:left-\[500px\] {
-    left: 500px;
+  .lg\:left-\[530px\] {
+    left: 530px;
   }
 
   .lg\:top-0 {
     top: 0px;
-  }
-
-  .lg\:left-\[530px\] {
-    left: 530px;
   }
 
   .lg\:mb-20 {
