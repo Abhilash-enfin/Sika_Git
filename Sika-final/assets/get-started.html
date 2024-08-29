@@ -2,7 +2,7 @@
 <!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Wed Jul 31 2024 15:41:14 GMT+0000 (Coordinated Universal Time) -->
 <html data-wf-domain="www.sikahealth.com" data-wf-page="64de6dd68c22af95553e578d"
     data-wf-site="63979d3ce779b679241436ec">
-
+ 
 <head>
     <meta charset="utf-8" />
     <title>Sika Health :: Get Started</title>
@@ -47,9 +47,9 @@
         gtag("config", "G-0HGK9LH4TH");
     </script>
 </head>
-
+ 
 <body>
-
+ 
     <!-- start header -->
     <header id="header" class="fixed w-full left-0 right-0 m-auto top-0 md:top-8 z-50">
         <div class="max-w-[1356px] mx-auto  md:px-4">
@@ -94,9 +94,9 @@
                             <h1 class="font-custom text-[16px] leading-[20px] font-[600] mb-0 text-gray-dark ">
                                 Book a Demo
                             </h1>
-
+ 
                         </div>
-
+ 
                         <div
                             class=" bg-green  p-0 h-[15px] w-[15px] rounded-full flex items-center justify-center flex-shrink-0 hover:animate-pulse hover:animate-infinite absolute bottom-2 right-2">
                             <svg width="80" height="80" viewBox="0 0 46 46" fill="none"
@@ -106,9 +106,9 @@
                                 <path d="M24.8101 13.4684L34.0253 22.6836L24.8101 31.8989" stroke="#22282B"
                                     stroke-width="2.0459" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-
+ 
                         </div>
-
+ 
                     </a>
                     <a href="shopping.html"
                         class=" bg-white border border-gray-light rounded-[10px] py-[10px] px-[13px] flex items-start min-h-[70px] cursor-pointer relative">
@@ -119,9 +119,9 @@
                             <h1 class="font-custom text-[16px] leading-[20px] font-[600] mb-0 text-gray-dark ">
                                 Browse Products
                             </h1>
-
+ 
                         </div>
-
+ 
                         <div
                             class=" bg-green  p-0 h-[15px] w-[15px] rounded-full flex items-center justify-center flex-shrink-0 hover:animate-pulse hover:animate-infinite absolute bottom-2 right-2">
                             <svg width="80" height="80" viewBox="0 0 46 46" fill="none"
@@ -131,16 +131,16 @@
                                 <path d="M24.8101 13.4684L34.0253 22.6836L24.8101 31.8989" stroke="#22282B"
                                     stroke-width="2.0459" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-
+ 
                         </div>
-
+ 
                     </a>
                 </div>
             </div>
         </div>
     </header>
     <!-- end header -->
-
+ 
     <div class="section grey getstarted !pt-[150px] sub-banner" id="banner">
         <div class="container centre _1000">
             <h2 class="herotitle small">Unlock seamless payments with HSA or FSA funds</h2>
@@ -168,37 +168,45 @@
                             <div class="subtitle reverse">We’re coming soon to a checkout near you! In the meantime,
                                 sign up for live merchant announcements or suggest a new merchant.</div>
                             <div class="form w-form">
-                                <form id="shopper-form" name="wf-form-Merchant" data-name="Merchant" method="get"
+                                <form id="shopper-form" name="shopper-form" data-name="Shopper" method="POST"
                                     class="form-3" data-wf-page-id="64de6dd68c22af95553e578d"
+                                    action="https://api-dev.sikahealth.com/v3/enquiry"
                                     data-wf-element-id="80fff084-da89-f3b5-518b-4748d3c6f00d">
                                     <div class="w-layout-grid formgrid">
                                         <div id="w-node-_80fff084-da89-f3b5-518b-4748d3c6f00f-553e578d"
                                             class="formcell">
                                             <label for="First-Name-5" class="fieldlabel reverse">First Name</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="First-Name-6"
+                                            <input class="formfield reverse w-input" maxlength="256" name="first_name"
                                                 data-name="First Name 6" placeholder="Your first name" type="text"
-                                                id="First-Name-5" required="" />
+                                                id="first_name" pattern="[A-Za-z]+"
+                                                title="First name must contain only letters." required="" />
                                         </div>
                                         <div id="w-node-_80fff084-da89-f3b5-518b-4748d3c6f013-553e578d"
                                             class="formcell">
                                             <label for="Last-Name-3" class="fieldlabel reverse">Last Name</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="Last-Name-3"
+                                            <input class="formfield reverse w-input" maxlength="256" name="last_name"
                                                 data-name="Last Name 3" placeholder="Your last name" type="text"
-                                                id="Last-Name-3" required="" />
+                                                id="last_name" pattern="[A-Za-z]+"
+                                                title="Last name must contain only letters." required="" />
+ 
                                         </div>
                                         <div id="w-node-_80fff084-da89-f3b5-518b-4748d3c6f017-553e578d"
                                             class="formcell">
                                             <label for="Email-4" class="fieldlabel reverse">Email</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="Email-4"
-                                                data-name="Email 4" placeholder="Your email address" type="email"
-                                                id="Email-4" required="" />
+                                            <input class="formfield reverse w-input" maxlength="256" name="email"
+                                                data-name="Email 4" placeholder="Your email address" type="text"
+                                                id="email" required />
+                                                <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="email-error-text" hidden>Enter a valid email address</p>
+ 
+ 
                                         </div>
                                         <div id="w-node-_80fff084-da89-f3b5-518b-4748d3c6f01b-553e578d"
                                             class="formcell">
                                             <label for="Phone-2" class="fieldlabel reverse">Phone</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="Phone-3"
-                                                data-name="Phone 3" placeholder="Your phone number" type="tel"
-                                                id="Phone-2" required="" />
+                                            <input class="formfield reverse w-input" maxlength="256" name="phone"
+                                                data-name="Phone 3" placeholder="Your phone number" type="text"
+                                                id="phone" pattern="^\d{10}$"
+                                                title="Please enter a 10-digit phone number." required="" />
                                         </div>
                                     </div>
                                     <div class="formdividr"></div>
@@ -212,8 +220,8 @@
                                                     <div
                                                         class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
                                                     </div>
-                                                    <input type="radio" name="Do-you-have-HSA-FSA" id="Yes"
-                                                        data-name="Do you have HSA/FSA?"
+                                                    <input type="radio" name="Do-you-have-HSA-FSA"
+                                                        id="Do-you-have-HSA-FSA" data-name="Do you have HSA/FSA?"
                                                         style="opacity: 0; position: absolute; z-index: -1;"
                                                         value="Yes" />
                                                     <span class="radio-button-label w-form-label" for="Yes">Yes</span>
@@ -222,8 +230,8 @@
                                                     <div
                                                         class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
                                                     </div>
-                                                    <input type="radio" name="Do-you-have-HSA-FSA" id="No"
-                                                        data-name="Do you have HSA/FSA?"
+                                                    <input type="radio" name="Do-you-have-HSA-FSA"
+                                                        id="Do-you-have-HSA-FSA" data-name="Do you have HSA/FSA?"
                                                         style="opacity: 0; position: absolute; z-index: -1;"
                                                         value="No" />
                                                     <span class="radio-button-label w-form-label" for="No">No</span>
@@ -232,8 +240,8 @@
                                                     <div
                                                         class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
                                                     </div>
-                                                    <input type="radio" name="Do-you-have-HSA-FSA" id="I-don-t-know"
-                                                        data-name="Do you have HSA/FSA?"
+                                                    <input type="radio" name="Do-you-have-HSA-FSA"
+                                                        id="Do-you-have-HSA-FSA" data-name="Do you have HSA/FSA?"
                                                         style="opacity: 0; position: absolute; z-index: -1;"
                                                         value="I don&#x27;t know" />
                                                     <span class="radio-button-label w-form-label" for="I-don-t-know">I
@@ -245,7 +253,7 @@
                                             class="formcell">
                                             <label for="HSA-FSA-Provider-2" class="fieldlabel reverse">If Yes, please
                                                 select one</label>
-                                            <select id="HSA-FSA-Provider-2" name="HSA-FSA-Provider-2"
+                                            <select id="hsa_fsa_provider" name="hsa_fsa_provider"
                                                 data-name="HSA FSA Provider 2" class="dropdown w-select">
                                                 <option value="">Please select</option>
                                                 <option value="Optum">Optum</option>
@@ -256,93 +264,96 @@
                                                 <option value="Connect Your Care">Connect Your Care</option>
                                                 <option value="Other">Other</option>
                                             </select>
+                                            <input type="hidden" id="source" name="source" value="shopper">
                                         </div>
                                     </div>
                                     <div class="formdividr"></div>
                                     <label class="w-checkbox checkbox">
                                         <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox-2">
                                         </div>
-                                        <input type="checkbox" name="Opt-in-2" id="Opt-in-2" data-name="Opt In 2"
+                                        <input type="checkbox" name="Opt-in" id="Opt-in" data-name="Opt In 3"
                                             style="opacity: 0; position: absolute; z-index: -1;" />
-                                        <span class="checkbox-label w-form-label" for="Opt-in-2">
+                                        <span class="checkbox-label w-form-label" for="Opt-in-3">
                                             By checking this box, I consent to receive emails from Sika Health Inc.
                                             regarding its products, services, and promotions. I understand that I may
                                             withdraw my authorization at any time.
-                                            <a href="/privacy-policy.html" class="privacy-link">Privacy Policy</a>
+                                            <a href="/privacy-policy" class="privacy-link">Privacy Policy</a>
                                         </span>
                                     </label>
+                                    <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="erroroptin" hidden>Please make sure the checkbox is selected!</p>
                                     <input type="submit" data-wait="Please wait..." class="button sumbit w-button"
                                         value="Submit" />
                                 </form>
-                                <div class="success-message-3 w-form-done">
-                                    <div>Thank you! Your submission has been received!</div>
-                                </div>
-                                <div class="error-message-2 w-form-fail">
-                                    <div>Oops! Something went wrong while submitting the form.</div>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div data-w-tab="merchant" class="tabpane w-tab-pane w--tab-active">
                         <div class="tabcontentwrapper">
                             <h2 class="sectionheader centre" id="tabHeader">I am a merchant</h2>
-                            <div class="subtitle reverse">Ready to start accepting HSA and FSA funds online? Complete the form and our team will reach out to you soon.</div>
+                            <div class="subtitle reverse">Ready to start accepting HSA and FSA funds online? Complete
+                                the form and our team will reach out to you soon.</div>
                             <div class="form w-form">
-                                <form id="wf-form-Merchant" name="wf-form-Merchant" data-name="Merchant" method="get"
+                                <form id="wf-form-Merchant" name="wf-form-Merchant" data-name="Merchant" method="POST"
                                     class="form-3" data-wf-page-id="64de6dd68c22af95553e578d"
+                                    action="https://api-dev.sikahealth.com/v3/enquiry"
                                     data-wf-element-id="e4f83720-b26c-b778-cdd0-7cbecabec482">
                                     <div class="w-layout-grid formgrid">
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec484-553e578d" class="formcell">
                                             <label for="First-Name-4" class="fieldlabel reverse">First Name</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="First-Name"
+                                            <input class="formfield reverse w-input" maxlength="256" name="first_name"
                                                 data-name="First Name" placeholder="Your first name" type="text"
-                                                id="First-Name-4" required="" />
+                                                id="first_name" pattern="[A-Za-z]+"
+                                                title="First name must contain only letters." required="" />
                                         </div>
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec488-553e578d" class="formcell">
                                             <label for="Last-Name-6" class="fieldlabel reverse">Last Name</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="Last-Name"
+                                            <input class="formfield reverse w-input" maxlength="256" name="last_name"
                                                 data-name="Last Name" placeholder="Your last name" type="text"
-                                                id="Last-Name-6" required="" />
+                                                id="last_name" pattern="[A-Za-z]+"
+                                                title="Last name must contain only letters." required="" />
                                         </div>
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec48c-553e578d" class="formcell">
                                             <label for="Email-8" class="fieldlabel reverse">Email</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="Email"
-                                                data-name="Email" placeholder="Your email address" type="email"
-                                                id="Email-8" required="" />
+                                            <input class="formfield reverse w-input" maxlength="256" name="email"
+                                                data-name="Email" placeholder="Your email address" type="text"
+                                                id="email" required />
+                                                <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="email-error-text" hidden>Enter a valid email address</p>
+ 
                                         </div>
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec490-553e578d" class="formcell">
                                             <label for="Phone" class="fieldlabel reverse">Phone</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="Phone"
-                                                data-name="Phone" placeholder="Your phone number" type="tel"
-                                                id="Phone" />
+                                            <input class="formfield reverse w-input" maxlength="256" name="phone"
+                                                data-name="Phone" placeholder="Your phone number" type="text"
+                                                pattern="^\d{10}$" title="Please enter a 10-digit phone number."
+                                                id="phone" />
                                         </div>
                                     </div>
                                     <div class="formdividr"></div>
                                     <div class="w-layout-grid formgrid">
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec496-553e578d" class="formcell">
                                             <label for="Company-Name-3" class="fieldlabel reverse">Company Name</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="Company-Name"
+                                            <input class="formfield reverse w-input" maxlength="256" name="company_name"
                                                 data-name="Company Name" placeholder="Your company name" type="text"
-                                                id="Company-Name-3" required="" />
+                                                id="company_name" required="" />
                                         </div>
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec49a-553e578d" class="formcell">
                                             <label for="Job-Role" class="fieldlabel reverse">Your Role</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="Job-Role"
-                                                data-name="Job Role" placeholder="Your job role" type="text"
-                                                id="Job-Role" required="" />
+                                            <input class="formfield reverse w-input" maxlength="256" name="role"
+                                                data-name="Job Role" placeholder="Your job role" type="text" id="role"
+                                                required="" />
                                         </div>
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec49e-553e578d" class="formcell">
                                             <label for="Company-Website-3" class="fieldlabel reverse">Company
                                                 Website</label>
                                             <input class="formfield reverse w-input" maxlength="256"
-                                                name="Company-Website" data-name="Company Website"
-                                                placeholder="Your company website" type="text" id="Company-Website-3"
+                                                name="company_website" data-name="Company Website"
+                                                placeholder="Your company website" type="text" id="company_website"
                                                 required="" />
                                         </div>
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec4a6-553e578d" class="formcell">
                                             <label for="E-Commerce-Platform" class="fieldlabel reverse">E-Commerce
                                                 Platform</label>
-                                            <select id="E-Commerce-Platform" name="E-Commerce-Platform"
+                                            <select id="ecommerce_platform" name="ecommerce_platform"
                                                 data-name="E-Commerce Platform" class="dropdown w-select">
                                                 <option value="">Please select</option>
                                                 <option value="3D Cart">3D Cart</option>
@@ -381,7 +392,7 @@
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec4ae-553e578d" class="formcell">
                                             <label for="Annual-Revenue" class="fieldlabel reverse">Annual
                                                 Revenue</label>
-                                            <select id="Annual-Revenue" name="Annual-Revenue" data-name="Annual Revenue"
+                                            <select id="annual_revenue" name="annual_revenue" data-name="Annual Revenue"
                                                 class="dropdown w-select">
                                                 <option value="">Select one...</option>
                                                 <option value="Pre-launch">Pre-launch</option>
@@ -393,29 +404,25 @@
                                                 <option value="More than $100m">More than $100m</option>
                                             </select>
                                         </div>
+                                        <input type="hidden" name="source" value="merchant">
                                     </div>
                                     <div class="formdividr"></div>
                                     <label class="w-checkbox checkbox">
                                         <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox-2">
                                         </div>
-                                        <input type="checkbox" name="Opt-in" id="Opt-in" data-name="Opt in"
+                                        <input type="checkbox" name="Opt-in" id="Opt-in" data-name="Opt In 3"
                                             style="opacity: 0; position: absolute; z-index: -1;" />
-                                        <span class="checkbox-label w-form-label" for="Opt-in">
+                                        <span class="checkbox-label w-form-label" for="Opt-in-3">
                                             By checking this box, I consent to receive emails from Sika Health Inc.
                                             regarding its products, services, and promotions. I understand that I may
                                             withdraw my authorization at any time.
-                                            <a href="/privacy-policy.html" class="privacy-link">Privacy Policy</a>
+                                            <a href="/privacy-policy" class="privacy-link">Privacy Policy</a>
                                         </span>
                                     </label>
+                                    <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="erroroptin" hidden>Please make sure the checkbox is selected!</p>
                                     <input type="submit" data-wait="Please wait..." class="button sumbit w-button"
                                         value="Submit" />
                                 </form>
-                                <div class="success-message-2 w-form-done">
-                                    <div>Thank you! Your submission has been received!</div>
-                                </div>
-                                <div class="error-message-2 w-form-fail">
-                                    <div>Oops! Something went wrong while submitting the form.</div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -425,78 +432,99 @@
                             <div class="subtitle reverse">Drive engagement and retention by helping your members
                                 discover new ways to use their benefits in Sika’s hassle-free marketplace.</div>
                             <div class="form w-form">
-                                <form id="provider-form" name="wf-form-Provider" data-name="Provider" method="get"
+                                <form id="provider-form" name="wf-form-Provider" data-name="Provider" method="POST"
                                     class="form-3" data-wf-page-id="64de6dd68c22af95553e578d"
+                                    action="https://api-dev.sikahealth.com/v3/enquiry"
                                     data-wf-element-id="fb1913c7-9eae-ab48-56b5-dfa2a95cfa85">
+ 
                                     <div class="w-layout-grid formgrid">
                                         <div id="w-node-fb1913c7-9eae-ab48-56b5-dfa2a95cfa87-553e578d" class="formcell">
                                             <label for="First-Name-3" class="fieldlabel reverse">First Name</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="First-Name-3"
-                                                data-name="First Name 3" placeholder="Your first name" type="text"
-                                                id="First-Name-3" required="" />
+                                            <input class="formfield reverse w-input" maxlength="256" name="first_name"
+                                                placeholder="Your first name" type="text" id="first_name"
+                                                data-name="First Name 3" pattern="[A-Za-z]+"
+                                                title="First name must contain only letters." required />
                                         </div>
+ 
                                         <div id="w-node-fb1913c7-9eae-ab48-56b5-dfa2a95cfa8b-553e578d" class="formcell">
                                             <label for="Last-Name-4" class="fieldlabel reverse">Last Name</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="Last-Name-4"
+                                            <input class="formfield reverse w-input" maxlength="256" name="last_name"
                                                 data-name="Last Name 4" placeholder="Your last name" type="text"
-                                                id="Last-Name-4" required="" />
+                                                id="last_name" pattern="[A-Za-z]+"
+                                                title="Last name must contain only letters." required />
                                         </div>
+ 
                                         <div id="w-node-_499dd033-92af-949f-08cb-a9284be4b9e9-553e578d"
                                             class="formcell">
                                             <label for="Company-Name-4" class="fieldlabel reverse">Company Name</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="Company-Name"
+                                            <input class="formfield reverse w-input" maxlength="256" name="company_name"
                                                 data-name="Company Name" placeholder="Your company name" type="text"
-                                                id="Company-Name-4" required="" />
+                                                id="company_name" required />
                                         </div>
+ 
                                         <div id="w-node-efc54ad6-d752-23b6-d2a5-64a605c14ca3-553e578d" class="formcell">
                                             <label for="Job-Role-3" class="fieldlabel reverse">Job Role</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="Job-Role"
-                                                data-name="Job Role" placeholder="Your job role" type="text"
-                                                id="Job-Role-3" required="" />
+                                            <input class="formfield reverse w-input" maxlength="256" name="role"
+                                                data-name="Job Role" placeholder="Your job role" type="text" id="role"
+                                                required />
                                         </div>
+ 
                                         <div id="w-node-fb1913c7-9eae-ab48-56b5-dfa2a95cfa8f-553e578d" class="formcell">
                                             <label for="Email-5" class="fieldlabel reverse">Email</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="Email-5"
+                                            <input class="formfield reverse w-input" maxlength="256" name="email"
                                                 data-name="Email 5" placeholder="Your email address" type="email"
-                                                id="Email-5" required="" />
+                                                id="email" required />
+ 
+                                                <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="email-error-text" hidden>Enter a valid email address</p>
                                         </div>
+ 
                                         <div id="w-node-fb1913c7-9eae-ab48-56b5-dfa2a95cfa93-553e578d" class="formcell">
                                             <label for="Phone-3" class="fieldlabel reverse">Phone</label>
-                                            <input class="formfield reverse w-input" maxlength="256" name="Phone-4"
+                                            <input class="formfield reverse w-input" maxlength="10" name="phone"
                                                 data-name="Phone 4" placeholder="Your phone number" type="tel"
-                                                id="Phone-3" required="" />
+                                                id="phone" pattern="^\d{10}$"
+                                                title="Please enter a 10-digit phone number." required />
                                         </div>
                                     </div>
+                                    <input type="hidden" id="source" name="source" value="provider">
+ 
                                     <div class="formdividr"></div>
+ 
                                     <label class="w-checkbox checkbox">
                                         <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox-2">
                                         </div>
-                                        <input type="checkbox" name="Opt-in-3" id="Opt-in-3" data-name="Opt In 3"
+                                        <input type="checkbox" name="Opt-in" id="Opt-in" data-name="Opt In 3"
                                             style="opacity: 0; position: absolute; z-index: -1;" />
                                         <span class="checkbox-label w-form-label" for="Opt-in-3">
                                             By checking this box, I consent to receive emails from Sika Health Inc.
                                             regarding its products, services, and promotions. I understand that I may
                                             withdraw my authorization at any time.
-                                            <a href="/privacy-policy.html" class="privacy-link">Privacy Policy</a>
+                                            <a href="/privacy-policy" class="privacy-link">Privacy Policy</a>
                                         </span>
                                     </label>
-                                    <input type="submit" data-wait="Please wait..." class="button sumbit w-button"
+                                    <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="erroroptin" hidden>Please make sure the checkbox is selected!</p>
+                                    <input type="submit" data-wait="Please wait..." class="button sumbit w-button" 
                                         value="Submit" />
                                 </form>
-                                <div class="success-message-2 w-form-done">
-                                    <div>Thank you! Your submission has been received!</div>
-                                </div>
-                                <div class="error-message-2 w-form-fail">
-                                    <div>Oops! Something went wrong while submitting the form.</div>
-                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <span id="email-errors" style="color: red; display: none;">Please enter a valid email
+                            address.</span>
+                            <div class="success-message-2 w-form-done" style="background-color: transparent; padding-bottom: 4rem;">
+                                <div>Thank you! Your submission has been received!</div>
+                            </div>
+                            <div class="error-message-2 w-form-fail" style="background-color: transparent; padding-bottom: 4rem; color: red;">
+                                <div>Oops! Something went wrong while submitting the form.</div>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+    </div>
+ 
     <footer class="border-t border-[#454545] border-solid">
         <div class="bg-[#0E0E0E] py-14">
             <div class="w-full max-w-[1208px] mx-auto px-6">
@@ -607,13 +635,13 @@
                             <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
                         </a>
                         <a href="https://www.instagram.com/sika_health/"
-                        class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
-                        <div class="flex items-center gap-2">
-                            <img src="images/instagram.svg" loading="" alt="" class="w-5 h-5">
-                            <div>INSTAGRAM</div>
-                        </div>
-                        <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
-                    </a>
+                            class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
+                            <div class="flex items-center gap-2">
+                                <img src="images/instagram.svg" loading="" alt="" class="w-5 h-5">
+                                <div>INSTAGRAM</div>
+                            </div>
+                            <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -635,25 +663,125 @@
                 </div>
             </div>
         </div>
-
+ 
     </footer>
-
-
-<!-- 
+ 
+ 
+    <!-- 
         <script src="js/jquery.min.js" type="text/javascript"></script>
         <script src="js/webflow.js" type="text/javascript"></script>
         <script src="js/custom.js"></script> -->
+ 
+ 
+ 
+ 
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63979d3ce779b679241436ec"
+        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+    <script>
+        function validateForm(event, formId) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            const form = document.getElementById(formId);
+            const formData = new FormData(form);
+            const email = formData.get('email');
+            const emailError = document.getElementById('email-errors');
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const emailErrorTexts= document.querySelectorAll('.email-error-text')
 
+            let isValid = true;
+            let optinvalid = true;
+            const erroroptin = document.querySelectorAll('.erroroptin');
+            const isChecked = formData.get('Opt-in')
+            if (isChecked) {
+                erroroptin.forEach(element => {
+                    element.hidden=true
+                });
+                optinvalid = true;
+            } else {
+                erroroptin.forEach(element => {
+                    element.hidden=false
+                });
+                optinvalid = false; 
+            }
+ 
+            if (!emailPattern.test(email)) {
+                emailErrorTexts.forEach(element => {
+                    element.hidden=false
+                });
+                isValid = false; 
+            } else {
+                emailErrorTexts.forEach(element => {
+                    element.hidden=true
+                });
+                isValid = true;
+            }
+            if (optinvalid == true && isValid == true){
+                return true;
+            } 
+            else{
+                return false;
+            }
+        }
+ 
+        function handleFormSubmit(event, formId) {
+            event.preventDefault(); 
+            const form = document.getElementById(formId);
+            const formData = new FormData(form);
+            const data = {};
+ 
+            formData.forEach((value, key) => {
+                if (key !== "Do-you-have-HSA-FSA" && key !== "Opt-in") {
+                    data[key] = value;
+                }
+            });
+ 
+            const successMessage = document.querySelector('.success-message-2');
+            const errorMessage = document.querySelector('.error-message-2');
+            successMessage.style.display = 'none';
+            errorMessage.style.display = 'none';
+ 
+            fetch('https://stage.ohai.sikahealth.com/v3/enquiry', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
 
-
-
-        <script
-        src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63979d3ce779b679241436ec"
-        type="text/javascript"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/js/webflow.37c5f454a.js" type="text/javascript"></script>
+            if (response.ok) {
+                form.style.display = 'none';
+                successMessage.style.display = 'block';
+            } else {
+                errorMessage.style.display = 'block';
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            errorMessage.style.display = 'block';
+        });
+    }
+ 
+        function handleSubmit(event, formId) {
+            if (validateForm(event, formId)) {
+                handleFormSubmit(event, formId);
+            }
+        }
+ 
+        document.getElementById('shopper-form').addEventListener('submit', function (event) {
+            handleSubmit(event, 'shopper-form');
+        });
+ 
+        document.getElementById('provider-form').addEventListener('submit', function (event) {
+            handleSubmit(event, 'provider-form');
+        });
+ 
+        document.getElementById('wf-form-Merchant').addEventListener('submit', function (event) {
+            handleSubmit(event, 'wf-form-Merchant');
+        });
+    </script>
+    <script src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/js/webflow.37c5f454a.js"
+        type="text/javascript"></script>
     <script src="js/custom.js"></script>
     <!-- OPEN SPECIFIC TABS -->
     <script>
@@ -665,10 +793,10 @@
             var tabName = getParam("tab");
             // terminate the function if no tab name was found
             if (!tabName) return;
-
+ 
             // click on the tab
             $("." + tabName).triggerHandler("click");
-
+ 
             // define the getParam function
             function getParam(name) {
                 // replace any '[' in the tab name with '\['
@@ -684,9 +812,9 @@
             }
         });
     </script>
-
-
-
+ 
+ 
+ 
 </body>
-
+ 
 </html>
