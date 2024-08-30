@@ -248,13 +248,14 @@
                                                         don&#x27;t know</span>
                                                 </label>
                                             </div>
+                                            <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="errorhfc" hidden>Please select an option</p>
                                         </div>
                                         <div id="w-node-_80fff084-da89-f3b5-518b-4748d3c6f031-553e578d"
                                             class="formcell">
                                             <label for="HSA-FSA-Provider-2" class="fieldlabel reverse">If Yes, please
                                                 select one</label>
                                             <select id="hsa_fsa_provider" name="hsa_fsa_provider"
-                                                data-name="HSA FSA Provider 2" class="dropdown w-select">
+                                                data-name="HSA FSA Provider 2" class="dropdown w-select" disabled>
                                                 <option value="">Please select</option>
                                                 <option value="Optum">Optum</option>
                                                 <option value="Health Equity">Health Equity</option>
@@ -264,6 +265,7 @@
                                                 <option value="Connect Your Care">Connect Your Care</option>
                                                 <option value="Other">Other</option>
                                             </select>
+                                            <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="errorhfpc" hidden>Please select a HSA/FSA Provider</p>
                                             <input type="hidden" id="source" name="source" value="shopper">
                                         </div>
                                     </div>
@@ -280,7 +282,7 @@
                                             <a href="/privacy-policy" class="privacy-link">Privacy Policy</a>
                                         </span>
                                     </label>
-                                    <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="erroroptin" hidden>Please make sure the checkbox is selected!</p>
+                                    <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="erroroptin" hidden>Please agree to the privacy policy to proceed.</p>
                                     <input type="submit" data-wait="Please wait..." class="button sumbit w-button"
                                         value="Submit" />
                                 </form>
@@ -388,6 +390,7 @@
                                                 <option value="Other">Other</option>
                                                 <option value="I don&#x27;t know">I don&#x27;t know</option>
                                             </select>
+                                            <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="errorecom" hidden>Please select an E-Commerce Platform</p>
                                         </div>
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec4ae-553e578d" class="formcell">
                                             <label for="Annual-Revenue" class="fieldlabel reverse">Annual
@@ -403,6 +406,7 @@
                                                 <option value="$50m–$100m">$50m–$100m</option>
                                                 <option value="More than $100m">More than $100m</option>
                                             </select>
+                                            <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="errorannrev" hidden>Please select the Annual Revenue</p>
                                         </div>
                                         <input type="hidden" name="source" value="merchant">
                                     </div>
@@ -419,7 +423,7 @@
                                             <a href="/privacy-policy" class="privacy-link">Privacy Policy</a>
                                         </span>
                                     </label>
-                                    <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="erroroptin" hidden>Please make sure the checkbox is selected!</p>
+                                    <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="erroroptin" hidden>Please agree to the privacy policy to proceed.</p>
                                     <input type="submit" data-wait="Please wait..." class="button sumbit w-button"
                                         value="Submit" />
                                 </form>
@@ -502,7 +506,7 @@
                                             <a href="/privacy-policy" class="privacy-link">Privacy Policy</a>
                                         </span>
                                     </label>
-                                    <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="erroroptin" hidden>Please make sure the checkbox is selected!</p>
+                                    <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="erroroptin" hidden>Please agree to the privacy policy to proceed.</p>
                                     <input type="submit" data-wait="Please wait..." class="button sumbit w-button" 
                                         value="Submit" />
                                 </form>
@@ -512,10 +516,10 @@
                     <div>
                         <span id="email-errors" style="color: red; display: none;">Please enter a valid email
                             address.</span>
-                            <div class="success-message-2 w-form-done" style="background-color: transparent; padding-bottom: 4rem;">
+                            <div class="success-message-2 w-form-done" style="background-color: transparent; padding-bottom: 4rem; font-size: larger;">
                                 <div>Thank you! Your submission has been received!</div>
                             </div>
-                            <div class="error-message-2 w-form-fail" style="background-color: transparent; padding-bottom: 4rem; color: red;">
+                            <div class="error-message-2 w-form-fail" style="background-color: transparent; padding-bottom: 4rem; color: red; font-size: larger;">
                                 <div>Oops! Something went wrong while submitting the form.</div>
                             </div>
                     </div>
@@ -679,19 +683,42 @@
         type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const yesRadioButton = document.querySelector('input[name="Do-you-have-HSA-FSA"][value="Yes"]');
+            const noRadioButton = document.querySelector('input[name="Do-you-have-HSA-FSA"][value="No"]');
+            const dontKnowRadioButton = document.querySelector('input[name="Do-you-have-HSA-FSA"][value="I don\'t know"]');
+            const dropdownList = document.getElementById('hsa_fsa_provider');
+
+            function handleRadioButtonClick() {
+                if (yesRadioButton.checked) {
+                    dropdownList.disabled = false;
+                } else {
+                    dropdownList.disabled = true;
+                    dropdownList.value = '';    
+                }
+            }
+
+            yesRadioButton.addEventListener('click', handleRadioButtonClick);
+            noRadioButton.addEventListener('click', handleRadioButtonClick);
+            dontKnowRadioButton.addEventListener('click', handleRadioButtonClick);
+        });
+    </script>
+    <script>
         function validateForm(event, formId) {
             event.preventDefault(); // Prevent the default form submission behavior
             const form = document.getElementById(formId);
             const formData = new FormData(form);
-            const email = formData.get('email');
-            const emailError = document.getElementById('email-errors');
-            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            const emailErrorTexts= document.querySelectorAll('.email-error-text')
 
             let isValid = true;
             let optinvalid = true;
+            let ecomvalid = true;
+            let annualrevvalid = true;
+            let hfpvalid = true;
+            let hfvalid = true;
+            
+            //privacy optin checkbox validation
             const erroroptin = document.querySelectorAll('.erroroptin');
-            const isChecked = formData.get('Opt-in')
+            const isChecked = formData.get('Opt-in');
             if (isChecked) {
                 erroroptin.forEach(element => {
                     element.hidden=true
@@ -703,7 +730,82 @@
                 });
                 optinvalid = false; 
             }
- 
+            //works only if the form is shopper
+            if(formId=="shopper-form"){
+                //hsa/fsa card? validation
+                const errorhf = document.querySelectorAll('.errorhfc');
+                const isselectedhf = formData.get('Do-you-have-HSA-FSA');
+                //console.log("do you have hsa/fsa",isselectedhf)
+                if (isselectedhf) {
+                    errorhf.forEach(element => {
+                        element.hidden=true
+                    });
+                    hfvalid = true;
+                } else {
+                    errorhf.forEach(element => {
+                        element.hidden=false
+                    });
+                    hfvalid = false; 
+                }
+                //hsa/fsa platform validation is only checked if hsa/fsa is available(yes)
+                //console.log("do you have hsa/fsa",isselectedhf);
+                if(isselectedhf == 'Yes'){
+                    //hsa/fsa platform validation
+                    const errorhfp = document.querySelectorAll('.errorhfpc');
+                    const isselectedhfp = formData.get('hsa_fsa_provider');
+                    if (isselectedhfp) {
+                        errorhfp.forEach(element => {
+                            element.hidden=true
+                        });
+                        hfpvalid = true;
+                    } else {
+                        errorhfp.forEach(element => {
+                            element.hidden=false
+                        });
+                        //console.log("else block");
+                        hfpvalid = false; 
+                    }
+                }
+            }
+            //works only if the form is merchant
+            if(formId=="wf-form-Merchant"){
+                //ecom platform validation
+                const errorep = document.querySelectorAll('.errorecom');
+                const isselectedecom = formData.get('ecommerce_platform');
+                if (isselectedecom) {
+                    errorep.forEach(element => {
+                        element.hidden=true
+                    });
+                    ecomvalid = true;
+                } else {
+                    errorep.forEach(element => {
+                        element.hidden=false
+                    });
+                    ecomvalid = false; 
+                }
+                
+                //annual revenue validation
+                const errorar = document.querySelectorAll('.errorannrev');
+                const isselectedannrev = formData.get('annual_revenue');
+                if (isselectedannrev) {
+                    errorar.forEach(element => {
+                        element.hidden=true
+                    });
+                    annualrevvalid = true;
+
+                } else {
+                    errorar.forEach(element => {
+                        element.hidden=false
+                    });
+                    annualrevvalid = false; 
+                }
+            }
+
+            //email validation
+            const email = formData.get('email');
+            const emailError = document.getElementById('email-errors');
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const emailErrorTexts= document.querySelectorAll('.email-error-text')
             if (!emailPattern.test(email)) {
                 emailErrorTexts.forEach(element => {
                     element.hidden=false
@@ -715,7 +817,14 @@
                 });
                 isValid = true;
             }
-            if (optinvalid == true && isValid == true){
+            // console.log("optin",optinvalid)
+            // console.log("email",isValid)
+            // console.log("ecom",ecomvalid)
+            // console.log("an rev",annualrevvalid)
+            // console.log("hfp",hfpvalid)
+            // console.log("hsfs?",hfvalid)
+
+            if (optinvalid == true && isValid == true && ecomvalid == true && annualrevvalid == true && hfpvalid == true && hfvalid == true){
                 return true;
             } 
             else{
