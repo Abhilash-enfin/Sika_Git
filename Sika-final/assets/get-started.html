@@ -47,11 +47,15 @@
         gtag("config", "G-0HGK9LH4TH");
     </script>
 </head>
- 
+ <style>
+    input:invalid {
+  scroll-margin-top: 100px;
+}
+ </style>
 <body>
  
     <!-- start header -->
-    <header id="header" class="fixed w-full left-0 right-0 m-auto top-0 md:top-8 z-50">
+    <header id="header" class="fixed w-full left-0 right-0 m-auto top-0 md:top-8 z-50" style="padding-bottom:50px;">
         <div class="max-w-[1356px] mx-auto  md:px-4">
             <div
                 class="bg-white flex justify-between items-center py-[10px] px-[15px] md:border-solid md:border md:border-secondary-black md:rounded-full">
@@ -196,7 +200,7 @@
                                             <input class="formfield reverse w-input" maxlength="256" name="email"
                                                 data-name="Email 4" placeholder="Your email address" type="text"
                                                 id="email" required />
-                                                <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="email-error-text" hidden>Enter a valid email address</p>
+                                                <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="email-error-text" hidden>Please enter a valid email address</p>
  
  
                                         </div>
@@ -297,7 +301,7 @@
                             <div class="form w-form">
                                 <form id="wf-form-Merchant" name="wf-form-Merchant" data-name="Merchant" method="POST"
                                     class="form-3" data-wf-page-id="64de6dd68c22af95553e578d"
-                                    action="https://api-dev.sikahealth.com/v3/enquiry"
+                                    action="https://stage.ohai.sikahealth.com/v3/enquiry"
                                     data-wf-element-id="e4f83720-b26c-b778-cdd0-7cbecabec482">
                                     <div class="w-layout-grid formgrid">
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec484-553e578d" class="formcell">
@@ -319,7 +323,7 @@
                                             <input class="formfield reverse w-input" maxlength="256" name="email"
                                                 data-name="Email" placeholder="Your email address" type="text"
                                                 id="email" required />
-                                                <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="email-error-text" hidden>Enter a valid email address</p>
+                                                <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="email-error-text" hidden>Please enter a valid email address</p>
  
                                         </div>
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec490-553e578d" class="formcell">
@@ -333,11 +337,11 @@
                                     <div class="formdividr"></div>
                                     <div class="w-layout-grid formgrid">
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec496-553e578d" class="formcell">
-                                            <label for="Company-Name-3" class="fieldlabel reverse">Company Name</label>
+                                            <label for="Company-Name-3" class="fieldlabel reverse" style="margin:0px">Company Name</label>
                                             <input class="formfield reverse w-input" maxlength="256" name="company_name"
                                                 data-name="Company Name" placeholder="Your company name" type="text"
                                                 id="company_name" required="" />
-                                        </div>
+                                                                                    </div>
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec49a-553e578d" class="formcell">
                                             <label for="Job-Role" class="fieldlabel reverse">Your Role</label>
                                             <input class="formfield reverse w-input" maxlength="256" name="role"
@@ -349,7 +353,7 @@
                                                 Website</label>
                                             <input class="formfield reverse w-input" maxlength="256"
                                                 name="company_website" data-name="Company Website"
-                                                placeholder="Your company website" type="text" id="company_website"
+                                                placeholder="Your company website" type="url" id="company_website"
                                                 required="" />
                                         </div>
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec4a6-553e578d" class="formcell">
@@ -479,7 +483,7 @@
                                                 data-name="Email 5" placeholder="Your email address" type="email"
                                                 id="email" required />
  
-                                                <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="email-error-text" hidden>Enter a valid email address</p>
+                                                <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="email-error-text" hidden>Please enter a valid email address</p>
                                         </div>
  
                                         <div id="w-node-fb1913c7-9eae-ab48-56b5-dfa2a95cfa93-553e578d" class="formcell">
@@ -715,6 +719,7 @@
             let annualrevvalid = true;
             let hfpvalid = true;
             let hfvalid = true;
+            let iscnameValid =true;
             
             //privacy optin checkbox validation
             const erroroptin = document.querySelectorAll('.erroroptin');
@@ -734,6 +739,7 @@
             if(formId=="shopper-form"){
                 //hsa/fsa card? validation
                 const errorhf = document.querySelectorAll('.errorhfc');
+                const hfInput = form.querySelector('[name="Do-you-have-HSA-FSA"]');
                 const isselectedhf = formData.get('Do-you-have-HSA-FSA');
                 //console.log("do you have hsa/fsa",isselectedhf)
                 if (isselectedhf) {
@@ -745,13 +751,15 @@
                     errorhf.forEach(element => {
                         element.hidden=false
                     });
-                    hfvalid = false; 
+                    hfvalid = false;
+                    hfInput.scrollIntoView({ behavior: 'smooth', block: 'center' });  
                 }
                 //hsa/fsa platform validation is only checked if hsa/fsa is available(yes)
                 //console.log("do you have hsa/fsa",isselectedhf);
                 if(isselectedhf == 'Yes'){
                     //hsa/fsa platform validation
                     const errorhfp = document.querySelectorAll('.errorhfpc');
+                    const hfpInput = form.querySelector('[name="hsa_fsa_provider"]');
                     const isselectedhfp = formData.get('hsa_fsa_provider');
                     if (isselectedhfp) {
                         errorhfp.forEach(element => {
@@ -763,7 +771,9 @@
                             element.hidden=false
                         });
                         //console.log("else block");
-                        hfpvalid = false; 
+                        hfpvalid = false;
+                        hfpInput.scrollIntoView({ behavior: 'smooth', block: 'center' }); 
+ 
                     }
                 }
             }
@@ -771,6 +781,7 @@
             if(formId=="wf-form-Merchant"){
                 //ecom platform validation
                 const errorep = document.querySelectorAll('.errorecom');
+                const ecompInput = form.querySelector('[name="ecommerce_platform"]');
                 const isselectedecom = formData.get('ecommerce_platform');
                 if (isselectedecom) {
                     errorep.forEach(element => {
@@ -781,11 +792,13 @@
                     errorep.forEach(element => {
                         element.hidden=false
                     });
-                    ecomvalid = false; 
+                    ecomvalid = false;
+                    ecompInput.scrollIntoView({ behavior: 'smooth', block: 'center' });  
                 }
                 
                 //annual revenue validation
                 const errorar = document.querySelectorAll('.errorannrev');
+                const annrevInput = form.querySelector('[name="annual_revenue"]');
                 const isselectedannrev = formData.get('annual_revenue');
                 if (isselectedannrev) {
                     errorar.forEach(element => {
@@ -797,20 +810,43 @@
                     errorar.forEach(element => {
                         element.hidden=false
                     });
-                    annualrevvalid = false; 
+                    annualrevvalid = false;
+                    annrevInput.scrollIntoView({ behavior: 'smooth', block: 'center' });  
+ 
                 }
             }
+            // if(formId=="provider-form" || formId=="wf-form-Merchant")
+            // //company name validation
+            // {
+            // console.log("inside cname valid");
+            // const cname = formData.get('company_name');
+            // const cnamePattern = /^[a-zA-Z0-9-@.{}#&!()]+(\s[a-zA-Z0-9-@{}.#&!()]+)+(\s[a-zA-Z-@.#&!()]+)?$/;
+            // const cnameErrorTexts= document.querySelectorAll('.cname-error-text')
+            // if (!cnamePattern.test(cname)) {
+            //     cnameErrorTexts.forEach(element => {
+            //         element.hidden=false
+            //     });
+            //     iscnameValid = false; 
+            // } else {
+            //     cnameErrorTexts.forEach(element => {
+            //         element.hidden=true
+            //     });
+            //     iscnameValid = true;
+            // }}
 
             //email validation
             const email = formData.get('email');
             const emailError = document.getElementById('email-errors');
+            const emailInput = form.querySelector('[name="email"]');
             const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
             const emailErrorTexts= document.querySelectorAll('.email-error-text')
             if (!emailPattern.test(email)) {
                 emailErrorTexts.forEach(element => {
-                    element.hidden=false
+                    element.hidden=false            
                 });
-                isValid = false; 
+                isValid = false;
+                //emailInput.focus();
+                emailInput.scrollIntoView({ behavior: 'smooth', block: 'center' }); 
             } else {
                 emailErrorTexts.forEach(element => {
                     element.hidden=true
@@ -824,7 +860,7 @@
             // console.log("hfp",hfpvalid)
             // console.log("hsfs?",hfvalid)
 
-            if (optinvalid == true && isValid == true && ecomvalid == true && annualrevvalid == true && hfpvalid == true && hfvalid == true){
+            if (optinvalid == true && isValid == true && ecomvalid == true && annualrevvalid == true && hfpvalid == true && hfvalid == true && iscnameValid == true){
                 return true;
             } 
             else{
