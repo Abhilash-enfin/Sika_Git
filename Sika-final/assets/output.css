@@ -2106,9 +2106,9 @@ video {
   display: block;
 }
 
-.logo-slider > div:hover {
+/* .logo-slider > div:hover {
   animation-play-state: paused;
-}
+} */
 
 /* @media (min-width: 1000px) {
   .logo-slider {
