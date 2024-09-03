@@ -43,7 +43,11 @@
   <script
     type="text/javascript">window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('set', 'developer_id.dZGVlNj', true); gtag('config', 'G-0HGK9LH4TH');</script>
 </head>
-
+<style>
+  input:invalid {
+scroll-margin-top: 100px;
+}
+</style>
 <body class="body bg-[#F7F9FB]">
 
   <!-- start header -->
@@ -632,35 +636,47 @@
           <div class="text-block-14">Enter your details below to see the Sika platform in action</div>
         </div>
         <div class="form-block-2 w-form">
-          <form id="wf-form-LMN-Demo-Form" name="wf-form-LMN-Demo-Form" data-name="LMN Demo Form" method="get"
+          <form id="wf-form-LMN-Demo-Form" name="wf-form-LMN-Demo-Form" data-name="LMN Demo Form" method="POST"
             class="form-2" data-wf-page-id="66338533c841934154575d8d"
+            action="https://api-dev.sikahealth.com/v3/enquiry"
             data-wf-element-id="e02162e7-fee5-b98e-1b09-ebe960f11189">
             <div class="w-layout-grid formgrid">
               <div id="w-node-_743cb0b9-fc43-41ef-377d-76f2ed5f6afa-54575d8d" class="formcell"><label for="First-Name"
                   class="fieldlabel light">First Name</label><input class="formfield reverse w-input" maxlength="256"
-                  name="First-Name" data-name="First Name" placeholder="Your first name" type="text" id="First-Name"
+                  name="first_name" data-name="First Name" placeholder="Your first name" type="text" id="first_name" pattern="[A-Za-z]+"
+                  title="First name must contain only letters." 
                   required=""></div>
               <div id="w-node-caa61ea9-8f25-ec39-2986-2fed0606a27e-54575d8d" class="formcell"><label for="Last-Name"
                   class="fieldlabel light">Last Name</label><input class="formfield reverse w-input" maxlength="256"
-                  name="Last-Name" data-name="Last Name" placeholder="Your last name" type="text" id="Last-Name"
+                  name="last_name" data-name="Last Name" placeholder="Your last name" type="text" id="last_name" pattern="[A-Za-z]+"
+                  title="Last name must contain only letters."
                   required=""></div>
               <div id="w-node-e8c97adc-2a47-414e-0592-bb4cfbf9015e-54575d8d" class="formcell"><label for="Email-2"
                   class="fieldlabel">Company</label><input class="formfield reverse w-input" maxlength="256"
-                  name="Email" data-name="Email" placeholder="Your company name" type="text" id="Email-2" required="">
+                  name="company_name" data-name="Email" placeholder="Your company name" type="text" id="company_name" required="">
               </div>
               <div id="w-node-_8577ca66-b634-ffaa-0a92-84206ec1e2e2-54575d8d" class="formcell"><label for="Email-3"
-                  class="fieldlabel">Email</label><input class="formfield reverse w-input" maxlength="256" name="Email"
-                  data-name="Email" placeholder="Your email address" type="email" id="Email-4" required=""></div>
-            </div><input type="submit" data-wait="Please wait..." class="button sumbit green w-button"
-              value="BOOK DEMO">
+                  class="fieldlabel">Email</label><input class="formfield reverse w-input" maxlength="256" name="email"
+                  data-name="Email" placeholder="Your email address" type="email" id="email" required="">
+                  <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="email-error-text" hidden>Please enter a valid email address</p>  
+              </div>
+            </div>
+            <input type="hidden" id="phone" name="phone" value="0000000000">
+            <input type="hidden" id="source" name="source" value="LMN_demo">
+            <input type="submit" data-wait="Please wait..." class="button sumbit green w-button"
+              value="BOOK DEMO"/>
           </form>
-          <div class="success-message w-form-done">
-            <div>Thank you! Your submission has been received!</div>
-          </div>
-          <div class="error-message w-form-fail">
-            <div>Oops! Something went wrong while submitting the form. Please try again.</div>
-          </div>
         </div>
+        <div>
+          <span id="email-errors" style="color: red; display: none;" hidden>Please enter a valid email
+              address.</span>
+              <div class="success-message-2 w-form-done" style="background-color: transparent; padding-bottom: 4rem; font-size: larger;">
+                  <div>Thank you! Your submission has been received!</div>
+              </div>
+              <div class="error-message-2 w-form-fail" style="background-color: transparent; padding-bottom: 4rem; color: red; font-size: larger;">
+                  <div>Oops! Something went wrong while submitting the form.</div>
+              </div>
+      </div>
       </div>
     </div>
 
@@ -816,6 +832,86 @@
     <script src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/js/webflow.37c5f454a.js"
       type="text/javascript"></script>
     <script src="js/custom.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('wf-form-LMN-Demo-Form');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+        let isValid = true;
+        let iscnameValid = true;
+        const formData = new FormData(form);
+
+        // Convert FormData to a JSON object
+        const data = {};
+        formData.forEach((value, key) => {
+                if (key !== "Do-you-have-HSA-FSA" && key !== "Opt-in") {
+                    data[key] = value;
+                }
+            });
+          const email = formData.get('email');
+          const emailError = document.getElementById('email-errors');
+          const emailInput = form.querySelector('[name="email"]');
+          const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+          const emailErrorTexts= document.querySelectorAll('.email-error-text')
+          if (!emailPattern.test(email)) {
+              emailErrorTexts.forEach(element => {
+                  element.hidden=false;
+                  element.style.display="flex";
+              });
+              isValid = false; 
+              emailInput.scrollIntoView({ behavior: 'smooth', block: 'center' }); 
+          } else {
+              emailErrorTexts.forEach(element => {
+                  element.hidden=true;
+              });
+              isValid = true;
+          }
+          // const cname = formData.get('company_name');
+          // const cnamePattern = /^[a-zA-Z0-9-@.{}#&!()]+(\s[a-zA-Z0-9-@{}.#&!()]+)+(\s[a-zA-Z-@.#&!()]+)?$/;
+          // const cnameErrorTexts= document.querySelectorAll('.cname-error-text')
+          // if (!cnamePattern.test(cname)) {
+          //       cnameErrorTexts.forEach(element => {
+          //           element.hidden=false
+          //       });
+          //       iscnameValid = false; 
+          // } else {
+          //       cnameErrorTexts.forEach(element => {
+          //           element.hidden=true
+          //       });
+          //       iscnameValid = true;
+          // }
+        // Send the POST request
+        
+      if(isValid == true ){ //&& iscnameValid == true
+       const successMessage = document.querySelector('.success-message-2');
+        const errorMessage = document.querySelector('.error-message-2');
+        successMessage.style.display = 'none';
+        errorMessage.style.display = 'none';
+
+        fetch('https://stage.ohai.sikahealth.com/v3/enquiry', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
+          })
+          .then(response => {
+
+          if (response.ok) {
+              form.style.display = 'none';
+              successMessage.style.display = 'block';
+          } else {
+              errorMessage.style.display = 'block';
+          }
+      })
+      .catch(error => {
+          console.error('Error:', error);
+          errorMessage.style.display = 'block';
+      });}
+    });
+});
+    </script>
 </body>
 
 </html>
