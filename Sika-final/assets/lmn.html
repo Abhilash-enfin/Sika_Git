@@ -43,11 +43,7 @@
   <script
     type="text/javascript">window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('set', 'developer_id.dZGVlNj', true); gtag('config', 'G-0HGK9LH4TH');</script>
 </head>
-<style>
-  input:invalid {
-scroll-margin-top: 100px;
-}
-</style>
+
 <body class="body bg-[#F7F9FB]">
 
   <!-- start header -->
@@ -56,16 +52,16 @@ scroll-margin-top: 100px;
       <div
         class="bg-white flex justify-between items-center py-[10px] px-[15px] md:border-solid md:border md:border-secondary-black md:rounded-full">
         <div class="flex flex-shrink-0 items-center">
-          <a href="/">
+          <a href="index.html">
             <img class="h-[30px] lg:h-[35px] max-w-[100px] lg:max-w-[120px] w-auto" src="images/Sika-logo.svg"
               alt="sika logo">
           </a>
         </div>
         <nav class="hidden md:flex md:space-x-[10px] lg:space-x-[35px] md:items-center">
-          <!-- <a href="about" class="nav-link"> How Sika Works</a> -->
-          <a href="merchants" class="nav-link">For Merchants</a>
-          <a href="shopping" class="nav-link">For Shoppers</a>
-          <a href="get-started" class="btn-green">GET STARTED WITH SIKA</a>
+          <!-- <a href="about.html" class="nav-link"> How Sika Works</a> -->
+          <a href="merchants.html" class="nav-link">For Merchants</a>
+          <a href="shopping.html" class="nav-link">For Shoppers</a>
+          <a href="get-started.html" class="btn-green">GET STARTED WITH SIKA</a>
         </nav>
         <div class="md:hidden">
           <div class="relative">
@@ -80,12 +76,12 @@ scroll-margin-top: 100px;
     </div>
     <div id="mobile-menu" class="hidden lg:hidden  h-full fixed w-full sidebar">
       <div class="flex flex-col space-y-8 p-7 bg-white ml-auto max-w-[270px] h-full overflow-y-auto pb-16">
-        <!-- <a href="about" class="nav-link"> How Sika Works</a> -->
-        <a href="merchants" class="nav-link">For Merchants</a>
-        <a href="shopping" class="nav-link">For Shoppers</a>
-        <a href="get-started" class="nav-link">GET STARTED WITH SIKA</a>
+        <!-- <a href="about.html" class="nav-link"> How Sika Works</a> -->
+        <a href="merchants.html" class="nav-link">For Merchants</a>
+        <a href="shopping.html" class="nav-link">For Shoppers</a>
+        <a href="get-started.html" class="nav-link">GET STARTED WITH SIKA</a>
         <div class="grid md:grid-cols-2 gap-4 md:gap-6 pt-0 !mt-3">
-          <a href="merchants"
+          <a href="merchants.html"
             class=" bg-white border border-gray-light rounded-[10px] py-[10px] px-[13px] flex items-start min-h-[70px] cursor-pointer relative">
             <div class="flex flex-col">
               <p class="uppercase inline-block text-[8px] leading-[12px] font-[800] text-gray-dark ">
@@ -109,7 +105,7 @@ scroll-margin-top: 100px;
             </div>
 
           </a>
-          <a href="shopping"
+          <a href="shopping.html"
             class=" bg-white border border-gray-light rounded-[10px] py-[10px] px-[13px] flex items-start min-h-[70px] cursor-pointer relative">
             <div class="flex flex-col">
               <p class="uppercase inline-block text-[8px] leading-[12px] font-[800] text-gray-dark ">
@@ -170,12 +166,12 @@ scroll-margin-top: 100px;
           <div class="mb-5 md:mb-0">
             <article class="md:text-end lg:max-w-[520px]">
               <h1
-                class="font-custom text-[30px] leading-[33px] md:text-[34px] md:leading-[44px]  lg:text-[51px] lg:leading-[61px] font-[600] mb-3 md:mb-4 text-secondary-black">
+                class="font-custom text-[30px] leading-[33px] md:text-[34px] md:leading-[44px]  lg:text-[51px] lg:leading-[61px] font-[600] mt-0 mb-3 md:mb-4 text-secondary-black">
                 Letter of Medical <br>
                 Necessity (LMN)
               </h1>
               <p
-                class="lg:max-w-[330px] inline-block text-[17px] leading-[22px] font-[400] mb-5 md:mb-7 text-secondary-black">
+                class="lg:max-w-[330px] inline-block text-[17px] leading-[22px] font-[400] mt-0 mb-5 md:mb-7 text-secondary-black">
                 Expand eligibility of your items for customers with relevant medical conditions so that they can purchase with HSA and FSA through Sika's medical practice.
               </p>
               <!-- <a class=" flex underline  items-center text-[11px] leading-[14px]  md:text-[17px] md:leading-[20px] font-bold text-secondary-black uppercase tracking-[2px]"
@@ -546,7 +542,7 @@ scroll-margin-top: 100px;
                     <p>
                       The information you provide in the LMN process will be kept confidential and shared only with our
                       independent healthcare provider(s) to evaluate your eligibility for an LMN. For more information,
-                      see our <a href="/privacy-policy">privacy policy</a>.
+                      see our <a href="/privacy-policy.html">privacy policy</a>.
                     </p>
                   </div>
                 </div>
@@ -636,47 +632,35 @@ scroll-margin-top: 100px;
           <div class="text-block-14">Enter your details below to see the Sika platform in action</div>
         </div>
         <div class="form-block-2 w-form">
-          <form id="wf-form-LMN-Demo-Form" name="wf-form-LMN-Demo-Form" data-name="LMN Demo Form" method="POST"
+          <form id="wf-form-LMN-Demo-Form" name="wf-form-LMN-Demo-Form" data-name="LMN Demo Form" method="get"
             class="form-2" data-wf-page-id="66338533c841934154575d8d"
-            action="https://api-dev.sikahealth.com/v3/enquiry"
             data-wf-element-id="e02162e7-fee5-b98e-1b09-ebe960f11189">
             <div class="w-layout-grid formgrid">
               <div id="w-node-_743cb0b9-fc43-41ef-377d-76f2ed5f6afa-54575d8d" class="formcell"><label for="First-Name"
                   class="fieldlabel light">First Name</label><input class="formfield reverse w-input" maxlength="256"
-                  name="first_name" data-name="First Name" placeholder="Your first name" type="text" id="first_name" pattern="[A-Za-z]+"
-                  title="First name must contain only letters." 
+                  name="First-Name" data-name="First Name" placeholder="Your first name" type="text" id="First-Name"
                   required=""></div>
               <div id="w-node-caa61ea9-8f25-ec39-2986-2fed0606a27e-54575d8d" class="formcell"><label for="Last-Name"
                   class="fieldlabel light">Last Name</label><input class="formfield reverse w-input" maxlength="256"
-                  name="last_name" data-name="Last Name" placeholder="Your last name" type="text" id="last_name" pattern="[A-Za-z]+"
-                  title="Last name must contain only letters."
+                  name="Last-Name" data-name="Last Name" placeholder="Your last name" type="text" id="Last-Name"
                   required=""></div>
               <div id="w-node-e8c97adc-2a47-414e-0592-bb4cfbf9015e-54575d8d" class="formcell"><label for="Email-2"
                   class="fieldlabel">Company</label><input class="formfield reverse w-input" maxlength="256"
-                  name="company_name" data-name="Email" placeholder="Your company name" type="text" id="company_name" required="">
+                  name="Email" data-name="Email" placeholder="Your company name" type="text" id="Email-2" required="">
               </div>
               <div id="w-node-_8577ca66-b634-ffaa-0a92-84206ec1e2e2-54575d8d" class="formcell"><label for="Email-3"
-                  class="fieldlabel">Email</label><input class="formfield reverse w-input" maxlength="256" name="email"
-                  data-name="Email" placeholder="Your email address" type="email" id="email" required="">
-                  <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="email-error-text" hidden>Please enter a valid email address</p>  
-              </div>
-            </div>
-            <input type="hidden" id="phone" name="phone" value="0000000000">
-            <input type="hidden" id="source" name="source" value="LMN_demo">
-            <input type="submit" data-wait="Please wait..." class="button sumbit green w-button"
-              value="BOOK DEMO"/>
+                  class="fieldlabel">Email</label><input class="formfield reverse w-input" maxlength="256" name="Email"
+                  data-name="Email" placeholder="Your email address" type="email" id="Email-4" required=""></div>
+            </div><input type="submit" data-wait="Please wait..." class="button sumbit green w-button"
+              value="BOOK DEMO">
           </form>
+          <div class="success-message w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="error-message w-form-fail">
+            <div>Oops! Something went wrong while submitting the form. Please try again.</div>
+          </div>
         </div>
-        <div>
-          <span id="email-errors" style="color: red; display: none;" hidden>Please enter a valid email
-              address.</span>
-              <div class="success-message-2 w-form-done" style="background-color: transparent; padding-bottom: 4rem; font-size: larger;">
-                  <div>Thank you! Your submission has been received!</div>
-              </div>
-              <div class="error-message-2 w-form-fail" style="background-color: transparent; padding-bottom: 4rem; color: red; font-size: larger;">
-                  <div>Oops! Something went wrong while submitting the form.</div>
-              </div>
-      </div>
       </div>
     </div>
 
@@ -689,22 +673,22 @@ scroll-margin-top: 100px;
               <div class="mb-4">
                 <div class="text-green font-[700] text-[13px] uppercase tracking-[2px]">Platform</div>
               </div>
-              <a href="/get-started?tab=merchant"
+              <a href="/get-started.html?tab=merchant"
                 class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
                 <div>MERCHANTS</div>
                 <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
               </a>
-              <a href="/get-started?tab=shopper"
+              <a href="/get-started.html?tab=shopper"
                 class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
                 <div>SHOPPERS</div>
                 <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
               </a>
-              <a href="/get-started?tab=provider"
+              <a href="/get-started.html?tab=provider"
                 class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
                 <div>PROVIDERS</div>
                 <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
               </a>
-              <a href="/lmn"
+              <a href="/lmn.html"
                 class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
                 <div>LMN</div>
                 <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
@@ -714,17 +698,17 @@ scroll-margin-top: 100px;
               <div class="mb-4">
                 <div class="text-green font-[700] text-[13px] uppercase tracking-[2px]">SOLUTION</div>
               </div>
-              <a href="/features#Features"
+              <a href="/features.html#Features"
                 class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
                 <div>FEATURES</div>
                 <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
               </a>
-              <a href="/features#Benefits"
+              <a href="/features.html#Benefits"
                 class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
                 <div>BENEFITS</div>
                 <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
               </a>
-              <a href="/features#Overview"
+              <a href="/features.html#Overview"
                 class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
                 <div>OVERVIEW</div>
                 <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
@@ -739,27 +723,27 @@ scroll-margin-top: 100px;
               <div class="mb-4">
                 <div class="text-green font-[700] text-[13px] uppercase tracking-[2px]">ABOUT</div>
               </div>
-              <a href="about"
+              <a href="about.html"
                 class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
                 <div>ABOUT&nbsp;US</div>
                 <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
               </a>
-              <a href="/about#Team"
+              <a href="/about.html#Team"
                 class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
                 <div>TEAM</div>
                 <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
               </a>
-              <a href="/about#Roles"
+              <a href="/about.html#Roles"
                 class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
                 <div>OPEN&nbsp;ROLES</div>
                 <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
               </a>
-              <a href="press"
+              <a href="press.html"
                 class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
                 <div>PRESS</div>
                 <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
               </a>
-              <a href="blog"
+              <a href="blog.html"
                 class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
                 <div>BLOG</div>
                 <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
@@ -808,11 +792,11 @@ scroll-margin-top: 100px;
           <div class="text-white text-[11px] font-normal order-2 md:order-">© Sika Health 2024. All rights
             reserved.</div>
           <div class="flex items-center space-x-5 mb-5 md:mb-0">
-            <a href="terms-of-service"
+            <a href="terms-of-service.html"
               class="flex items-center h-full text-white/80 hover:text-green  text-[11px] font-[500] uppercase">
               <div>TERMS&nbsp;OF&nbsp;SERVICE</div>
             </a>
-            <a href="privacy-policy"
+            <a href="privacy-policy.html"
               class="flex items-center h-full text-white/80 hover:text-green  text-[11px] font-[500] uppercase">
               <div>PRIVACY&nbsp;POLICY</div>
             </a>
@@ -832,86 +816,6 @@ scroll-margin-top: 100px;
     <script src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/js/webflow.37c5f454a.js"
       type="text/javascript"></script>
     <script src="js/custom.js"></script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('wf-form-LMN-Demo-Form');
-
-    form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent the default form submission
-        let isValid = true;
-        let iscnameValid = true;
-        const formData = new FormData(form);
-
-        // Convert FormData to a JSON object
-        const data = {};
-        formData.forEach((value, key) => {
-                if (key !== "Do-you-have-HSA-FSA" && key !== "Opt-in") {
-                    data[key] = value;
-                }
-            });
-          const email = formData.get('email');
-          const emailError = document.getElementById('email-errors');
-          const emailInput = form.querySelector('[name="email"]');
-          const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-          const emailErrorTexts= document.querySelectorAll('.email-error-text')
-          if (!emailPattern.test(email)) {
-              emailErrorTexts.forEach(element => {
-                  element.hidden=false;
-                  element.style.display="flex";
-              });
-              isValid = false; 
-              emailInput.scrollIntoView({ behavior: 'smooth', block: 'center' }); 
-          } else {
-              emailErrorTexts.forEach(element => {
-                  element.hidden=true;
-              });
-              isValid = true;
-          }
-          // const cname = formData.get('company_name');
-          // const cnamePattern = /^[a-zA-Z0-9-@.{}#&!()]+(\s[a-zA-Z0-9-@{}.#&!()]+)+(\s[a-zA-Z-@.#&!()]+)?$/;
-          // const cnameErrorTexts= document.querySelectorAll('.cname-error-text')
-          // if (!cnamePattern.test(cname)) {
-          //       cnameErrorTexts.forEach(element => {
-          //           element.hidden=false
-          //       });
-          //       iscnameValid = false; 
-          // } else {
-          //       cnameErrorTexts.forEach(element => {
-          //           element.hidden=true
-          //       });
-          //       iscnameValid = true;
-          // }
-        // Send the POST request
-        
-      if(isValid == true ){ //&& iscnameValid == true
-       const successMessage = document.querySelector('.success-message-2');
-        const errorMessage = document.querySelector('.error-message-2');
-        successMessage.style.display = 'none';
-        errorMessage.style.display = 'none';
-
-        fetch('https://stage.ohai.sikahealth.com/v3/enquiry', {
-              method: 'POST',
-              headers: {
-                  'Content-Type': 'application/json'
-              },
-              body: JSON.stringify(data)
-          })
-          .then(response => {
-
-          if (response.ok) {
-              form.style.display = 'none';
-              successMessage.style.display = 'block';
-          } else {
-              errorMessage.style.display = 'block';
-          }
-      })
-      .catch(error => {
-          console.error('Error:', error);
-          errorMessage.style.display = 'block';
-      });}
-    });
-});
-    </script>
 </body>
 
 </html>
