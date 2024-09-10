@@ -68,7 +68,7 @@
                 <nav class="hidden md:flex md:space-x-[10px] lg:space-x-[35px] md:items-center">
                     <!-- <a href="about" class="nav-link"> How Sika Works</a> -->
                     <a href="merchants" class="nav-link">For Merchants</a>
-                    <a href="shopping" class="nav-link">For Shoppers</a>
+                    <a href="shop" class="nav-link">For Shoppers</a>
                     <a href="get-started" class="btn-green">GET STARTED WITH SIKA</a>
                 </nav>
                 <div class="md:hidden">
@@ -86,7 +86,7 @@
             <div class="flex flex-col space-y-8 p-7 bg-white ml-auto max-w-[270px] h-full overflow-y-auto pb-16">
                 <!-- <a href="about" class="nav-link"> How Sika Works</a> -->
                 <a href="merchants" class="nav-link">For Merchants</a>
-                <a href="shopping" class="nav-link">For Shoppers</a>
+                <a href="shop" class="nav-link">For Shoppers</a>
                 <a href="get-started" class="nav-link">GET STARTED WITH SIKA</a>
                 <div class="grid md:grid-cols-2 gap-4 md:gap-6 pt-0 !mt-3">
                     <a href="merchants"
@@ -114,7 +114,7 @@
                         </div>
  
                     </a>
-                    <a href="shopping"
+                    <a href="shop"
                         class=" bg-white border border-gray-light rounded-[10px] py-[10px] px-[13px] flex items-start min-h-[70px] cursor-pointer relative">
                         <div class="flex flex-col">
                             <p class="uppercase inline-block text-[8px] leading-[12px] font-[800] text-gray-dark ">
@@ -353,8 +353,11 @@
                                                 Website</label>
                                             <input class="formfield reverse w-input" maxlength="256"
                                                 name="company_website" data-name="Company Website"
-                                                placeholder="Your company website" type="url" id="company_website"
+                                                placeholder="Your company website" type="text" 
+                                                id="company_website" 
                                                 required="" />
+                                            <p style="padding: 0px;margin: 0px;color: red;font-size: small; margin-top: -10px; padding-bottom: 35px;" class="errorcomw" hidden>Please enter a valid URL</p>
+
                                         </div>
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec4a6-553e578d" class="formcell">
                                             <label for="E-Commerce-Platform" class="fieldlabel reverse">E-Commerce
@@ -394,7 +397,7 @@
                                                 <option value="Other">Other</option>
                                                 <option value="I don&#x27;t know">I don&#x27;t know</option>
                                             </select>
-                                            <p style="padding: 0px;margin: 0px;color: red;font-size: small;" class="errorecom" hidden>Please select an E-Commerce Platform</p>
+                                            <p style="padding: 0px;margin: 0px;color: red;font-size: small;margin-top: -10px; padding-bottom: 35px;" class="errorecom" hidden>Please select an E-Commerce Platform</p>
                                         </div>
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec4ae-553e578d" class="formcell">
                                             <label for="Annual-Revenue" class="fieldlabel reverse">Annual
@@ -814,6 +817,28 @@
                     annrevInput.scrollIntoView({ behavior: 'smooth', block: 'center' });  
  
                 }
+
+                //company website
+                const comw = formData.get('company_website');
+                const comwError = document.getElementById('errorcomw');
+                const comwInput = form.querySelector('[name="company_website"]');
+                const comwPattern = /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}\/?$/;///((?:https?\:\/\/|www\.|)(?:[-a-z0-9]+\.)*[-a-z0-9]+\.[a-z]{2,}.*)/i
+                const comwErrorTexts= document.querySelectorAll('.errorcomw')
+                if (!comwPattern.test(comw)) {
+                    comwErrorTexts.forEach(element => {
+                        element.hidden=false            
+                    });
+                    iscnameValid = false;
+                    //emailInput.focus();
+                    comwInput.scrollIntoView({ behavior: 'smooth', block: 'center' }); 
+                } else {
+                    comwErrorTexts.forEach(element => {
+                        element.hidden=true
+                    });
+                    iscnameValid = true;
+                }
+
+                
             }
             // if(formId=="provider-form" || formId=="wf-form-Merchant")
             // //company name validation
@@ -885,7 +910,7 @@
             successMessage.style.display = 'none';
             errorMessage.style.display = 'none';
  
-            fetch('https://stage.ohai.sikahealth.com/v3/enquiry', {
+            fetch('https://api.sika.health/v3/enquiry', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
