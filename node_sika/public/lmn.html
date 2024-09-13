@@ -662,7 +662,7 @@ scroll-margin-top: 100px;
               </div>
             </div>
             <input type="hidden" id="phone" name="phone" value="0000000000">
-            <input type="hidden" id="source" name="source" value="LMN_demo">
+            <input type="hidden" id="source" name="source" value="LMN (Book a Demo)">
             <input type="submit" data-wait="Please wait..." class="button sumbit green w-button"
               value="BOOK DEMO"/>
           </form>
@@ -889,7 +889,7 @@ scroll-margin-top: 100px;
         successMessage.style.display = 'none';
         errorMessage.style.display = 'none';
 
-        fetch('https://api.sika.health/v3/enquiry', {
+        fetch('https://stage.ohai.sikahealth.com/v3/enquiry', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json'

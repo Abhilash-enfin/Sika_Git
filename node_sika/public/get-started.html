@@ -277,7 +277,7 @@
                                     <label class="w-checkbox checkbox">
                                         <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox-2">
                                         </div>
-                                        <input type="checkbox" name="Opt-in" id="Opt-in" data-name="Opt In 3"
+                                        <input type="checkbox" name="opt_in" id="opt_in" data-name="Opt In 3"
                                             style="opacity: 0; position: absolute; z-index: -1;" />
                                         <span class="checkbox-label w-form-label" for="Opt-in-3">
                                             By checking this box, I consent to receive emails from Sika Health Inc.
@@ -421,7 +421,7 @@
                                     <label class="w-checkbox checkbox">
                                         <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox-2">
                                         </div>
-                                        <input type="checkbox" name="Opt-in" id="Opt-in" data-name="Opt In 3"
+                                        <input type="checkbox" name="opt_in" id="opt_in" data-name="Opt In 3"
                                             style="opacity: 0; position: absolute; z-index: -1;" />
                                         <span class="checkbox-label w-form-label" for="Opt-in-3">
                                             By checking this box, I consent to receive emails from Sika Health Inc.
@@ -504,7 +504,7 @@
                                     <label class="w-checkbox checkbox">
                                         <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox-2">
                                         </div>
-                                        <input type="checkbox" name="Opt-in" id="Opt-in" data-name="Opt In 3"
+                                        <input type="checkbox" name="opt_in" id="opt_in" data-name="Opt In 3"
                                             style="opacity: 0; position: absolute; z-index: -1;" />
                                         <span class="checkbox-label w-form-label" for="Opt-in-3">
                                             By checking this box, I consent to receive emails from Sika Health Inc.
@@ -724,20 +724,20 @@
             let hfvalid = true;
             let iscnameValid =true;
             
-            //privacy optin checkbox validation
-            const erroroptin = document.querySelectorAll('.erroroptin');
-            const isChecked = formData.get('Opt-in');
-            if (isChecked) {
-                erroroptin.forEach(element => {
-                    element.hidden=true
-                });
-                optinvalid = true;
-            } else {
-                erroroptin.forEach(element => {
-                    element.hidden=false
-                });
-                optinvalid = false; 
-            }
+            // //privacy optin checkbox validation
+            // const erroroptin = document.querySelectorAll('.erroroptin');
+            // const isChecked = formData.get('Opt-in');
+            // if (isChecked) {
+            //     erroroptin.forEach(element => {
+            //         element.hidden=true
+            //     });
+            //     optinvalid = true;
+            // } else {
+            //     erroroptin.forEach(element => {
+            //         element.hidden=false
+            //     });
+            //     optinvalid = false; 
+            // }
             //works only if the form is shopper
             if(formId=="shopper-form"){
                 //hsa/fsa card? validation
@@ -900,8 +900,16 @@
             const data = {};
  
             formData.forEach((value, key) => {
-                if (key !== "Do-you-have-HSA-FSA" && key !== "Opt-in") {
-                    data[key] = value;
+                if (key !== "Do-you-have-HSA-FSA") {
+
+
+                    if (key === 'opt_in') {
+                        // Explicitly handle null and 'on'
+                        const checkboxValue = formData.get(key);
+                        data[key] = checkboxValue === 'on'; // Convert checkbox value to boolean
+                    } else {
+                        data[key] = value; // For other fields, keep the original value
+                    }
                 }
             });
  
@@ -910,7 +918,7 @@
             successMessage.style.display = 'none';
             errorMessage.style.display = 'none';
  
-            fetch('https://api.sika.health/v3/enquiry', {
+            fetch('https://stage.ohai.sikahealth.com/v3/enquiry', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
