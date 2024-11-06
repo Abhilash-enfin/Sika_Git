@@ -37,10 +37,29 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
+    $('.employee-slide').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        speed: 1000,
+
+    });
+
+});
+
+
+
+
+
+
+$(document).ready(function () {
     var isMobile = $(window).width() <= 768;
 
     $('.merchant-slide').slick({
-        infinite: false,
+        infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,

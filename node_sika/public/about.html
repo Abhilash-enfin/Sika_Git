@@ -15,13 +15,20 @@
         property="twitter:image">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Webflow" name="generator">
+
+
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/webflow.css" rel="stylesheet" type="text/css">
     <link href="css/sika2-3793a1.webflow.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="output.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.min.css" rel="stylesheet" type="text/css">
+
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-    <link href="output.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
     <script
         type="text/javascript">WebFont.load({ google: { families: ["PT Serif:400,400italic,700,700italic", "Outfit:100,200,300,regular,500,600,700,800,900"] } });</script>
     <script
@@ -33,7 +40,7 @@
         type="text/javascript">window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('set', 'developer_id.dZGVlNj', true); gtag('config', 'G-0HGK9LH4TH');</script>
 </head>
 
-<body>
+<body class="bg-[#F2F2F2]">
     <!-- start header -->
     <header id="header" class="fixed w-full left-0 right-0 m-auto top-0 md:top-8 z-50">
         <div class="max-w-[1356px] mx-auto  md:px-4">
@@ -126,884 +133,552 @@
     <!-- end header -->
 
 
-    <div class="section hero2 team !pt-[150px]">
-        <div class="container _50">
-            <div class="contentwrapper centre">
-                <!-- <h2 class="herotitle"><sub>We are a proudly Black female physician-founded company that is reinventing
-                        the way we pay for our health</sub></h2>
-                <div class="paragraph">Many of us struggle to pay for our health needs. We believe that healthcare plans
-                    were meant to keep us healthy, in addition to treating us when we are already ill. Whether we use
-                    our plans to cover our visits to the doctor and pharmacy or towards lifestyle enhancements for
-                    better sleep, nutrition, and regular exercise - these are all valid health purchases. And we’re here
-                    to give you the power to easily afford these purchases using tools many of us already have at our
-                    disposal.</div> -->
+    <main class="mt-12 md:mt-24">
+        <!-- start hero banner -->
+        <section class="py-10 md:py-16 lg:pt-24  lg:pb-16 ">
+            <div class="container px-6 ">
+                <div class="grid md:grid-cols-2 md:gap-4 md:items-center">
+                    <div class=" order-2 md:order-1">
+                        <article class="prose lg:prose-xl lg:max-w-[520px]">
+                            <h1
+                                class="font-custom text-[30px] leading-[35px] md:text-[34px] md:leading-[44px]  lg:text-[51px] lg:leading-[61px] font-semibold mb-2 md:mb-4 mt-0 text-secondary-black break-words">
+                                We’re putting the future of your health back in your hands
+                            </h1>
+                            <p
+                                class="lg:max-w-[470px] inline-block text-[17px] leading-[22px] md:text-[20px] md:leading-[25px] lg:text-[25px] lg:leading-[30px] font-[400] m-0 text-secondary-black break-keep">
+                                HSA/FSA shouldn’t be filled with confusing coverage rules and stressful paperwork just
+                                to use your own money. That’s why we created Sika — to help you cut through the
+                                confusion, make the most of your money, and finally feel like your HSA/FSA spending is a
+                                benefit, not a burden. 
+                            </p>
 
-                <p class="text-[20px] text-[#5a5a5a]">Our mission is to enable consumers to use their health benefits
-                    accounts in ways that are personally relevant and impactful as they continue their long-term health
-                    journey. We achieve this by making paying with HSA and FSA simple wherever customers shop, including
-                    on <a class="text-[20px] !text-black" href="/">sikahealth.com</a> and its partner websites.</p>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="section mission">
-        <div id="w-node-_8e430eaa-36b4-758e-5321-0dc96c0b0cdd-553e5759" class="contentwrapper">
-            <h2 class="sectionheader centre reverse">Our Mission</h2>
-            <p class="subtitle mission">Our mission is to bring the power to pay with your health plan to every
-                checkout, starting with enabling seamless spending with HSA/FSA funds at your favorite merchants. </p>
-        </div>
-    </div> -->
-    <div id="Team" class="section grey">
-        <div class="container">
-            <h2 class="sectionheader centre">Our Team</h2>
-            <p class="subtitle reverse _500">We are a seasoned team of builders who are reinventing the way we pay for
-                health.</p>
-            <div class="collection-list-wrapper top w-dyn-list">
-                <div role="list" class="teamgrid w-dyn-items">
-                    <div role="listitem" class="w-dyn-item">
-                        <div data-w-id="a64585c6-4ac3-bd91-7263-92c730e583eb" class="teamtn">
-                            <div class="tnimagewrapper">
-                                <img loading="lazy" style="
-                                    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " alt=""
-                                    src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63c84a693d6b34853b612e77_ami-tn.jpg"
-                                    sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, (max-width: 991px) 29vw, 27vw"
-                                    srcset="
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63c84a693d6b34853b612e77_ami-tn-p-500.jpg 500w,
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63c84a693d6b34853b612e77_ami-tn.jpg       600w
-                                " class="tnimage" />
-                            </div>
-                            <div class="tncontent">
-                                <div class="teamname">Ami Kumordzie, MD/MBA</div>
-                                <div class="teamposition">Founder & Chief Evangelist</div>
-                                <div style="
-                                    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="tnctawrapper">
-                                    <div class="text-block-3">Read Bio</div>
-                                    <img src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/64e616ba262a9c688ae41532_sika-footer-arrow-pine.svg"
-                                        loading="lazy" alt="" class="footerarrow" />
-                                </div>
-                            </div>
-                            <div style="display: none; opacity: 0;" class="teampop">
-                                <div style="
-                                    -webkit-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="popup">
-                                    <img src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63d2d8780a8c62f689953055_ami.jpg"
-                                        loading="lazy" alt="" sizes="100vw" srcset="
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63d2d8780a8c62f689953055_ami-p-500.jpg 500w,
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63d2d8780a8c62f689953055_ami.jpg       600w
-                                    " class="bioimage" />
-                                    <div class="div-block-2">
-                                        <div class="biotitle">Ami Kumordzie, MD/MBA</div>
-                                        <div class="bioposition">Founder & Chief Evangelist</div>
-                                        <p class="paragraph nomargin">
-                                            Ami is the Founder & Chief Evangelist of Sika. She&#x27;s a Stanford-trained
-                                            physician and
-                                            ex-BCG consultant and bioengineering graduate who brings cross-functional
-                                            experience. She brings depth of healthcare
-                                            expertise ranging from launching medical devices to advising health systems
-                                            on care delivery. She lives in NYC and loves long walks with her pup,
-                                            Genevieve.
-                                        </p>
-                                        <a href="https://www.linkedin.com/in/ami-kumordzie-md-mba-60828a30/"
-                                            target="_blank" class="linkedinlink w-inline-block"></a>
-                                    </div>
-                                    <div class="bioclose"></div>
-                                </div>
-                                <div class="popoverlay"></div>
-                            </div>
-                        </div>
-                        <a data-w-id="ff2ddda6-1b6f-36a1-4c6f-c9ffa20ede1a" href="https://jobs.lever.co/SikaHealth"
-                            target="_blank" class="teamtnjoin w-inline-block w-condition-invisible">
-                            <div class="tncontent">
-                                <div class="teamname">This could be you!</div>
-                                <div class="teamposition">Your Role</div>
-                                <div style="
-                                    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="tnctawrapper">
-                                    <div class="text-block-3">See Open Roles</div>
-                                    <img src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/63a6147a8cfe9152f0cdba34_sika-footer-arrow.svg"
-                                        loading="lazy" alt="Arrow" class="footerarrow" />
-                                </div>
-                            </div>
-                        </a>
+                        </article>
                     </div>
-                    <div role="listitem" class="w-dyn-item">
-                        <div data-w-id="a64585c6-4ac3-bd91-7263-92c730e583eb" class="teamtn">
-                            <div class="tnimagewrapper">
-                                <img loading="lazy" style="
-                                    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " alt=""
-                                    src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6622a30c4866f289741274bd_kristina4-tn.jpg"
-                                    sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, (max-width: 991px) 29vw, 27vw"
-                                    srcset="
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6622a30c4866f289741274bd_kristina4-tn-p-500.jpg 500w,
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6622a30c4866f289741274bd_kristina4-tn.jpg       600w
-                                " class="tnimage" />
-                            </div>
-                            <div class="tncontent">
-                                <div class="teamname">Kristina Herrmann</div>
-                                <div class="teamposition">Chief Executive Officer</div>
-                                <div style="
-                                    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="tnctawrapper">
-                                    <div class="text-block-3">Read Bio</div>
-                                    <img src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/64e616ba262a9c688ae41532_sika-footer-arrow-pine.svg"
-                                        loading="lazy" alt="" class="footerarrow" />
-                                </div>
-                            </div>
-                            <div style="display: none; opacity: 0;" class="teampop">
-                                <div style="
-                                    -webkit-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="popup">
-                                    <img src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6622a30c4866f289741274bd_kristina4-tn.jpg"
-                                        loading="lazy" alt="" sizes="100vw" srcset="
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6622a30c4866f289741274bd_kristina4-tn-p-500.jpg 500w,
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6622a30c4866f289741274bd_kristina4-tn.jpg       600w
-                                    " class="bioimage" />
-                                    <div class="div-block-2">
-                                        <div class="biotitle">Kristina Herrmann</div>
-                                        <div class="bioposition">Chief Executive Officer</div>
-                                        <p class="paragraph nomargin">
-                                            Kristina is the CEO of Sika Health. Kristina spent nearly 16 years at Amazon
-                                            as an in-house attorney and then as General Manager and Founder of the
-                                            Amazon Access team, which built and operated
-                                            products and programs for underserved customers. She is based in Seattle,
-                                            where she lives with her husband, three children, two dogs, and five
-                                            chickens.
-                                        </p>
-                                        <a href="https://www.linkedin.com/in/kherrmann/" target="_blank"
-                                            class="linkedinlink w-inline-block"></a>
-                                    </div>
-                                    <div class="bioclose"></div>
-                                </div>
-                                <div class="popoverlay"></div>
-                            </div>
-                        </div>
-                        <a data-w-id="ff2ddda6-1b6f-36a1-4c6f-c9ffa20ede1a" href="https://jobs.lever.co/SikaHealth"
-                            target="_blank" class="teamtnjoin w-inline-block w-condition-invisible">
-                            <div class="tncontent">
-                                <div class="teamname">This could be you!</div>
-                                <div class="teamposition">Your Role</div>
-                                <div style="
-                                    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="tnctawrapper">
-                                    <div class="text-block-3">See Open Roles</div>
-                                    <img src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/63a6147a8cfe9152f0cdba34_sika-footer-arrow.svg"
-                                        loading="lazy" alt="Arrow" class="footerarrow" />
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- <div role="listitem" class="w-dyn-item">
-                        <div data-w-id="a64585c6-4ac3-bd91-7263-92c730e583eb" class="teamtn">
-                            <div class="tnimagewrapper">
-                                <img loading="lazy" style="
-                                    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " alt=""
-                                    src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/65ca5693fca5fc8880c2f690_michael-swenson2-tn.jpg"
-                                    sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, (max-width: 991px) 29vw, 27vw"
-                                    srcset="
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/65ca5693fca5fc8880c2f690_michael-swenson2-tn-p-500.jpg 500w,
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/65ca5693fca5fc8880c2f690_michael-swenson2-tn.jpg       600w
-                                " class="tnimage" />
-                            </div>
-                            <div class="tncontent">
-                                <div class="teamname">Michael Swenson</div>
-                                <div class="teamposition">Business Development</div>
-                                <div style="
-                                    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="tnctawrapper">
-                                    <div class="text-block-3">Read Bio</div>
-                                    <img src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/64e616ba262a9c688ae41532_sika-footer-arrow-pine.svg"
-                                        loading="lazy" alt="" class="footerarrow" />
-                                </div>
-                            </div>
-                            <div style="display: none; opacity: 0;" class="teampop">
-                                <div style="
-                                    -webkit-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="popup">
-                                    <img src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/65ca5693fca5fc8880c2f690_michael-swenson2-tn.jpg"
-                                        loading="lazy" alt="" sizes="100vw" srcset="
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/65ca5693fca5fc8880c2f690_michael-swenson2-tn-p-500.jpg 500w,
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/65ca5693fca5fc8880c2f690_michael-swenson2-tn.jpg       600w
-                                    " class="bioimage" />
-                                    <div class="div-block-2">
-                                        <div class="biotitle">Michael Swenson</div>
-                                        <div class="bioposition">Business Development</div>
-                                        <p class="paragraph nomargin">
-                                            Michael is a passionate sales leader with a knack for building connections
-                                            and driving results. He leverages his proven experience in unlocking digital
-                                            revenue growth for eCommerce brands and
-                                            his background in helping women navigate complex and underserved areas of
-                                            the healthcare system to empower individuals to maximize the FSA/HSA dollars
-                                            they&#x27;ve put aside for their health.
-                                            Based in Stamford, Connecticut, Michael enjoys spending his free time on the
-                                            golf course, unwinding with his wife Courtney, and playing fetch with their
-                                            golden retriever, Baxter.
-                                        </p>
-                                        <a href="https://www.linkedin.com/in/swensonmichael/" target="_blank"
-                                            class="linkedinlink w-inline-block"></a>
-                                    </div>
-                                    <div class="bioclose"></div>
-                                </div>
-                                <div class="popoverlay"></div>
-                            </div>
-                        </div>
-                        <a data-w-id="ff2ddda6-1b6f-36a1-4c6f-c9ffa20ede1a" href="https://jobs.lever.co/SikaHealth"
-                            target="_blank" class="teamtnjoin w-inline-block w-condition-invisible">
-                            <div class="tncontent">
-                                <div class="teamname">This could be you!</div>
-                                <div class="teamposition">Your Role</div>
-                                <div style="
-                                    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="tnctawrapper">
-                                    <div class="text-block-3">See Open Roles</div>
-                                    <img src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/63a6147a8cfe9152f0cdba34_sika-footer-arrow.svg"
-                                        loading="lazy" alt="Arrow" class="footerarrow" />
-                                </div>
-                            </div>
-                        </a>
-                    </div> -->
-                    <div role="listitem" class="w-dyn-item">
-                        <div data-w-id="a64585c6-4ac3-bd91-7263-92c730e583eb" class="teamtn">
-                            <div class="tnimagewrapper">
-                                <img loading="lazy" style="
-                                    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " alt=""
-                                    src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6660d182a2541f0a0c03e9b1_sunil-tn.jpg"
-                                    sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, (max-width: 991px) 29vw, 27vw"
-                                    srcset="
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6660d182a2541f0a0c03e9b1_sunil-tn-p-500.jpg 500w,
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6660d182a2541f0a0c03e9b1_sunil-tn.jpg       600w
-                                " class="tnimage" />
-                            </div>
-                            <div class="tncontent">
-                                <div class="teamname">Sunil Nair</div>
-                                <div class="teamposition">Chief Technology Officer</div>
-                                <div style="
-                                    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="tnctawrapper">
-                                    <div class="text-block-3">Read Bio</div>
-                                    <img src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/64e616ba262a9c688ae41532_sika-footer-arrow-pine.svg"
-                                        loading="lazy" alt="" class="footerarrow" />
-                                </div>
-                            </div>
-                            <div style="display: none; opacity: 0;" class="teampop">
-                                <div style="
-                                    -webkit-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="popup">
-                                    <img src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6660d182a2541f0a0c03e9b1_sunil-tn.jpg"
-                                        loading="lazy" alt="" sizes="100vw" srcset="
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6660d182a2541f0a0c03e9b1_sunil-tn-p-500.jpg 500w,
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6660d182a2541f0a0c03e9b1_sunil-tn.jpg       600w
-                                    " class="bioimage" />
-                                    <div class="div-block-2">
-                                        <div class="biotitle">Sunil Nair</div>
-                                        <div class="bioposition">Chief Technology Officer</div>
-                                        <p class="paragraph nomargin">
-                                            Sunil serves as the CTO at Sika, bringing over 18 years of
-                                            extensive experience in Information Technology. His impressive background
-                                            includes tenures at Amazon, FedEx, and
-                                            various Fortune 500 companies. Sunil is passionate about building and
-                                            leading high-performing engineering teams and collaborating with diverse
-                                            stakeholders to deliver software products that
-                                            exceed customer expectations. A Seattle resident, he enjoys hiking, skiing,
-                                            and playing badminton in his free time.
-                                        </p>
-                                        <a href="https://www.linkedin.com/in/sunilkumar-chandrasekharan-4170a628/"
-                                            target="_blank" class="linkedinlink w-inline-block"></a>
-                                    </div>
-                                    <div class="bioclose"></div>
-                                </div>
-                                <div class="popoverlay"></div>
-                            </div>
-                        </div>
-                        <a data-w-id="ff2ddda6-1b6f-36a1-4c6f-c9ffa20ede1a" href="https://jobs.lever.co/SikaHealth"
-                            target="_blank" class="teamtnjoin w-inline-block w-condition-invisible">
-                            <div class="tncontent">
-                                <div class="teamname">This could be you!</div>
-                                <div class="teamposition">Your Role</div>
-                                <div style="
-                                    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="tnctawrapper">
-                                    <div class="text-block-3">See Open Roles</div>
-                                    <img src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/63a6147a8cfe9152f0cdba34_sika-footer-arrow.svg"
-                                        loading="lazy" alt="Arrow" class="footerarrow" />
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- <div role="listitem" class="w-dyn-item">
-                        <div data-w-id="a64585c6-4ac3-bd91-7263-92c730e583eb" class="teamtn">
-                            <div class="tnimagewrapper">
-                                <img loading="lazy" style="
-                                    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " alt=""
-                                    src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/661e9c912fa6f5571a80f7a7_sasha-tn.jpg"
-                                    sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, (max-width: 991px) 29vw, 27vw"
-                                    srcset="
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/661e9c912fa6f5571a80f7a7_sasha-tn-p-500.jpg 500w,
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/661e9c912fa6f5571a80f7a7_sasha-tn.jpg       600w
-                                " class="tnimage" />
-                            </div>
-                            <div class="tncontent">
-                                <div class="teamname">Sasha Kimmelman</div>
-                                <div class="teamposition">Customer Success Manager</div>
-                                <div style="
-                                    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="tnctawrapper">
-                                    <div class="text-block-3">Read Bio</div>
-                                    <img src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/64e616ba262a9c688ae41532_sika-footer-arrow-pine.svg"
-                                        loading="lazy" alt="" class="footerarrow" />
-                                </div>
-                            </div>
-                            <div style="display: none; opacity: 0;" class="teampop">
-                                <div style="
-                                    -webkit-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="popup">
-                                    <img src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/661e9c912fa6f5571a80f7a7_sasha-tn.jpg"
-                                        loading="lazy" alt="" sizes="100vw" srcset="
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/661e9c912fa6f5571a80f7a7_sasha-tn-p-500.jpg 500w,
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/661e9c912fa6f5571a80f7a7_sasha-tn.jpg       600w
-                                    " class="bioimage" />
-                                    <div class="div-block-2">
-                                        <div class="biotitle">Sasha Kimmelman</div>
-                                        <div class="bioposition">Customer Success Manager</div>
-                                        <p class="paragraph nomargin">
-                                            Sasha leads Customer Success at Sika. She has supported and enabled SaaS
-                                            clients across industries from fintech to hospitality to human resources,
-                                            helping optimize customer success standards
-                                            and practices. Her love of great design extends beyond software to fine art,
-                                            and you can find her practicing illustration and interior design in Brooklyn
-                                            where she lives with her two rescue
-                                            cats, Cinnamon and Binx.
-                                        </p>
-                                        <a href="#" class="linkedinlink w-inline-block"></a>
-                                    </div>
-                                    <div class="bioclose"></div>
-                                </div>
-                                <div class="popoverlay"></div>
-                            </div>
-                        </div>
-                        <a data-w-id="ff2ddda6-1b6f-36a1-4c6f-c9ffa20ede1a" href="https://jobs.lever.co/SikaHealth"
-                            target="_blank" class="teamtnjoin w-inline-block w-condition-invisible">
-                            <div class="tncontent">
-                                <div class="teamname">This could be you!</div>
-                                <div class="teamposition">Your Role</div>
-                                <div style="
-                                    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="tnctawrapper">
-                                    <div class="text-block-3">See Open Roles</div>
-                                    <img src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/63a6147a8cfe9152f0cdba34_sika-footer-arrow.svg"
-                                        loading="lazy" alt="Arrow" class="footerarrow" />
-                                </div>
-                            </div>
-                        </a>
-                    </div> -->
-                </div>
-            </div>
-            <h2 class="sectionheader centre">Our Advisors</h2>
-            <div class="collection-list-wrapper top w-dyn-list">
-                <div role="list" class="teamgrid w-dyn-items">
-                    <div role="listitem" class="w-dyn-item">
-                        <div data-w-id="06a15a51-62ee-59f9-063d-47e3b9e51d6d" class="teamtn">
-                            <div class="tnimagewrapper">
-                                <img loading="lazy" style="
-                                    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " alt=""
-                                    src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/64676bfd0ef7b2ee10f3947a_jody-dietel.jpg"
-                                    sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, (max-width: 991px) 29vw, 27vw"
-                                    srcset="
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/64676bfd0ef7b2ee10f3947a_jody-dietel-p-500.jpg 500w,
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/64676bfd0ef7b2ee10f3947a_jody-dietel.jpg       600w
-                                " class="tnimage" />
-                            </div>
-                            <div class="tncontent">
-                                <div class="teamname">Jody Dietel</div>
-                                <div class="teamposition">Regulatory Advisor, Former HealthEquity, Inc.</div>
-                                <div style="
-                                    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="tnctawrapper">
-                                    <div class="text-block-3">Read Bio</div>
-                                    <img src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/64e616ba262a9c688ae41532_sika-footer-arrow-pine.svg"
-                                        loading="lazy" alt="" class="footerarrow" />
-                                </div>
-                            </div>
-                            <div style="display: none; opacity: 0;" class="teampop">
-                                <div style="
-                                    -webkit-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="popup">
-                                    <img src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/64676bfd0ef7b2ee10f3947a_jody-dietel.jpg"
-                                        loading="lazy" alt="" sizes="100vw" srcset="
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/64676bfd0ef7b2ee10f3947a_jody-dietel-p-500.jpg 500w,
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/64676bfd0ef7b2ee10f3947a_jody-dietel.jpg       600w
-                                    " class="bioimage" />
-                                    <div class="div-block-2">
-                                        <div class="biotitle">Jody Dietel</div>
-                                        <div class="bioposition">Regulatory Advisor, Former HealthEquity, Inc.</div>
-                                        <p class="paragraph nomargin">
-                                            Jody Dietel is an expert in consumer-directed benefits, benefits
-                                            administration, and eligible expenses. She served as SVP, Advocacy &amp;
-                                            Government Affairs as well as Special Advisor to the
-                                            Advocacy and Government Affairs Team for HealthEquity, Inc. through the
-                                            acquisition of WageWorks where she held the position of Chief Compliance
-                                            Officer. Prior to that, in 1989, she founded
-                                            Creative Benefits, Inc., a consumer-directed healthcare benefits company.
-                                            Jody has spent decades advocating for the industry’s interests, is a
-                                            frequent speaker at industry events, acts as a
-                                            subject matter expert, and provides leadership for key industry groups. She
-                                            has served on the boards of Employers Council on Flexible Compensation
-                                            (ECFC), American Benefits Council (ABC),
-                                            Council for Affordable Health Coverage (CAHC), American Bankers
-                                            Association’s HSA Council, and the Special Interest Group for IIAS Standards
-                                            (SIGIS). She has also served on committees for
-                                            Alliance for Health Care (AFHC), America’s Health Insurance Plans (AHIP),
-                                            Employee Benefits Research Institute (EBRI), and US Chamber of Commerce
-                                        </p>
-                                        <a href="https://www.linkedin.com/in/jodydietel/" target="_blank"
-                                            class="linkedinlink w-inline-block"></a>
-                                    </div>
-                                    <div class="bioclose"></div>
-                                </div>
-                                <div class="popoverlay"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div role="listitem" class="w-dyn-item">
-                        <div data-w-id="06a15a51-62ee-59f9-063d-47e3b9e51d6d" class="teamtn">
-                            <div class="tnimagewrapper">
-                                <img loading="lazy" style="
-                                    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " alt=""
-                                    src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6467b5d33f1d8501a51538cc_jeff.jpg"
-                                    sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, (max-width: 991px) 29vw, 27vw"
-                                    srcset="
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6467b5d33f1d8501a51538cc_jeff-p-500.jpg 500w,
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6467b5d33f1d8501a51538cc_jeff.jpg       600w
-                                " class="tnimage" />
-                            </div>
-                            <div class="tncontent">
-                                <div class="teamname">Jeff Epstein</div>
-                                <div class="teamposition">Former CFO Oracle, Bessemer Venture Partners</div>
-                                <div style="
-                                    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="tnctawrapper">
-                                    <div class="text-block-3">Read Bio</div>
-                                    <img src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/64e616ba262a9c688ae41532_sika-footer-arrow-pine.svg"
-                                        loading="lazy" alt="" class="footerarrow" />
-                                </div>
-                            </div>
-                            <div style="display: none; opacity: 0;" class="teampop">
-                                <div style="
-                                    -webkit-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="popup">
-                                    <img src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6467b5d33f1d8501a51538cc_jeff.jpg"
-                                        loading="lazy" alt="" sizes="100vw" srcset="
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6467b5d33f1d8501a51538cc_jeff-p-500.jpg 500w,
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6467b5d33f1d8501a51538cc_jeff.jpg       600w
-                                    " class="bioimage" />
-                                    <div class="div-block-2">
-                                        <div class="biotitle">Jeff Epstein</div>
-                                        <div class="bioposition">Former CFO Oracle, Bessemer Venture Partners</div>
-                                        <p class="paragraph nomargin">
-                                            Jeff Epstein is an operating partner in the Silicon Valley Office where he
-                                            leads Bessemer’s CFO Council and helps portfolio company CEOs and CFOs share
-                                            best practices. He is the former
-                                            Executive Vice President and Chief Financial Officer of Oracle, one of the
-                                            world’s largest and most profitable technology companies, with a market
-                                            value of over $200 billion. Prior to joining
-                                            Oracle, Jeff served as the chief financial officer at several public and
-                                            private companies, including DoubleClick (acquired by Google), King World
-                                            Productions (acquired by CBS), and Nielsen’s
-                                            Media Measurement and Information Group. He holds an MBA from the Stanford
-                                            University Graduate School of Business, where he was an Arjay Miller
-                                            Scholar, and a BA from Yale College, where he
-                                            graduated summa cum laude, Phi Beta Kappa.
-                                        </p>
-                                        <a href="https://www.linkedin.com/in/jeffepstein1/" target="_blank"
-                                            class="linkedinlink w-inline-block"></a>
-                                    </div>
-                                    <div class="bioclose"></div>
-                                </div>
-                                <div class="popoverlay"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div role="listitem" class="w-dyn-item">
-                        <div data-w-id="06a15a51-62ee-59f9-063d-47e3b9e51d6d" class="teamtn">
-                            <div class="tnimagewrapper">
-                                <img loading="lazy" style="
-                                    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " alt=""
-                                    src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6467b5e0e6e8fff19fd294c1_artur.jpg"
-                                    sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, (max-width: 991px) 29vw, 27vw"
-                                    srcset="
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6467b5e0e6e8fff19fd294c1_artur-p-500.jpg 500w,
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6467b5e0e6e8fff19fd294c1_artur.jpg       600w
-                                " class="tnimage" />
-                            </div>
-                            <div class="tncontent">
-                                <div class="teamname">Arthur Matuszewski</div>
-                                <div class="teamposition">People Advisor, Shine VC</div>
-                                <div style="
-                                    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="tnctawrapper">
-                                    <div class="text-block-3">Read Bio</div>
-                                    <img src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/64e616ba262a9c688ae41532_sika-footer-arrow-pine.svg"
-                                        loading="lazy" alt="" class="footerarrow" />
-                                </div>
-                            </div>
-                            <div style="display: none; opacity: 0;" class="teampop">
-                                <div style="
-                                    -webkit-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="popup">
-                                    <img src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6467b5e0e6e8fff19fd294c1_artur.jpg"
-                                        loading="lazy" alt="" sizes="100vw" srcset="
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6467b5e0e6e8fff19fd294c1_artur-p-500.jpg 500w,
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6467b5e0e6e8fff19fd294c1_artur.jpg       600w
-                                    " class="bioimage" />
-                                    <div class="div-block-2">
-                                        <div class="biotitle">Arthur Matuszewski</div>
-                                        <div class="bioposition">People Advisor, Shine VC</div>
-                                        <p class="paragraph nomargin">
-                                            Arthur is an operator and advisor supporting growth companies and funds
-                                            across strategy and people — figuring out what organizations need to scale
-                                            and aligning capital and humans to deliver
-                                            against that. Prior, Arthur led Better and Wayfair through hyper-growth
-                                            enabling organizational effectiveness across biz ops, talent, and people,
-                                            and has a mix of earlier-stage adventures and
-                                            general management experience at Bridgewater Associates. Arthur is keen on
-                                            NYC handball, conversations on work and purpose, and competitive leisure.
-                                        </p>
-                                        <a href="https://www.linkedin.com/in/arthurmatuszewski/" target="_blank"
-                                            class="linkedinlink w-inline-block"></a>
-                                    </div>
-                                    <div class="bioclose"></div>
-                                </div>
-                                <div class="popoverlay"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div role="listitem" class="w-dyn-item">
-                        <div data-w-id="06a15a51-62ee-59f9-063d-47e3b9e51d6d" class="teamtn">
-                            <div class="tnimagewrapper">
-                                <img loading="lazy" style="
-                                    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " alt=""
-                                    src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6467b5f17fa40ab490e88ba5_tushar.jpg"
-                                    sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, (max-width: 991px) 29vw, 27vw"
-                                    srcset="
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6467b5f17fa40ab490e88ba5_tushar-p-500.jpg 500w,
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/6467b5f17fa40ab490e88ba5_tushar.jpg       600w
-                                " class="tnimage" />
-                            </div>
-                            <div class="tncontent">
-                                <div class="teamname">Tushar Tanna</div>
-                                <div class="teamposition">Product Advisor, Former PillPack (acq Amazon)</div>
-                                <div style="
-                                    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="tnctawrapper">
-                                    <div class="text-block-3">Read Bio</div>
-                                    <img src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/64e616ba262a9c688ae41532_sika-footer-arrow-pine.svg"
-                                        loading="lazy" alt="" class="footerarrow" />
-                                </div>
-                            </div>
-                            <div style="display: none; opacity: 0;" class="teampop">
-                                <div style="
-                                    -webkit-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -moz-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    -ms-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                    transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                                " class="popup">
-                                    <img src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63c873e85a4bf814c346c6ec_tushar-tn.jpg"
-                                        loading="lazy" alt="" sizes="100vw" srcset="
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63c873e85a4bf814c346c6ec_tushar-tn-p-500.jpg 500w,
-                                        https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63c873e85a4bf814c346c6ec_tushar-tn.jpg       600w
-                                    " class="bioimage" />
-                                    <div class="div-block-2">
-                                        <div class="biotitle">Tushar Tanna</div>
-                                        <div class="bioposition">Product Advisor, Former PillPack (acq Amazon)</div>
-                                        <p class="paragraph nomargin">
-                                            Tushar serves as Sika&#x27;s product advisor. He&#x27;s previously held
-                                            product leadership roles at PillPack (acq by Amazon), TripAdvisor, and
-                                            WebMD. In his free time, he enjoys spending time
-                                            with his family in Needham, MA.
-                                        </p>
-                                        <a href="https://www.linkedin.com/in/tushartanna/" target="_blank"
-                                            class="linkedinlink w-inline-block"></a>
-                                    </div>
-                                    <div class="bioclose"></div>
-                                </div>
-                                <div class="popoverlay"></div>
-                            </div>
-                        </div>
+                    <div class="order-1 md:order-2 mb-10 md:mb-0">
+                        <img class="max-w-[552px] w-full" src="images/about-banner.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <h2 class="sectionheader centre">We are leaders from</h2>
-                <div class="collection-list-wrapper w-dyn-list">
-                    <div role="list" class="logogrid w-dyn-items">
-                        <div role="listitem" class="w-dyn-item">
-                            <div class="logocell">
-                                <img src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e0ac98b2cb14c985212_etsy.png"
-                                    loading="lazy" alt=""
-                                    sizes="(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 27vw, 25vw"
-                                    srcset="
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e0ac98b2cb14c985212_etsy-p-500.png 500w,
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e0ac98b2cb14c985212_etsy.png       700w
-                                " class="logo" />
-                            </div>
-                        </div>
-                        <div role="listitem" class="w-dyn-item">
-                            <div class="logocell">
-                                <img src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e1ce1337576d1a82ec2_amazon-pillpack.png"
-                                    loading="lazy" alt=""
-                                    sizes="(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 27vw, 25vw"
-                                    srcset="
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e1ce1337576d1a82ec2_amazon-pillpack-p-500.png 500w,
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e1ce1337576d1a82ec2_amazon-pillpack.png       700w
-                                " class="logo" />
-                            </div>
-                        </div>
-                        <div role="listitem" class="w-dyn-item">
-                            <div class="logocell">
-                                <img src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e2d99f79bd8e55f0f2b_klarna.png"
-                                    loading="lazy" alt=""
-                                    sizes="(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 27vw, 25vw"
-                                    srcset="
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e2d99f79bd8e55f0f2b_klarna-p-500.png 500w,
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e2d99f79bd8e55f0f2b_klarna.png       700w
-                                " class="logo" />
-                            </div>
-                        </div>
-                        <div role="listitem" class="w-dyn-item">
-                            <div class="logocell">
-                                <img src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e3fb616c35f01714457_capital-one.png"
-                                    loading="lazy" alt=""
-                                    sizes="(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 27vw, 25vw"
-                                    srcset="
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e3fb616c35f01714457_capital-one-p-500.png 500w,
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e3fb616c35f01714457_capital-one.png       700w
-                                " class="logo" />
-                            </div>
-                        </div>
-                        <div role="listitem" class="w-dyn-item">
-                            <div class="logocell">
-                                <img src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e50c98b2c0a02985742_10101-data.png"
-                                    loading="lazy" alt=""
-                                    sizes="(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 27vw, 25vw"
-                                    srcset="
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e50c98b2c0a02985742_10101-data-p-500.png 500w,
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e50c98b2c0a02985742_10101-data.png       700w
-                                " class="logo" />
-                            </div>
-                        </div>
-                        <div role="listitem" class="w-dyn-item">
-                            <div class="logocell">
-                                <img src="https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e63d5b38023f9c23b4d_stanford-medicine.png"
-                                    loading="lazy" alt=""
-                                    sizes="(max-width: 479px) 40vw, (max-width: 767px) 42vw, (max-width: 991px) 27vw, 25vw"
-                                    srcset="
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e63d5b38023f9c23b4d_stanford-medicine-p-500.png 500w,
-                                    https://cdn.prod.website-files.com/63b40d3ad81a379094595031/63b45e63d5b38023f9c23b4d_stanford-medicine.png       700w
-                                " class="logo" />
-                            </div>
-                        </div>
+        </section>
+        <!-- end hero banner -->
+
+        <!--  -->
+        <section class="py-10 md:py-16 bg-white">
+            <div class="container px-6 ">
+                <div class="grid md:grid-cols-2 lg:grid-cols-[2fr_1fr]  md:gap-4 md:items-center relative">
+                    <div class="">
+                        <img class="xl:max-w-[900px] lg:max-w-[700px] md:max-w-[400px]  w-full md:absolute top-0  left-0 xl:left-[-120px] hidden md:block"
+                            src="images/mission-img.png" alt="">
+                        <img class="w-full md:hidden" src="images/mission-img-small.png" alt="">
                     </div>
+                    <div class="">
+                        <article class="lg:max-w-[520px]">
+                            <h2
+                                class="font-custom text-[30px] leading-[35px]   md:text-[25px] md:leading-[30px]  lg:text-[32px] lg:leading-[37px]  xl:text-[36px] xl:leading-[42px] font-[600] mb-5 md:mb-10 mt-0 text-secondary-black break-words">
+                                Sika is on a mission to enable consumers to use their health benefit accounts in ways
+                                that are personally relevant and impactful as they continue their long-term health
+                                journey.
+                            </h2>
+                        </article>
+                    </div>
+
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-[2fr_1fr]  md:gap-4 md:items-end relative md:mt-[]">
+                    <div class="">
+                        <article class="lg:max-w-[520px]">
+                            <h2
+                                class="font-custom text-[17px] leading-[22px] md:text-[25px] md:leading-[30px]      lg:text-[32px] lg:leading-[37px] font-[600] mb-5 md:mb-4 mt-0 text-secondary-black break-words">
+                                Let’s be real—figuring out how to use your HSA/FSA can be a real headache. Luckily, your
+                                health savings cover medication for that. But you might not know that.
+                            </h2>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="lg:max-w-[520px]">
+                            <p
+                                class="mb-[15px] inline-block text-[17px] leading-[22px] md:text-[18px] md:leading-[23px]  font-[400] m-0 text-secondary-black break-keep">
+                                In fact, most people don’t realize that everything from acne-fighting skincare to a
+                                backache-relieving mattress could be covered by their health savings. And if you have an
+                                FSA, that may mean losing your hard-earned money or using it to buy things you don't
+                                really need.
+                            </p>
+                            <p
+                                class="mb-[15px] inline-block text-[17px] leading-[22px] md:text-[18px] md:leading-[23px]  font-[400] m-0 text-secondary-black break-keep">
+                                At Sika, we are changing that. We’ve made it easier to spend your health savings on
+                                stuff you actually need. From fitness gear to wellness products, we help you get more
+                                out of every dollar, without all the confusion. 
+                            </p>
+                            <p
+                                class="mb-[15px] inline-block text-[17px] leading-[22px] md:text-[18px] md:leading-[23px]  font-[600] m-0 text-secondary-black break-keep">
+                                How?
+                            </p>
+                            <p
+                                class="mb-[0] inline-block text-[17px] leading-[22px] md:text-[18px] md:leading-[23px]  font-[400] m-0 text-secondary-black break-keep">
+                                By simplifying how you pay with HSA and FSA by shopping eligible products directly on
+                                our marketplace or with our partners. Because taking care of your health shouldn’t be
+                                complicated—it should be empowering.
+                            </p>
+
+                        </article>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="section small">
-        <div class="container">
-            <div class="contentwrapper centre left">
-                <div class="text-block-4">Sika</div>
-                <div class="text-block-6">\sik-ah\ <span class="text-span">noun</span></div>
-                <div class="text-block-5">&#x27;cash&#x27; in the Fante language of Ghana... we&#x27;re making it easier
-                    to invest more cash into your health</div>
-            </div>
-        </div>
-    </div>
-    <div class="section stroke">
-        <div class="container">
-            <div class="sectiontitle">How we work at Sika Health</div>
-            <div class="w-layout-grid featuregrid">
-                <div id="w-node-fdddf423-507d-0027-07e3-0396a80e03ae-553e5759" class="featurecell">
-                    <div class="featureiconwrapper small"><img src="images/sika-scrappy-icon.svg" loading="lazy" alt=""
-                            class="featureicon"></div>
-                    <div class="featuretitle">Scrappy</div>
-                    <p class="featurebody">We are diligent about our resources. Be it our time, funds, or social
-                        capital, we are thoughtful and effective with how we put our resources to work.</p>
-                </div>
-                <div id="w-node-fdddf423-507d-0027-07e3-0396a80e03b5-553e5759" class="featurecell">
-                    <div class="featureiconwrapper small"><img src="images/sika-trophy-icon.svg" loading="lazy" alt=""
-                            class="featureicon"></div>
-                    <div class="featuretitle">I win when we win</div>
-                    <p class="featurebody">We play as a team, and we win as a team. This means we are generous with our
-                        time and spirit and focused on helping each others succeed.</p>
-                </div>
-                <div id="w-node-fdddf423-507d-0027-07e3-0396a80e03bc-553e5759" class="featurecell">
-                    <div class="featureiconwrapper small"><img src="images/sika-kindness-icon.svg" loading="lazy" alt=""
-                            class="featureicon"></div>
-                    <div class="featuretitle">Kind to customers</div>
-                    <p class="featurebody">We always put our customers first, and go the extra mile to delight.</p>
-                </div>
-                <div id="w-node-fdddf423-507d-0027-07e3-0396a80e03c3-553e5759" class="featurecell">
-                    <div class="featureiconwrapper small"><img src="images/sika-integrity-icon.svg" loading="lazy"
-                            alt="" class="featureicon"></div>
-                    <div class="featuretitle">Always do what’s right</div>
-                    <p class="featurebody">We always do what’s right, even when no one is looking. After all, when
-                        dealing with sensitive health and financial services, integrity is always top priority.</p>
-                </div>
-                <div id="w-node-fdddf423-507d-0027-07e3-0396a80e03ca-553e5759" class="featurecell">
-                    <div class="featureiconwrapper small"><img src="images/sika-flag.svg" loading="lazy" alt=""
-                            class="featureicon"></div>
-                    <div class="featuretitle">Not employees, we’re owners</div>
-                    <p class="featurebody">We act and think like owners, because we are. We treat the business as if it
-                        were our own. Because it is.</p>
-                </div>
-                <div id="w-node-fdddf423-507d-0027-07e3-0396a80e03d1-553e5759" class="featurecell">
-                    <div class="featureiconwrapper small"><img src="images/sika-wellbeing-icon.svg" loading="lazy"
-                            alt="" class="featureicon"></div>
-                    <div class="featuretitle">Self-care is never self-ish</div>
-                    <p class="featurebody">When it comes to self-care, we practice what we preach. We take the time we
-                        need to invest in our health. This helps us bring our best selves to our team and customers.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <div data-delay="4000" data-animation="slide" class="sectionslider w-slider" data-autoplay="true" data-easing="ease"
-        data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3"
-        data-duration="500" data-infinite="true">
-        <div class="w-slider-mask">
-            <div class="sectionslide w-slide"><img src="images/sika-team-4.jpg" loading="lazy"
-                    sizes="(max-width: 991px) 100vw, 33vw"
-                    srcset="images/sika-team-4-p-500.jpg 500w, images/sika-team-4-p-800.jpg 800w, images/sika-team-4-p-1080.jpg 1080w, images/sika-team-4.jpg 1200w"
-                    alt="" class="sectionslideimage"></div>
-            <div class="sectionslide w-slide"><img src="images/sika-team-5.jpg" loading="lazy"
-                    sizes="(max-width: 991px) 100vw, 33vw"
-                    srcset="images/sika-team-5-p-500.jpg 500w, images/sika-team-5-p-800.jpg 800w, images/sika-team-5-p-1080.jpg 1080w, images/sika-team-5.jpg 1200w"
-                    alt="" class="sectionslideimage"></div>
-            <div class="sectionslide w-slide"><img src="images/sika-team-6.jpg" loading="lazy"
-                    sizes="(max-width: 991px) 100vw, 33vw"
-                    srcset="images/sika-team-6-p-500.jpg 500w, images/sika-team-6-p-800.jpg 800w, images/sika-team-6-p-1080.jpg 1080w, images/sika-team-6.jpg 1200w"
-                    alt="" class="sectionslideimage"></div>
-        </div>
-        <div class="left-arrow-2 w-slider-arrow-left">
-            <div class="w-icon-slider-left"></div>
-        </div>
-        <div class="right-arrow-2 w-slider-arrow-right">
-            <div class="w-icon-slider-right"></div>
-        </div>
-        <div class="slide-nav-2 w-slider-nav w-round"></div>
-    </div> -->
-    <div id="Roles" class="section small dark">
-        <div class="container centre">
-            <h2 class="sectionheader centre reverse">Join our growing team</h2>
-            <div class="subtitle _500">Ready to make investing in health more delightful and straightforward? Explore
-                our open roles.</div>
-            <a href="https://www.linkedin.com/my-items/posted-jobs/?trk=nav_app_launcher_manage_job_post_nept"
-                target="_blank" class="button green w-button">OPEN ROLES</a>
-        </div>
-    </div>
+        </section>
+        <!--  -->
 
 
-     <!-- start footer -->
-     <footer>
+        <!-- -->
+        <section class="py-0 md:py-[50px] bg-[#015844] md:bg-white">
+            <div class="container  px-0  md:px-6 mx-auto ">
+                <div class="bg-[#015844] md:rounded-[8px]">
+                    <div class="relative">
+                        <ul class="employee-slide p-0 m-0">
+                            <!-- 1 -->
+                            <li>
+                                <div
+                                    class="grid md:grid-cols-2  md:gap-4 py-[40px] md:py-[90px] relative items-end px-5 md:px-[20px] xl:px-[100px]">
+                                    <div class="order-2 md:order-1 mt-[22px] md:mt-0">
+                                        <div class="relative w-[88px] h-[88px] overflow-hidden  rounded-full mb-4">
+                                            <img class="w-full h-full object-cover" src="images/team1-small.png" alt="">
+                                        </div>
+                                        <h2
+                                            class="mb-1 font-custom text-[11px] leading-[16px]   md:text-[18px] md:leading-[24px]  lg:text-[23px] lg:leading-[28px]  font-[600] mb-0 text-white break-words">
+                                            Sunil Nair
+                                        </h2>
+                                        <p
+                                            class="font-custom text-[7px] leading-[10px] uppercase  md:text-[10px] md:leading-[14px]  lg:text-[13px] lg:leading-[18px]  font-[600] mb-0 text-white break-words">
+                                            Chief Technology Officer
+                                        </p>
+
+                                    </div>
+                                    <div class="relative order-1 md:order-2">
+                                        <img class="mb-5 md:absolute top-[-30px] left-[-160px] max-w-[58px] md:max-w-[120px]"
+                                            src="images/quotes.png" alt="">
+                                        <h2
+                                            class="lg:max-w-[480px] font-custom text-[16px] leading-[24px]   md:text-[28px] md:leading-[36px]  lg:text-[32px] lg:leading-[40px]  font-[600] mb-0 text-white break-words">
+                                            I joined Sika Health to empower individuals in their health choices,
+                                            revolutionizing the
+                                            use
+                                            of FSA and HSA funds. Sika Health is reshaping how we think about health
+                                            finance.”
+                                        </h2>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <!-- 2 -->
+                            <li>
+                                <div
+                                    class="grid md:grid-cols-2  md:gap-4 py-[40px] md:py-[90px] relative items-end px-5 md:px-[20px] xl:px-[100px]">
+                                    <div class="order-2 md:order-1 mt-[22px] md:mt-0">
+                                        <div class="relative w-[88px] h-[88px] overflow-hidden  rounded-full mb-4">
+                                            <img class="w-full h-full object-cover" src="images/team1-small.png" alt="">
+                                        </div>
+                                        <h2
+                                            class="mb-1 font-custom text-[11px] leading-[16px]   md:text-[18px] md:leading-[24px]  lg:text-[23px] lg:leading-[28px]  font-[600] mb-0 text-white break-words">
+                                            Sunil Nair
+                                        </h2>
+                                        <p
+                                            class="font-custom text-[7px] leading-[10px] uppercase  md:text-[10px] md:leading-[14px]  lg:text-[13px] lg:leading-[18px]  font-[600] mb-0 text-white break-words">
+                                            Chief Technology Officer
+                                        </p>
+
+                                    </div>
+                                    <div class="relative order-1 md:order-2">
+                                        <img class="mb-5 md:absolute top-[-30px] left-[-160px] max-w-[58px] md:max-w-[120px]"
+                                            src="images/quotes.png" alt="">
+                                        <h2
+                                            class="lg:max-w-[480px] font-custom text-[16px] leading-[24px]   md:text-[28px] md:leading-[36px]  lg:text-[32px] lg:leading-[40px]  font-[600] mb-0 text-white break-words">
+                                            I joined Sika Health to empower individuals in their health choices,
+                                            revolutionizing the
+                                            use
+                                            of FSA and HSA funds. Sika Health is reshaping how we think about health
+                                            finance.”
+                                        </h2>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <!-- 3 -->
+                            <li>
+                                <div
+                                    class="grid md:grid-cols-2  md:gap-4 py-[40px] md:py-[90px] relative items-end px-5 md:px-[20px] xl:px-[100px]">
+                                    <div class="order-2 md:order-1 mt-[22px] md:mt-0">
+                                        <div class="relative w-[88px] h-[88px] overflow-hidden  rounded-full mb-4">
+                                            <img class="w-full h-full object-cover" src="images/team1-small.png" alt="">
+                                        </div>
+                                        <h2
+                                            class="mb-1 font-custom text-[11px] leading-[16px]   md:text-[18px] md:leading-[24px]  lg:text-[23px] lg:leading-[28px]  font-[600] mb-0 text-white break-words">
+                                            Sunil Nair
+                                        </h2>
+                                        <p
+                                            class="font-custom text-[7px] leading-[10px] uppercase  md:text-[10px] md:leading-[14px]  lg:text-[13px] lg:leading-[18px]  font-[600] mb-0 text-white break-words">
+                                            Chief Technology Officer
+                                        </p>
+
+                                    </div>
+                                    <div class="relative order-1 md:order-2">
+                                        <img class="mb-5 md:absolute top-[-30px] left-[-160px] max-w-[58px] md:max-w-[120px]"
+                                            src="images/quotes.png" alt="">
+                                        <h2
+                                            class="lg:max-w-[480px] font-custom text-[16px] leading-[24px]   md:text-[28px] md:leading-[36px]  lg:text-[32px] lg:leading-[40px]  font-[600] mb-0 text-white break-words">
+                                            I joined Sika Health to empower individuals in their health choices,
+                                            revolutionizing the
+                                            use
+                                            of FSA and HSA funds. Sika Health is reshaping how we think about health
+                                            finance.”
+                                        </h2>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <!-- 4 -->
+                            <li>
+                                <div
+                                    class="grid md:grid-cols-2  md:gap-4 py-[40px] md:py-[90px] relative items-end px-5 md:px-[20px] xl:px-[100px]">
+                                    <div class="order-2 md:order-1 mt-[22px] md:mt-0">
+                                        <div class="relative w-[88px] h-[88px] overflow-hidden  rounded-full mb-4">
+                                            <img class="w-full h-full object-cover" src="images/team1-small.png" alt="">
+                                        </div>
+                                        <h2
+                                            class="mb-1 font-custom text-[11px] leading-[16px]   md:text-[18px] md:leading-[24px]  lg:text-[23px] lg:leading-[28px]  font-[600] mb-0 text-white break-words">
+                                            Sunil Nair
+                                        </h2>
+                                        <p
+                                            class="font-custom text-[7px] leading-[10px] uppercase  md:text-[10px] md:leading-[14px]  lg:text-[13px] lg:leading-[18px]  font-[600] mb-0 text-white break-words">
+                                            Chief Technology Officer
+                                        </p>
+
+                                    </div>
+                                    <div class="relative order-1 md:order-2">
+                                        <img class="mb-5 md:absolute top-[-30px] left-[-160px] max-w-[58px] md:max-w-[120px]"
+                                            src="images/quotes.png" alt="">
+                                        <h2
+                                            class="lg:max-w-[480px] font-custom text-[16px] leading-[24px]   md:text-[28px] md:leading-[36px]  lg:text-[32px] lg:leading-[40px]  font-[600] mb-0 text-white break-words">
+                                            I joined Sika Health to empower individuals in their health choices,
+                                            revolutionizing the
+                                            use
+                                            of FSA and HSA funds. Sika Health is reshaping how we think about health
+                                            finance.”
+                                        </h2>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <!--  -->
+
+        <!-- -->
+        <section class="py-[20px] md:pt-[30px] md:pb-[60px] bg-white">
+            <div class="container px-6">
+                <div class="grid md:grid-cols-2 lg:grid-cols-[1fr_1.2fr] md:gap-4  relative ">
+                    <div class="relative">
+                        <h2
+                            class="font-custom text-[30px] leading-[35px]   md:text-[25px] md:leading-[30px]  lg:text-[32px] lg:leading-[37px]  xl:text-[36px] xl:leading-[42px] font-[600] mb-5 md:mb-10 mt-0 text-secondary-black break-words">
+                            The Sika Story
+                        </h2>
+                    </div>
+
+                    <div class=" md:mt-0">
+                        <p
+                            class="mb-[15px] inline-block text-[17px] leading-[22px] md:text-[17px] md:leading-[23px]  font-[400] m-0 text-secondary-black break-keep">
+                            When our founder, Ami, witnessed her mom lose her job during the pandemic, she quickly
+                            realized that not only was her mom's health insurance in jeopardy, but also thousands of
+                            dollars in FSA savings were about to expire.
+                        </p>
+                        <p
+                            class="mb-[15px] inline-block text-[17px] leading-[23px]  font-[400] m-0 text-secondary-black break-keep">
+                            But like so many others, her mom had no idea that everyday health essentials—like glasses or
+                            medications—were eligible, and trying to navigate the maze of confusing rules made it even
+                            harder to use her savings before they disappeared.
+                        </p>
+                        <p
+                            class="mb-[15px] inline-block text-[17px] leading-[23px]  font-[400] m-0 text-secondary-black break-keep">
+                            Ami soon realized her mom was only one of countless people facing the same struggles. In
+                            fact, nearly 50% of FSA account holders forfeit a portion of their contributions each year. 
+                        </p>
+                        <p
+                            class="mb-[15px] inline-block text-[17px] leading-[23px]  font-[400] m-0 text-secondary-black break-keep">
+                            At Sika, we believe your health savings should work as hard as you do. That’s why we created
+                            an ecosystem enabling you to use your benefits in more places, more simply, across retail
+                            websites and Sika's marketplace, so you can focus on what truly matters — your health. 
+                        </p>
+                        <p
+                            class="mb-[15px] inline-block text-[17px] leading-[23px]  font-[400] m-0 text-secondary-black break-keep">
+                            Together, let’s put the power of health spending back in your hands where it belongs.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!--  -->
+
+
+        <section id="Team" class="team bg-white py-[25px] md:py-[50px]">
+            <div class="container px-6">
+                <div
+                    class="grid md:grid-cols-[1fr_2.5fr] md:gap-4  relative py-[20px] md:py-[30px] border-t border-[#E6E9EA]">
+                    <div class="relative">
+                        <h2
+                            class="font-custom text-[30px] leading-[35px]   md:text-[25px] md:leading-[30px]  lg:text-[32px] lg:leading-[37px]  xl:text-[36px] xl:leading-[42px] font-[600] mb-3 md:mb-5 mt-0 text-secondary-black break-words">
+                            Our team
+                        </h2>
+                        <p
+                            class="mb-[15px] inline-block text-[17px] leading-[22px] md:text-[17px] md:leading-[23px]  font-[400] m-0 text-secondary-black break-keep">
+                            Meet the innovators, tech leaders, healthcare visionaries, and relentless problem-solvers
+                            who  are rewriting the rules of health benefits. With over 40 years of leadership in payment
+                            innovation, we’re creating a future where  using your health savings is actually simple,
+                            seamless, and empowering —  as it should be.
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <div class=" md:grid md:grid-cols-3 gap-5 hidden">
+                            <div class="flex flex-col bg-[#F2F2F2] rounded-[16px] overflow-hidden">
+                                <img class="max-h-[265px] max-w-[252px]" src="images/team-1.png" />
+                                <div class="p-[20px]">
+                                    <h4 class="text-[17px] leading-[22px] text-[#22282B] font-[600] mb-0">Ami Kumordzie,
+                                        MD/MBA</h4>
+                                    <P class="text-[15px] leading-[20px] text-[#909DA2] font-[400] mb-0">Founder & Chief
+                                        Evangelist</P>
+                                </div>
+                            </div>
+                            <div class="flex flex-col bg-[#F2F2F2] rounded-[16px] overflow-hidden">
+                                <img class="max-h-[265px] max-w-[252px]" src="images/team-2.png" />
+                                <div class="p-[20px]">
+                                    <h4 class="text-[17px] leading-[22px] text-[#22282B] font-[600] mb-0">Kristina
+                                        Herrmann</h4>
+                                    <P class="text-[15px] leading-[20px] text-[#909DA2] font-[400] mb-0">Chief Executive
+                                        Officer</P>
+                                </div>
+                            </div>
+                            <div class="flex flex-col bg-[#F2F2F2] rounded-[16px] overflow-hidden">
+                                <img class="max-h-[265px] max-w-[252px]" src="images/team-3.png" />
+                                <div class="p-[20px]">
+                                    <h4 class="text-[17px] leading-[22px] text-[#22282B] font-[600] mb-0">Sunil Nair
+                                    </h4>
+                                    <P class="text-[15px] leading-[20px] text-[#909DA2] font-[400] mb-0">Chief
+                                        Technology Officer</P>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="Team" class="team bg-[#F2F2F2] py-[40px] md:py-[50px]">
+            <div class="container px-6">
+                <div class="">
+                    <h2
+                        class="text-center md:text-left font-custom text-[30px] leading-[35px]   md:text-[25px] md:leading-[30px]  lg:text-[32px] lg:leading-[37px]  xl:text-[36px] xl:leading-[42px] font-[600] mb-4 md:mb-8 mt-0 text-secondary-black break-words">
+                        Sika in the news
+                    </h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-[30px]">
+                    <!-- 1 -->
+                    <div class="flex flex-col bg-[#fff] rounded-[10px] overflow-hidden">
+                        <img class=" w-full h-full rounded-[10px] overflow-hidden"
+                            src="images/news-1.png" />
+                        <div class="px-[15px] py-[25px]">
+                            <h4 class="text-[25px] leading-[32px] text-[#22282B] font-[600] mb-0">Why more brands like Therabody are using FSAs to drive new sales</h4>
+                            <div class="flex items-center justify-between mt-[20px]">
+                                <div class="text-[#949494] text-[15px] leading-[20px] font-[500] flex items-center">
+                                    <span class="me-2 "> 
+                                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2.45312" y="5.00391" width="12.8609" height="12.3439" rx="1.25" stroke="#949494"/>
+                                            <path d="M3.16797 9.11719H14.5999" stroke="#949494" stroke-linecap="round"/>
+                                            <path d="M6.74023 13.2344H11.0272" stroke="#949494" stroke-linecap="round"/>
+                                            <path d="M6.02734 2.53516L6.02734 5.82687" stroke="#949494" stroke-linecap="round"/>
+                                            <path d="M11.7422 2.53516L11.7422 5.82687" stroke="#949494" stroke-linecap="round"/>
+                                            </svg>
+                                            
+                                    </span>
+                                    Dec 5, 2023
+                                </div>
+                                <a href="" class="border-b border-black/60 text-[15px] leading-[20px] text-black hover:text-black/80 font-[600] mb-0"> Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="flex flex-col bg-[#fff] rounded-[10px] overflow-hidden">
+                        <img class=" w-full h-full rounded-[10px] overflow-hidden"
+                            src="images/news-2.png" />
+                        <div class="px-[15px] py-[25px]">
+                            <h4 class="text-[25px] leading-[32px] text-[#22282B] font-[600] mb-0">Hyperice Partners With Sika Health on HSA/FSA Eligible Recovery Technology</h4>
+                            <div class="flex items-center justify-between mt-[20px]">
+                                <div class="text-[#949494] text-[15px] leading-[20px] font-[500] flex items-center">
+                                    <span class="me-2 "> 
+                                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2.45312" y="5.00391" width="12.8609" height="12.3439" rx="1.25" stroke="#949494"/>
+                                            <path d="M3.16797 9.11719H14.5999" stroke="#949494" stroke-linecap="round"/>
+                                            <path d="M6.74023 13.2344H11.0272" stroke="#949494" stroke-linecap="round"/>
+                                            <path d="M6.02734 2.53516L6.02734 5.82687" stroke="#949494" stroke-linecap="round"/>
+                                            <path d="M11.7422 2.53516L11.7422 5.82687" stroke="#949494" stroke-linecap="round"/>
+                                            </svg>
+                                            
+                                    </span>
+                                    Dec 5, 2023
+                                </div>
+                                <a href="" class="border-b border-black/60 text-[15px] leading-[20px] text-black hover:text-black/80 font-[600] mb-0"> Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="flex flex-col bg-[#fff] rounded-[10px] overflow-hidden">
+                        <img class=" w-full h-full rounded-[10px] overflow-hidden"
+                            src="images/news-3.png" />
+                        <div class="px-[15px] py-[25px]">
+                            <h4 class="text-[25px] leading-[32px] text-[#22282B] font-[600] mb-0">Sika Health Launches Marketplace for Shopping  with HSA, FSA Funds</h4>
+                            <div class="flex items-center justify-between mt-[20px]">
+                                <div class="text-[#949494] text-[15px] leading-[20px] font-[500] flex items-center">
+                                    <span class="me-2 "> 
+                                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2.45312" y="5.00391" width="12.8609" height="12.3439" rx="1.25" stroke="#949494"/>
+                                            <path d="M3.16797 9.11719H14.5999" stroke="#949494" stroke-linecap="round"/>
+                                            <path d="M6.74023 13.2344H11.0272" stroke="#949494" stroke-linecap="round"/>
+                                            <path d="M6.02734 2.53516L6.02734 5.82687" stroke="#949494" stroke-linecap="round"/>
+                                            <path d="M11.7422 2.53516L11.7422 5.82687" stroke="#949494" stroke-linecap="round"/>
+                                            </svg>
+                                            
+                                    </span>
+                                    Dec 5, 2023
+                                </div>
+                                <a href="" class="border-b border-black/60 text-[15px] leading-[20px] text-black hover:text-black/80 font-[600] mb-0"> Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+                    <a href="blog"
+                    class="bg-[#000] rounded-[50px] text-[16px] min-w-[261px] min-h-[58px] text-white hover:text-white/80 flex items-center justify-center">View
+                    Read more about Sika</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- start user -->
+    <!-- py-10 bg-white md:pt-[40px] md:pb-[40px] lg:pt-[50px] lg:pb-[50px] -->
+
+    <section class="bg-white py-[25px] md:py-[50px]  relative before:content-[''] before:absolute before:top-0 before:bg-[#F2F2F2] before:h-[50%] md:before:h-[60%] before:w-[100%]">
+        <div class="container px-6">
+            <div class="text-center md:text-start mb-5 lg:mb-8">
+                <h2
+                    class="relative font-custom text-[30px] leading-[33px] md:text-[32px] md:leading-[35px]  lg:text-[37px] lg:leading-[40px] font-[600] mt-0 mb-4 text-secondary-black">
+                    Get started with Sika
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4 md:gap-6">
+                <a href="merchants"
+                    class=" bg-white border border-gray-light rounded-[20px] py-[14px] px-[22px] md:py-[31px] md:px-[37px] flex items-end md:items-start min-h-[110px] md:min-h-[160px] lg:min-h-[188px] cursor-pointer relative">
+                    <div class="flex-1 me-5">
+                        <p
+                            class="uppercase inline-block text-[12px] leading-[12px] md:text-[16px] md:leading-[20px] lg:text-[20px] lg:leading-[25px] font-[800] text-gray-dark my-0">
+                            For Merchants
+                        </p>
+                        <h1
+                            class="font-custom text-[25px] leading-[27px] md:text-[34px] md:leading-[40px]  lg:text-[45px] lg:leading-[54px] font-[600] mt-0 mb-2 md:mb-3 text-gray-dark ">
+                            Book a Demo
+                        </h1>
+
+                    </div>
+
+                    <div
+                        class=" bg-green  p-0 h-[28px] w-[28px] md:h-[38px] md:w-[38px]  rounded-full flex items-center justify-center flex-shrink-0 hover:animate-pulse hover:animate-infinite absolute bottom-4 right-4 md:bottom-8 md:right-8">
+                        <svg width="80" height="80" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.3417 22.6838H34.0254" stroke="#22282B" stroke-width="2.0459"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M24.8101 13.4684L34.0253 22.6836L24.8101 31.8989" stroke="#22282B"
+                                stroke-width="2.0459" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+                </a>
+
+                <a href="shop"
+                    class=" bg-white border border-gray-light rounded-[20px] py-[14px] px-[22px] md:py-[31px] md:px-[37px] flex items-end md:items-start min-h-[110px] md:min-h-[160px] lg:min-h-[188px] cursor-pointer relative">
+                    <div class="flex-1 me-5">
+                        <p
+                            class="uppercase inline-block text-[12px] leading-[12px] md:text-[16px] md:leading-[20px] lg:text-[20px] lg:leading-[25px] font-[800] text-gray-dark my-0">
+                            For Shoppers
+                        </p>
+                        <h1
+                            class="font-custom text-[25px] leading-[27px] md:text-[34px] md:leading-[40px]  lg:text-[45px] lg:leading-[54px] font-[600] mt-0 mb-2 md:mb-3 text-gray-dark ">
+                            Browse Products
+                        </h1>
+
+                    </div>
+
+                    <div
+                        class=" bg-green  p-0 h-[28px] w-[28px] md:h-[38px] md:w-[38px]  rounded-full flex items-center justify-center flex-shrink-0 hover:animate-pulse hover:animate-infinite absolute bottom-4 right-4 md:bottom-8 md:right-8">
+                        <svg width="80" height="80" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.3417 22.6838H34.0254" stroke="#22282B" stroke-width="2.0459"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M24.8101 13.4684L34.0253 22.6836L24.8101 31.8989" stroke="#22282B"
+                                stroke-width="2.0459" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end user -->
+
+
+
+    <!-- start Categories -->
+    <section class="py-5 md:py-10 bg-white">
+        <div class="container px-6">
+            <div class="bg-[#F2F2F2] rounded-[20px] p-[40px]  relative ">
+                <div class=" md:me-4 text-center md:text-left mb-[30px] md:mb-0">
+                    <p
+                        class="inline-block uppercase text-[10px] leading-[14px] md:text-[13px] md:leading-[20px]  font-bold mb-1 md:mb-0 mt-0  text-gray-dark  uppercase tracking-[2px]">
+                        Work with us
+                    </p>
+                    <h2
+                        class="font-custom text-[40px] leading-[44px] md:text-[34px] md:leading-[44px]  lg:text-[51px] lg:leading-[61px]  font-[600] mb-0 text-gray-dark ">
+                        Want to help us flip the <br class="hidden md:inline">
+                        script on health savings?
+                    </h2>
+                </div>
+                <div class="flex justify-center md:justify-end items-center">
+                    <a href="https://sika-health.breezy.hr/p/116a6f3083e5-sales-director" target="_blank"
+                        class="bg-[#000] rounded-[50px] text-[16px] min-w-[220px] min-h-[58px] text-white hover:text-white/80 flex items-center justify-center">View
+                        Job Openings</a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- start footer -->
+    <footer>
         <div class="footer-top">
             <div class="container">
                 <div class="footer-grid">
@@ -1078,6 +753,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/js/webflow.37c5f454a.js"
         type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript"></script>
     <script src="js/custom.js"></script>
 
 
