@@ -26,13 +26,20 @@
     <meta content="summary_large_image" name="twitter:card">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Webflow" name="generator">
+
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/webflow.css" rel="stylesheet" type="text/css">
     <link href="css/sika2-3793a1.webflow.css" rel="stylesheet" type="text/css">
     <link href="output.css" rel="stylesheet" type="text/css">
     <link href="css/slick.min.css" rel="stylesheet" type="text/css">
+
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
     <script
         type="text/javascript">WebFont.load({ google: { families: ["PT Serif:400,400italic,700,700italic", "Outfit:100,200,300,regular,500,600,700,800,900"] } });</script>
@@ -45,7 +52,7 @@
         type="text/javascript">window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('set', 'developer_id.dZGVlNj', true); gtag('config', 'G-0HGK9LH4TH');</script>
 </head>
 
-<body class="">
+<body class="bg-secondary-gray">
     <!-- start header -->
     <header id="header" class="fixed w-full left-0 right-0 m-auto top-0 md:top-8 z-50">
         <div class="max-w-[1356px] mx-auto  md:px-4">
@@ -140,27 +147,30 @@
     <main class="mt-12 md:mt-24">
         <!-- start hero banner -->
         <section class="py-10 md:py-16 lg:pt-24  lg:pb-16 ">
-            <div class="max-w-[1150px] px-8 lg:px-0 mx-auto">
+            <div class="container px-6 mx-auto">
                 <div class="grid md:grid-cols-2 md:gap-4 md:items-center">
-
-                    <div class="mb-5 md:mb-0">
-                        <article class="md:text-end lg:max-w-[520px]">
+                    <div class="mb-10 md:mb-0">
+                        <article class="prose lg:prose-xl lg:max-w-[520px]">
                             <h1
-                                class="font-custom text-[30px] leading-[33px] md:text-[34px] md:leading-[44px]  lg:text-[51px] lg:leading-[61px] font-[600] mt-0 mb-3 md:mb-4 text-secondary-black">
-                                The one-stop, fully-integrated HSA & FSA payment solution
+                                class="font-custom text-[30px] leading-[33px] md:text-[34px] md:leading-[44px]  lg:text-[51px] lg:leading-[61px] font-semibold mb-2 md:mb-4 mt-0 text-secondary-black break-words">
+                                Reach millions of customers with Sika’s HSA/FSA payments
                             </h1>
                             <p
-                                class="lg:max-w-[380px] inline-block text-[17px] leading-[22px] font-[400] mt-0 mb-5 md:mb-7 text-secondary-black">
-                                Accept HSA/FSA payments on your e-commerce store and unlock the billions of dollars
-                                sitting in HSA and FSA accounts today.
+                                class="lg:max-w-[470px] inline-block text-[17px] leading-[22px] md:text-[20px] md:leading-[25px] lg:text-[25px] lg:leading-[30px] font-[400] mt-0 mb-5 md:mb-10 text-secondary-black break-keep">
+                                From integration and LMN support to increased marketplace visibility, Sika provides
+                                everything you need to accept HSA/FSA payments with ease. Unlock new revenue and grow
+                                your business today.
                             </p>
-                            <!-- <a class=" flex underline  items-center text-[11px] leading-[14px]  md:text-[17px] md:leading-[20px] font-bold text-secondary-black uppercase tracking-[2px]"
-                                href="">How Sika Works >
-                            </a> -->
+                            <a class=" flex underline  items-center text-[12px] leading-[14px]  md:text-[17px] md:leading-[20px] font-bold text-secondary-black uppercase tracking-[2px]"
+                                href="lmn#DEMO">Book My Demo >
+                            </a>
+                            <!-- <span class=" flex underline  items-center text-[11px] leading-[14px]  md:text-[17px] md:leading-[20px] font-bold text-secondary-black uppercase tracking-[2px]"
+                            >How Sika Works >
+                        </span> -->
                         </article>
                     </div>
                     <div class="">
-                        <img class="max-w-[552px] w-full" src="images/merchants.png" alt="">
+                        <img class="max-w-[552px] w-full" src="images/merchant-banner.png" alt="">
                     </div>
                 </div>
             </div>
@@ -168,921 +178,663 @@
         <!-- end hero banner -->
 
 
+        <!-- start Sika difference -->
+        <section class="bg-white py-[50px] md:py-[100px]">
+            <div class="container px-6 lg:px-0 mx-auto">
+                <h1
+                    class="font-custom text-[30px] leading-[33px] md:text-[30px] md:leading-[36px]  lg:text-[42px] lg:leading-[52px] font-semibold mb-5 md:mb-10 mt-0 text-secondary-black break-words  md:hidden">
+                    The Sika difference
+                </h1>
 
-        <div class="conatiner-fluid overflow-hidden max-w-[1500px]  mx-auto">
-            <!-- 1 -->
-            <div class="marquee mb-5 md:mb-10">
-                <div>
-                    <ul class="flex list-none">
-                        <li>
-                            <img class="" src="images/partner/elitone.png" alt="elitone" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/evvy.png" alt="evvy" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/felixgrey.png" alt="felixgrey" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/ghostbed.png" alt="ghostbed" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/hyperice.png" alt="hyperice" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/icebarrel.png" alt="icebarrel" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/kegalhard.png" alt="kegalhard" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/kttape.png" alt="kttape" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/lola.png" alt="lola" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/oura.png" alt="oura" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/proov.png" alt="proov" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/pumpin.png" alt="pumpin" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/elitone.png" alt="elitone" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/evvy.png" alt="evvy" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/felixgrey.png" alt="felixgrey" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/ghostbed.png" alt="ghostbed" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/hyperice.png" alt="hyperice" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/icebarrel.png" alt="icebarrel" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/kegalhard.png" alt="kegalhard" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/kttape.png" alt="kttape" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/lola.png" alt="lola" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/oura.png" alt="oura" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/proov.png" alt="proov" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/pumpin.png" alt="pumpin" />
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="flex list-none">
-                        <li>
-                            <img class="" src="images/partner/elitone.png" alt="elitone" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/evvy.png" alt="evvy" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/felixgrey.png" alt="felixgrey" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/ghostbed.png" alt="ghostbed" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/hyperice.png" alt="hyperice" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/icebarrel.png" alt="icebarrel" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/kegalhard.png" alt="kegalhard" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/kttape.png" alt="kttape" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/lola.png" alt="lola" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/oura.png" alt="oura" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/proov.png" alt="proov" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/pumpin.png" alt="pumpin" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/elitone.png" alt="elitone" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/evvy.png" alt="evvy" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/felixgrey.png" alt="felixgrey" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/ghostbed.png" alt="ghostbed" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/hyperice.png" alt="hyperice" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/icebarrel.png" alt="icebarrel" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/kegalhard.png" alt="kegalhard" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/kttape.png" alt="kttape" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/lola.png" alt="lola" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/oura.png" alt="oura" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/proov.png" alt="proov" />
-                        </li>
-                        <li>
-                            <img class="" src="images/partner/pumpin.png" alt="pumpin" />
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 1 -->
-        </div>
+                <div class="flex flex-col md:flex-row">
+                    <div class="max-w-[100%]  md:max-w-[300px] lg:max-w-[500px] py-0 bg-white" id="">
+                        <div class="relative">
+                            <ul class="merchant-slide p-0 m-0">
+                                <!-- 1 -->
+                                <li>
+                                    <div class=" ">
+                                        <div class="mb-0 slide-img ">
+                                            <img class="h-full object-cover w-full" src="images/brand-1.png" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- 2 -->
+                                <li>
+                                    <div class=" ">
+                                        <div class="mb-0 slide-img ">
+                                            <img class="h-full object-cover w-full" src="images/brand-2.png" alt="">
+                                        </div>
 
+                                    </div>
+                                </li>
+                                <!-- 3 -->
+                                <li>
+                                    <div class=" ">
+                                        <div class="mb-0 slide-img ">
+                                            <img class="h-full object-cover w-full" src="images/brand-3.png" alt="">
+                                        </div>
 
+                                    </div>
+                                </li>
+                                <!-- 4 -->
+                                <li>
+                                    <div class=" ">
+                                        <div class="mb-0 slide-img ">
+                                            <img class="h-full object-cover w-full" src="images/brand-4.png" alt="">
+                                        </div>
 
+                                    </div>
+                                </li>
 
-        <div class="sectiongradwrapper">
-            <div id="Overview" class="section">
-                <div class="container grid">
-                    <div id="w-node-b33059c6-4d40-0d1b-afec-6b7d1f1603b5-553e578e" class="sectionimagecell ui right">
-                        <div class="uianimation right"><img src="images/Modal.svg" loading="lazy" alt=""
-                                class="uianimationimage"></div>
-                    </div>
-                    <div id="w-node-b33059c6-4d40-0d1b-afec-6b7d1f1603b6-553e578e" class="contentwrapper">
-                        <h2 class="sectionheader">The API-first HSA/FSA payment integration that unlocks more than $175B
-                            in new spending</h2>
-                        <p>Sika Health enables millions of online shoppers to confidently pay using their HSA/FSA funds.
-                            Customers simply select the Sika Health payment method at checkout and enter their HSA/FSA
-                            card details.</p>
-                        <a href="get-started" class="button w-button">GET STARTED</a>
-                    </div>
-                </div>
-            </div>
-            <div id="Benefits" class="section asi">
-                <div class="container">
-                    <div class="sectiontitle">Why Sika Health?</div>
-                    <div class="w-layout-grid featuregrid">
-                        <div id="w-node-_8ccb27d5-3c62-0603-4654-95618f7950ee-553e578e" class="featurecell">
-                            <div class="featureiconwrapper">
-                                <div data-is-ix2-target="1" class="featureicon"
-                                    data-w-id="33630261-68e1-80e9-ad3c-ce14291d2e55" data-animation-type="lottie"
-                                    data-src="documents/sika-traffic.json" data-loop="0" data-direction="1"
-                                    data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968"
-                                    data-duration="0" data-ix2-initial-state="0"></div>
+                            </ul>
+                            <!-- Custom Arrows -->
+                            <div class="flex items-start mt-0 space-x-5  bottom-0 mb-4 left-0 md:hidden">
+                                <button class="slick-prev custom-arrow arrow-2" aria-label="Previous" type="button">
+                                    <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 6L9 12L15 18" stroke="#000000" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="slick-next custom-arrow arrow-2" aria-label="Next" type="button">
+                                    <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 6L15 12L9 18" stroke="#000000" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
                             </div>
-                            <div class="featuretitle">Traffic</div>
-                            <p class="featurebody">Encourage more than 70 million high-intent HSA/FSA account-holders to
-                                your online store. Close to $175B is contributed to these tax-free accounts every year.
+                        </div>
+                    </div>
+                    <div class="mb-10 md:mb-0  flex-1 merchant-accordion md:ps-10">
+                        <h1
+                            class="font-custom text-[30px] leading-[33px] md:text-[30px] md:leading-[36px]  lg:text-[42px] lg:leading-[52px] font-semibold mb-5 md:mb-10 mt-0 text-secondary-black break-words hidden md:block">
+                            The Sika difference
+                        </h1>
+
+                        <div id="accordion-1" class="merchant-accordion">
+                            <!-- Accordion Item 1 -->
+                            <div class="accordion-item active pb-8 lg:pb-16">
+                                <button
+                                    class="flex items-center justify-start w-full ps-[20px] lg:ps-[40px] relative text-left focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 text-[17px] leading-[22px] md:text-[20px] md:leading-[25px]  lg:text-[24px] lg:leading-[28px] font-[600]"
+                                    onclick="toggleAccordion1('accordion-1-item1')">
+                                    <span id="">Seamless HSA/FSA checkout</span>
+                                </button>
+                                <div id="accordion-1-item1"
+                                    class=" ps-[20px] lg:ps-[40px] mt-[20px] lg:mt-[25px] lg:max-w-[80%]">
+                                    <p
+                                        class="text-[#22282B] text-[13px] leading-[20px] lg:text-[18px] lg:leading-[24px] font-[400] m-0 pb-0 break-keep">
+                                        Customers simply choose Sika Health at checkout and enter their HSA/FSA card
+                                        details. Mixed-eligibility carts and multiple payment methods are also processed
+                                        in one smooth transaction.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 2 -->
+                            <div class="accordion-item pb-8 lg:pb-16">
+                                <button
+                                    class="flex items-center justify-start w-full ps-[20px] lg:ps-[40px] relative text-left focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 text-[17px] leading-[22px] md:text-[20px] md:leading-[25px]  lg:text-[24px] lg:leading-[28px] font-[600]"
+                                    onclick="toggleAccordion1('accordion-1-item2')">
+
+                                    <span id="">Effortless sales growth</span>
+                                </button>
+                                <div id="accordion-1-item2"
+                                    class="hidden ps-[20px] lg:ps-[40px] mt-[20px] lg:mt-[25px] lg:max-w-[80%]">
+                                    <p
+                                        class="text-[#22282B] text-[13px] leading-[20px] lg:text-[18px] lg:leading-[24px] font-[400] m-0 pb-0">
+                                        Simplify the shopping experience for HSA/FSA customers by removing barriers at
+                                        checkout to drive 4.6x higher conversion rates while increasing sales by 86%.
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 3 -->
+                            <div class="accordion-item pb-8 lg:pb-16">
+                                <button
+                                    class="flex items-center justify-start w-full ps-[20px] lg:ps-[40px] relative text-left focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 text-[17px] leading-[22px] md:text-[20px] md:leading-[25px]  lg:text-[24px] lg:leading-[28px] font-[600]"
+                                    onclick="toggleAccordion1('accordion-1-item3')">
+                                    <span id="">Amplify your selling power</span>
+                                </button>
+                                <div id="accordion-1-item3"
+                                    class="hidden ps-[20px] lg:ps-[40px] mt-[20px] lg:mt-[25px] lg:max-w-[80%]">
+                                    <p
+                                        class="text-[#22282B] text-[13px] leading-[20px] lg:text-[18px] lg:leading-[24px] font-[400] m-0 pb-0">
+                                        Maximize your visibility by selling directly through your site and the Sika
+                                        Marketplace, giving you access to a broader range of new customers.
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 4 -->
+                            <div class="accordion-item">
+                                <button
+                                    class="flex items-center justify-start w-full ps-[20px] lg:ps-[40px] relative text-left focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 text-[17px] leading-[22px] md:text-[20px] md:leading-[25px]  lg:text-[24px] lg:leading-[28px]  font-[600]"
+                                    onclick="toggleAccordion1('accordion-1-item4')">
+                                    <span id="">Lightning-fast integration</span>
+                                </button>
+                                <div id="accordion-1-item4"
+                                    class="hidden ps-[20px] lg:ps-[40px] mt-[20px] lg:mt-[25px] lg:max-w-[80%]">
+                                    <p
+                                        class="text-[#22282B] text-[13px] leading-[20px] lg:text-[18px] lg:leading-[24px] font-[400] m-0 pb-0">
+                                        Get HSA/FSA payments set up in as little as 15 minutes and start seeing  the
+                                        impact on your sales right away.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Sika difference -->
+
+        <section class="py-8 md:py-16 bg-[#F2F2F2] md:bg-[#F7F9FB]">
+            <div class="container px-6 mx-auto">
+                <div class="flex md:gap-4 md:items-center flex-col md:flex-row mb-5 md:mb-0">
+                    <div class="md:w-[50%] lg:max-w-[500px]">
+                        <article>
+                            <h1
+                                class="font-custom text-[30px] leading-[33px] md:text-[34px] md:leading-[44px] lg:text-[46px] lg:leading-[56px] font-semibold mb-2 md:mb-4 mt-0 text-secondary-black break-words">
+                                Need a Letter of Medical Necessity? We’ve got you covered.
+                            </h1>
+                            <p
+                                class="lg:max-w-[470px] text-[15px] leading-[20px] lg:text-[18px] lg:leading-[28px] font-[400] mt-0 mb-5 md:mb-10 text-secondary-black break-keep">
+                                If your products treat medical conditions and have a non-medical use, customers may need
+                                a doctor’s approval (or LMN) to pay with their HSA/FSA. This is where Sika steps in. We
+                                make the process simple by instantly connecting your customers to a healthcare provider,
+                                so they can quickly get the approval they need.
                             </p>
-                        </div>
-                        <div id="w-node-ed103c1b-c9bc-8dc5-6f48-6196a3725ae6-553e578e" class="featurecell">
-                            <div class="featureiconwrapper">
-                                <div data-is-ix2-target="1" class="featureicon"
-                                    data-w-id="cb7470de-c4b9-ebad-a2a3-f8b81b99849f" data-animation-type="lottie"
-                                    data-src="documents/sika-conversion.json" data-loop="0" data-direction="1"
-                                    data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968"
-                                    data-duration="0" data-ix2-initial-state="0"></div>
-                            </div>
-                            <div class="featuretitle">Conversion</div>
-                            <p class="featurebody">See increased conversion and upsell from customers who have money
-                                sitting in their HSA/FSA accounts. These are <span class="inline-block">pre-tax</span>
-                                dollars that have already been
-                                paid.</p>
-                        </div>
-                        <div id="w-node-_6ce47638-f0f6-f28e-ca3e-0789a6ff52f1-553e578e" class="featurecell">
-                            <div class="featureiconwrapper">
-                                <div data-is-ix2-target="1" class="featureicon"
-                                    data-w-id="1110d3a4-f270-7a9e-1c00-98016cf23d6c" data-animation-type="lottie"
-                                    data-src="documents/sika-loyalty.json" data-loop="0" data-direction="1"
-                                    data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968"
-                                    data-duration="0" data-ix2-initial-state="0"></div>
-                            </div>
-                            <div class="featuretitle">Loyalty</div>
-                            <p class="featurebody">Enable shoppers to purchase using their health wallets directly from
-                                you rather than from third-parties. This enables positive brand loyalty and better
-                                ownership of your customer journey.</p>
-                        </div>
+                        </article>
+                    </div>
+                    <div class="md:w-[50%] max-w-[750px] w-full">
+                        <img class="w-full" src="images/merchant-banner-2.png" alt="Merchant Banner">
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="section graph stroke">
-            <div data-w-id="289a6035-a1d9-846d-5ae1-9cc3d777748f" class="graphwrapper">
-                <div style="width:0px;height:110px" class="graphbar">
-                    <div style="opacity:0" class="graphtextwrapper">
-                        <div class="bar-label">Baskets without Sika Health</div>
-                    </div>
-                </div>
-                <div class="graphbar green">
-                    <div style="opacity:0" class="graphtextwrapper">
-                        <div class="bar-label">Baskets with Sika Health</div>
-                    </div>
-                </div>
-            </div>
-            <div class="container grid">
-                <div id="w-node-c6950420-dd21-3c8a-ac8b-d87279312616-553e578e" class="graphimageplaceholder"></div>
-                <div id="w-node-_3b500fee-a8a6-cf40-099e-b286f0821114-553e578e" class="contentwrapper">
-                    <h2 class="sectionheader">Case Study: 116% increase in average order value</h2>
-                    <p class="paragraph nomargin">Since implementing Sika Health, a hydration therapy company has seen
-                        that shoppers who utilize HSA/FSA funds spend more than 116% more in their baskets compared to
-                        regular credit/debit card shoppers. This company tells us this is due to their customers
-                        considering their HSA/FSA funds as “already spent” and are therefore looking to stock up on
-                        qualified items or upgrade to a higher-priced SKU to ensure their health funds are not lost.
-                        Sika supports merchants to create a commerce experience that supports easy payments, which in
-                        turn helps grow average order value.</p>
-                </div>
-            </div>
-        </div>
-        <div class="section stroke">
-            <div class="container grid">
-                <div id="w-node-_3a9441d5-5a35-cede-5481-90071b3c2b1d-553e578e" class="contentwrapper">
-                    <h2 class="sectionheader">Case Study: 75% decrease in return rates</h2>
-                    <p class="paragraph nomargin break-keep">A postpartum care company has experienced a 75% decrease in
-                        return
-                        rates from shoppers who pay with HSA/FSA funds, when compared with shoppers that spend with
-                        credit card and buy-now-pay-later methods. Sika Health&#x27;s offering helps HSA/FSA shoppers to
-                        easily spend money that is often sitting idle in <span class="inline-block">pre-tax</span>
-                        benefit accounts. As a result, when
-                        shoppers spend with these accounts they are less likely to return the item since these are often
-                        &quot;use-it-or-lose it&quot; funds. Sika Health partners with merchants to ensure a seamless
-                        journey when spending these regulated health.</p>
-                </div>
-                <div id="w-node-f61c7142-0ea2-7c52-e89c-37683a268bba-553e578e" class="contentwrapper returns">
-                    <div class="div-block-6">
-                        <p class="paragraph-4">Returns without Sika Health</p>
-                        <div class="div-block-5">
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return grey"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                        </div>
-                    </div>
-                    <div class="div-block-6">
-                        <p class="paragraph-4">Returns with Sika Health</p>
-                        <div class="div-block-5">
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return green"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                            <div class="return"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="Features" class="section stroke">
-            <div class="container">
-                <div class="sectiontitle">Features</div>
-                <div class="w-layout-grid featuregrid">
-                    <div id="w-node-_841c9da0-8fe1-4a98-0850-f86251950de4-553e578e" class="featurecell">
-                        <div class="featureiconwrapper small">
-                            <div data-is-ix2-target="1" class="featureicon"
-                                data-w-id="00b3098f-147f-3e76-6673-d8d2f38d9573" data-animation-type="lottie"
-                                data-src="documents/sika-inventory.json" data-loop="0" data-direction="1"
-                                data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968"
-                                data-duration="0" data-ix2-initial-state="0"></div>
-                        </div>
-                        <div class="featuretitle">Eligible Inventory Management</div>
-                        <p class="featurebody">Our software directly integrates with your existing inventory management
-                            to update HSA/FSA product eligibility in real time.</p>
-                    </div>
-                    <div id="w-node-_841c9da0-8fe1-4a98-0850-f86251950deb-553e578e" class="featurecell">
-                        <div class="featureiconwrapper small">
-                            <div data-is-ix2-target="1" class="featureicon"
-                                data-w-id="a1ae793b-4c5f-f38e-c0b8-b995e5844648" data-animation-type="lottie"
-                                data-src="documents/sika-online-payments.json" data-loop="0" data-direction="1"
-                                data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968"
-                                data-duration="0" data-ix2-initial-state="0"></div>
-                        </div>
-                        <div class="featuretitle">Secured Online Payments</div>
-                        <p class="featurebody">We offer a secured, PCI compliant e-commerce payment gateway so that you
-                            can accept HSA/FSA payments directly at the point of sale.</p>
-                    </div>
-                    <div id="w-node-_841c9da0-8fe1-4a98-0850-f86251950df2-553e578e" class="featurecell">
-                        <div class="featureiconwrapper small">
-                            <div data-is-ix2-target="1" class="featureicon"
-                                data-w-id="fd14a646-0f18-1b12-b5b8-985629a830d5" data-animation-type="lottie"
-                                data-src="documents/sika-letter.json" data-loop="0" data-direction="1" data-autoplay="0"
-                                data-renderer="svg" data-default-duration="1.0010009602293968" data-duration="0"
-                                data-ix2-initial-state="0"></div>
-                        </div>
-                        <div class="featuretitle">Letter of Medical Necessity</div>
-                        <p class="featurebody">We provide access to a healthcare consultation to obtain a Letter of
-                            Medical Necessity (if appropriate) for dual-purpose purchases like vitamins and fitness
-                            equipment - it’s like getting a doctor’s note right at checkout. <a style="color: #015844;"
-                                href="lmn">LEARN MORE</a>
-                        </p>
-                    </div>
-                    <!-- <div id="w-node-_74ad4bd1-604a-165e-5ead-8f3e7b814687-553e578e" class="featurecell">
-                        <div class="featureiconwrapper small">
-                            <div data-is-ix2-target="1" class="featureicon"
-                                data-w-id="cbb10156-355d-7b38-7fa9-06a873e14aea" data-animation-type="lottie"
-                                data-src="documents/sika-eligibility.json" data-loop="0" data-direction="1"
-                                data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968"
-                                data-duration="0" data-ix2-initial-state="0"></div>
-                        </div>
-                        <div class="featuretitle">Compliance</div>
-                        <p class="featurebody">We handle the regulatory effort to ensure qualifying products are
-                            eligible for HSA and FSA purchases and are auto-substantiated.</p>
-                    </div> -->
-                    <div id="w-node-_9311c82f-e76a-5f7b-d049-79ab34202eb0-553e578e" class="featurecell">
-                        <div class="featureiconwrapper small">
-                            <div data-is-ix2-target="1" class="featureicon"
-                                data-w-id="ddf37c97-eec3-7b2f-63c6-28d342b963b6" data-animation-type="lottie"
-                                data-src="documents/sika-marketplace.json" data-loop="0" data-direction="1"
-                                data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968"
-                                data-duration="0" data-ix2-initial-state="0"></div>
-                        </div>
-                        <div class="featuretitle">Premier Marketplace</div>
-                        <p class="featurebody">Get listed in our premier brand marketplace to help drive traffic to your
-                            store. That way HSA/FSA shoppers can discover your brand and know how easy it is to spend
-                            their unused funds with you.</p>
-                    </div>
-                    <div id="w-node-c56312e5-9916-7ef7-49be-4374463b9e7c-553e578e" class="featurecell">
-                        <div class="featureiconwrapper small">
-                            <div data-is-ix2-target="1" class="featureicon"
-                                data-w-id="078da700-1863-37e0-172b-c092ecc993e4" data-animation-type="lottie"
-                                data-src="documents/sika-card-splitting.json" data-loop="0" data-direction="1"
-                                data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968"
-                                data-duration="0" data-ix2-initial-state="0"></div>
-                        </div>
-                        <div class="featuretitle">Split Tender</div>
-                        <p class="featurebody">Easily handle mixed eligibility carts by accepting multiple payment
-                            methods for an order via a single, seamless payment experience.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="section grey">
+                <div class="mb-0">
+                    <h1
+                        class="font-custom text-[30px] leading-[33px] md:text-[34px] md:leading-[44px] lg:text-[52px] lg:leading-[60px] font-semibold mb-5 mt-0 text-secondary-black break-words">
+                        How it works
+                    </h1>
+
+                    <div class="overflow-x-auto">
+                        <div class="flex flex-col min-w-full">
+                            <div
+                                class="flex flex-col items-start md:items-center md:flex-row border-y border-[#EBECED] md:border-[#EFF1F3] ps-[50px] md:ps-[0] relative">
+                                <div class="w-[80px] md:py-8 absolute md:relative left-0 top-[10px] md:top-0">
+                                    <span
+                                        class="bg-green p-0 h-[38px] w-[38px] md:h-[50px] md:w-[50px] text-[18px] leading-[18px] md:text-[24px] md:leading-[24px] font-semibold rounded-full flex items-center justify-center flex-shrink-0 hover:animate-pulse hover:animate-infinite">01</span>
+                                </div>
+                                <div
+                                    class="flex-1 grow-[2] p-4 text-[17px] leading-[20px] md:text-[24px] md:leading-[28px] font-semibold">
+                                    Request an LMN
+                                </div>
+                                <div
+                                    class="flex-1 grow-[3] pt-0 md:pt-4 p-4 text-[15px] leading-[18px] md:text-[18px] md:leading-[22px]">
+                                    The customer completes a brief intake form.
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex flex-col items-start md:items-center md:flex-row border-y border-[#EBECED] md:border-[#EFF1F3] ps-[50px] md:ps-[0] relative">
+                                <div class="w-[80px] md:py-8 absolute md:relative left-0 top-[10px] md:top-0">
+                                    <span
+                                        class="bg-green p-0 h-[38px] w-[38px] md:h-[50px] md:w-[50px] text-[18px] leading-[18px] md:text-[24px] md:leading-[24px] font-semibold rounded-full flex items-center justify-center flex-shrink-0 hover:animate-pulse hover:animate-infinite">02</span>
+                                </div>
+                                <div
+                                    class="flex-1 grow-[2] p-4 text-[17px] leading-[20px] md:text-[24px] md:leading-[28px] font-semibold">
+                                    Provide health info
+                                </div>
+                                <div
+                                    class="flex-1 grow-[3] pt-0 md:pt-4 p-4 text-[15px] leading-[18px] md:text-[18px] md:leading-[22px]">
+                                    Sika’s healthcare provider reviews the customer’s health information and specific
+                                    symptoms to determine LMN eligibility. If they qualify, the LMN is issued.
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex flex-col items-start md:items-center md:flex-row border-y border-[#EBECED] md:border-[#EFF1F3] ps-[50px] md:ps-[0] relative">
+                                <div class="w-[80px] md:py-8 absolute md:relative left-0 top-[10px] md:top-0">
+                                    <span
+                                        class="bg-green p-0 h-[38px] w-[38px] md:h-[50px] md:w-[50px] text-[18px] leading-[18px] md:text-[24px] md:leading-[24px] font-semibold rounded-full flex items-center justify-center flex-shrink-0 hover:animate-pulse hover:animate-infinite">03</span>
+                                </div>
+                                <div
+                                    class="flex-1 grow-[2] p-4 text-[17px] leading-[20px] md:text-[24px] md:leading-[28px] font-semibold">
+                                    Checkout with HSA/FSA
+                                </div>
+                                <div
+                                    class="flex-1 grow-[3] pt-0 md:pt-4 p-4 text-[15px] leading-[18px] md:text-[18px] md:leading-[22px]">
+                                    Once your customer has their LMN, they can use their HSA/FSA funds to pay through
+                                    your website or our marketplace.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- impact in numbers -->
+        <section class="py-8 md:py-16 bg-white">
+            <div class="container px-6 mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10 ">
+                    <div>
+                        <h2
+                            class="text-center lg:text-left text-[38px] leading-[41px] md:text-[44px] md:leading-[50 px]  lg:text-[51px] lg:leading-[61px] font-semibold !text-black mb-5">
+                            See our
+                            <br class="hidden lg:inline"> impact
+                            <br class="hidden lg:inline"> in numbers
+                    </div>
+                    <!-- 1 -->
+                    <div class="relative flex flex-col justify-center items-center md:justify-start md:items-start ">
+                        <div class="relative flex">
+                            <h1
+                                class="inline text-center font-custom text-[84px] leading-[101px] md:text-[60px] md:leading-[70px]  lg:text-[75px] lg:leading-[90px] font-[600] mt-0 mb-2 md:mb-3 text-gray-dark ">
+                                116%
+                            </h1>
+                            <div
+                                class="absolute top-[-10px] lg:top-0 right-[-10px] bg-green  p-0 h-[37px] w-[37px] md:h-[33px] md:w-[33px]  rounded-full flex items-center justify-center flex-shrink-0  drop-shadow-[5px_5px_15px_rgba(79,106,251,0.3)]">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.73625 0.595085C8.90432 0.520388 9.09616 0.520388 9.26423 0.595085L17.0767 4.06731C17.3115 4.17163 17.4627 4.40441 17.4627 4.66128C17.4627 4.91816 17.3115 5.15094 17.0767 5.25526L9.26423 8.72748C9.09616 8.80218 8.90432 8.80218 8.73625 8.72748L0.923752 5.25526C0.689019 5.15094 0.537742 4.91816 0.537742 4.66128C0.537742 4.40441 0.689019 4.17163 0.923752 4.06731L8.73625 0.595085ZM2.78818 4.66128L9.00024 7.4222L15.2123 4.66128L9.00024 1.90037L2.78818 4.66128ZM0.593782 8.74083C0.73958 8.41278 1.12371 8.26504 1.45175 8.41084L9.00026 11.7657L16.5488 8.41084C16.8768 8.26504 17.2609 8.41278 17.4067 8.74083C17.5525 9.06887 17.4048 9.453 17.0767 9.59879L9.26425 13.071C9.09618 13.1457 8.90434 13.1457 8.73627 13.071L0.92377 9.59879C0.595725 9.453 0.447985 9.06887 0.593782 8.74083ZM1.45175 12.7468C1.12371 12.601 0.73958 12.7487 0.593782 13.0768C0.447985 13.4048 0.595725 13.7889 0.92377 13.9347L8.73627 17.407C8.90434 17.4817 9.09618 17.4817 9.26425 17.407L17.0767 13.9347C17.4048 13.7889 17.5525 13.4048 17.4067 13.0768C17.2609 12.7487 16.8768 12.601 16.5488 12.7468L9.00026 16.1017L1.45175 12.7468Z"
+                                        fill="#22282B" />
+                                </svg>
+
+                            </div>
+                        </div>
+
+                        <h4
+                            class="text-center md:text-left font-custom text-[30px] leading-[33px] md:text-[24px] md:leading-[31px]  font-[600] text-gray-dark mb-4">
+                            increase in avg order value</h4>
+                        <p
+                            class="text-center md:text-left font-custom text-[17px] leading-[22px] md:text-[18px] md:leading-[25px]  font-[400] text-gray-dark my-0">
+                            Since partnering with Sika Health, a hydration therapy company has seen an 116% increase in
+                            basket size for shoppers using HSA/FSA funds compared to those using regular credit or debit
+                            cards. This boost comes from customers viewing their HSA/FSA funds as "already spent,"
+                            prompting them to stock up on eligible products or upgrade to higher-priced items. Sika
+                            Health helps merchants create seamless payment experiences, leading to higher average order
+                            values.</p>
+
+                    </div>
+                    <!-- 2 -->
+                    <div class="relative flex flex-col justify-center items-center md:justify-start md:items-start">
+                        <div class="relative flex">
+                            <h1
+                                class="inline text-center font-custom text-[84px] leading-[101px] md:text-[60px] md:leading-[70px]  lg:text-[75px] lg:leading-[90px] font-[600] mt-0 mb-2 md:mb-3 text-gray-dark ">
+                                75%
+                            </h1>
+                            <div
+                                class="absolute top-[-10px] lg:top-0 right-[-10px] bg-green  p-0 h-[37px] w-[37px] md:h-[33px] md:w-[33px]  rounded-full flex items-center justify-center flex-shrink-0  drop-shadow-[5px_5px_15px_rgba(79,106,251,0.3)]">
+                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.5152 3.83906C6.55949 3.83906 3.35273 7.04582 3.35273 11.0016C3.35273 11.7358 3.5079 12.4881 3.73118 13.1864L3.73262 13.1909C3.92252 13.7848 4.06665 14.2356 4.16847 14.5661C4.26644 14.884 4.33732 15.1281 4.36659 15.2856C4.46443 15.8123 4.51896 16.2414 4.45724 16.6817C4.39552 17.1221 4.22511 17.5197 3.98624 17.9991C3.96087 18.05 3.93126 18.1046 3.89701 18.1641H10.5152C14.471 18.1641 17.6777 14.9573 17.6777 11.0016C17.6777 7.04582 14.471 3.83906 10.5152 3.83906ZM2.16691 18.446C2.09489 18.5506 2.05273 18.6774 2.05273 18.8141C2.05273 19.173 2.34375 19.4641 2.70273 19.4641H10.5152C15.1889 19.4641 18.9777 15.6753 18.9777 11.0016C18.9777 6.32785 15.1889 2.53906 10.5152 2.53906C5.84152 2.53906 2.05273 6.32785 2.05273 11.0016C2.05273 11.9104 2.24313 12.8011 2.49294 13.5824C2.68452 14.1815 2.82656 14.6258 2.92611 14.9489C3.02978 15.2853 3.07555 15.4536 3.08846 15.5231C3.18244 16.0289 3.20052 16.2823 3.16983 16.5013C3.13913 16.7203 3.05209 16.9589 2.82265 17.4194C2.7434 17.5785 2.57714 17.8306 2.16691 18.446ZM6.39302 9.26545C6.39302 8.90647 6.68403 8.61545 7.04302 8.61545H13.9875C14.3464 8.61545 14.6375 8.90647 14.6375 9.26545C14.6375 9.62444 14.3464 9.91545 13.9875 9.91545H7.04302C6.68403 9.91545 6.39302 9.62444 6.39302 9.26545ZM7.04302 12.0877C6.68403 12.0877 6.39302 12.3787 6.39302 12.7377C6.39302 13.0967 6.68403 13.3877 7.04302 13.3877H10.5152C10.8742 13.3877 11.1652 13.0967 11.1652 12.7377C11.1652 12.3787 10.8742 12.0877 10.5152 12.0877H7.04302Z"
+                                        fill="#22282B" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <h4
+                            class="text-center md:text-left font-custom text-[30px] leading-[33px] md:text-[24px] md:leading-[31px]  font-[600] text-gray-dark mb-4">
+                            decrease in return rate</h4>
+                        <p
+                            class="text-center md:text-left font-custom text-[17px] leading-[22px] md:text-[18px] md:leading-[25px]  font-[400] text-gray-dark my-0">
+                            A postpartum care company saw a 75% decrease in return rates from shoppers using HSA/FSA
+                            funds compared to those paying with credit cards or buy-now-pay-later options. Sika Health
+                            makes it easy for shoppers to access and spend pre-tax benefit funds, often seen as
+                            "use-it-or-lose-it" money. This leads to fewer returns, as customers are more intentional
+                            with their purchases. Sika partners with merchants to provide a seamless spending experience
+                            for regulated health funds.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- impact in numbers -->
+
+
+        <!-- start Testimonials -->
+        <section class="py-8 lg:py-16 bg-white" id="Testimonials">
+            <div class="container px-6 mx-auto">
+                <div class="relative">
+                    <ul class="responsive p-0 m-0">
+                        <!-- 1 -->
+                        <li>
+                            <div class="md:flex gap-10 lg:gap-16 ">
+                                <div
+                                    class="mb-0 slide-img flex-shrink md:w-[50%] overflow-hidden rounded-[20px] max-w-[350px] max-h-[340px] min-h-[340px] md:min-h-[auto] md:max-w-[365px] md:max-h-[420px]  lg:max-w-[465px] lg:max-h-[520px] h-full w-full">
+                                    <img class="h-full object-cover w-full" src="images/testimonial-1.png" alt="">
+                                </div>
+                                <div class="flex-1 pt-[110px] md:pt-0 ps-6 md:ps-0 pe-3 md:pe-0">
+                                    <div class="mb-2 md:mb-4 lg:mb-6">
+                                        <h3
+                                            class="quote-paragraph inline font-custom text-[25px] leading-[27px] md:text-[24px] md:leading-[32px]  lg:text-[36px] lg:leading-[46px] font-semibold  text-black">
+                                            Our partnership with Sika to enable HSA/FSA payments  has been truly
+                                            transformative <br class="hidden lg:block"> for Oura.
+                                        </h3>
+                                    </div>
+                                    <p
+                                        class="inline-block text-[17px] leading-[22px]  md:text-[15px] md:leading-[20px] lg:text-[17px] lg:leading-[22px]  font-[400] mb-5 md:mb-4 lg:mb-7 text-black line-clamp-none">
+                                        Sika guided us seamlessly through the entire process of eligibility, compliance,
+                                        and
+                                        enabling commerce. Now, our customers can use their HSA or FSA funds to purchase
+                                        Oura Rings and memberships, expanding our customer base by making Oura Ring more
+                                        accessible.
+                                    </p>
+                                    <small
+                                        class="text-[12px] leading-[14px]  lg:text-[13px] lg:leading-[16px] font-bold text-black uppercase tracking-[1.5px]">
+                                        Dor Kilroy, Oura - Chief Commercial Officer
+                                    </small>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 2 -->
+                        <li>
+                            <div class="md:flex gap-10 lg:gap-16 ">
+                                <div
+                                    class="mb-0 slide-img flex-shrink md:w-[50%] overflow-hidden rounded-[20px] max-w-[350px] max-h-[340px] min-h-[340px] md:min-h-[auto] md:max-w-[365px] md:max-h-[420px]  lg:max-w-[465px] lg:max-h-[520px] h-full w-full">
+                                    <img class="h-full object-cover w-full" src="images/testimonial-2.png" alt="">
+                                </div>
+                                <div class="flex-1 pt-[110px] md:pt-0 ps-6 md:ps-0 pe-3 md:pe-0">
+
+                                    <div class="mb-2 md:mb-4 lg:mb-6">
+                                        <h3
+                                            class="quote-paragraph inline font-custom text-[25px] leading-[27px] md:text-[24px] md:leading-[32px]  lg:text-[36px] lg:leading-[46px] font-semibold  text-black">
+                                            Sika Health’s team made the process of ensuring our products were compliant
+                                            and
+                                            eligible as seamless as possible.
+                                        </h3>
+                                    </div>
+
+                                    <small
+                                        class="text-[12px] leading-[14px]  lg:text-[13px] lg:leading-[16px] font-bold text-black uppercase tracking-[1.5px]">
+                                        Jim Huether, HYPERICE - CEO
+                                    </small>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 3 -->
+                        <li>
+                            <div class="md:flex gap-10 lg:gap-16 ">
+                                <div
+                                    class="mb-0 slide-img flex-shrink md:w-[50%] overflow-hidden rounded-[20px] max-w-[350px] max-h-[340px] min-h-[340px] md:min-h-[auto] md:max-w-[365px] md:max-h-[420px]  lg:max-w-[465px] lg:max-h-[520px] h-full w-full">
+                                    <img class="h-full object-cover w-full" src="images/testimonial-3.png" alt="">
+                                </div>
+                                <div class="flex-1 pt-[110px] md:pt-0 ps-6 md:ps-0 pe-3 md:pe-0">
+
+                                    <div class="mb-2 md:mb-4 lg:mb-6">
+                                        <h3
+                                            class="quote-paragraph inline font-custom text-[25px] leading-[27px] md:text-[24px] md:leading-[32px]  lg:text-[36px] lg:leading-[46px] font-semibold  text-black">
+                                            We are thrilled to work alongside Sika to make our award-winning,
+                                            scientifically proven wellness tech products more accessible to consumers
+                                        </h3>
+                                    </div>
+                                    <small
+                                        class="text-[12px] leading-[14px]  lg:text-[13px] lg:leading-[16px] font-bold text-black uppercase tracking-[1.5px]">
+                                        Monty Sharma, THERABODY - CEO and President
+                                    </small>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 4 -->
+                        <li>
+                            <div class="md:flex gap-10 lg:gap-16 ">
+                                <div
+                                    class="mb-0 slide-img flex-shrink md:w-[50%] overflow-hidden rounded-[20px] max-w-[350px] max-h-[340px] min-h-[340px] md:min-h-[auto] md:max-w-[365px] md:max-h-[420px]  lg:max-w-[465px] lg:max-h-[520px] h-full w-full">
+                                    <img class="h-full object-cover w-full" src="images/testimonial-4.png" alt="">
+                                </div>
+                                <div class="flex-1 pt-[110px] md:pt-0 ps-6 md:ps-0 pe-3 md:pe-0">
+                                    <div class="mb-2 md:mb-4 lg:mb-6">
+                                        <h3
+                                            class="quote-paragraph inline font-custom text-[25px] leading-[27px] md:text-[24px] md:leading-[32px]  lg:text-[36px] lg:leading-[46px] font-semibold  text-black break-keep">
+                                            Partnering with Sika Health to offer our products for purchase through
+                                            <span class="inline-block">pre-tax</span>
+                                            HSA/FSA dollars is the next step toward expanding Lola’s mission to provide
+                                            safe, clean, accessible period and vaginal care for all.
+                                        </h3>
+                                    </div>
+
+                                    <small
+                                        class="text-[12px] leading-[14px]  lg:text-[13px] lg:leading-[16px] font-bold text-black uppercase tracking-[1.5px]">
+                                        Kelly Murphy, LOLA - VP of Direct to Consumer and Amazon
+                                    </small>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- Custom Arrows -->
+                    <div
+                        class="flex items-center mt-0 space-x-5 absolute top-[380px] md:top-auto md:bottom-0 left-0 md:left-[400px] lg:left-[530px]">
+                        <button class="slick-prev custom-arrow" aria-label="Previous" type="button">
+                            <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6L9 12L15 18" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="slick-next custom-arrow" aria-label="Next" type="button">
+                            <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 6L15 12L9 18" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Testimonials -->
+
+
+        <!-- start question -->
+        <section class="py-10 lg:py-16 bg-white">
+            <div class="container px-6 mx-auto">
+                <div class="text-start mb-10 lg:mb-20">
+                    <h2
+                        class="font-custom text-[30px] leading-[33px] md:text-[32px] md:leading-[35px]  lg:text-[37px] lg:leading-[40px] font-[600] my-0 text-secondary-black">
+                        Frequently asked questions
+                    </h2>
+                </div>
+                <div id="accordion" class="space-y-12 md:space-y-16 lg:space-y-16">
+                    <!-- Accordion Item 1 -->
+                    <div class="accordion-item">
+                        <button
+                            class="flex items-center justify-start w-full ps-[60px] lg:ps-[100px] relative text-left focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 text-[17px] leading-[22px] md:text-[20px] md:leading-[25px]  lg:text-[25px] lg:leading-[28px] text-black  font-[600]"
+                            onclick="toggleAccordion('item1')">
+                            <span class="inline-block absolute left-0"> <img
+                                    class="w-[38px] h-[38px] lg:w-[45px] lg:h-[45px]" id="icon-item1"
+                                    src="images/plus.png" alt="plus icon"></span>
+                            <span>Are my products HSA/FSA eligible?</span>
+                        </button>
+                        <div id="item1" class="hidden ps-[60px] lg:ps-[100px] mt-[20px] lg:mt-[25px] lg:max-w-[80%]">
+                            <p
+                                class="text-gray-light text-[15px] leading-[20px] lg:text-[17px] lg:leading-[24px] font-[400] mt-0 mb-3 lg:mb-4 break-keep">
+                                Many health and wellness products are HSA/FSA eligible. To find out if your products are
+                                covered, book a demo with us. On our call, it takes as little as 15 minutes to provide
+                                insight on eligibility.</p>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 2 -->
+                    <div class="accordion-item">
+                        <button
+                            class="flex items-center justify-start w-full ps-[60px] lg:ps-[100px] relative text-left focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 text-[17px] leading-[22px] md:text-[20px] md:leading-[25px]  lg:text-[25px] lg:leading-[28px] text-black  font-[600]"
+                            onclick="toggleAccordion('item2')">
+                            <span class="inline-block absolute left-0"><img
+                                    class="w-[38px] h-[38px] lg:w-[45px] lg:h-[45px]" id="icon-item2"
+                                    src="images/plus.png" alt="plus icon"></span>
+                            <span>Are my products HSA/FSA eligible?</span>
+                        </button>
+                        <div id="item2" class="hidden ps-[60px] lg:ps-[100px] mt-[20px] lg:mt-[25px] lg:max-w-[80%]">
+                            <p
+                                class="text-gray-light text-[15px] leading-[20px] lg:text-[17px] lg:leading-[24px] font-[400] mt-0 mb-3 lg:mb-4">
+                                Many health and wellness products are HSA/FSA eligible. To find out if your products are
+                                covered, book a demo with us. On our call, it takes as little as 15 minutes to provide
+                                insight on eligibility.</p>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div class="accordion-item">
+                        <button
+                            class="flex items-center justify-start w-full ps-[60px] lg:ps-[100px] relative text-left focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 text-[17px] leading-[22px] md:text-[20px] md:leading-[25px]  lg:text-[25px] lg:leading-[28px] text-black  font-[600]"
+                            onclick="toggleAccordion('item3')">
+                            <span class="inline-block absolute left-0"><img
+                                    class="w-[38px] h-[38px] lg:w-[45px] lg:h-[45px]" id="icon-item3"
+                                    src="images/plus.png" alt="plus icon"></span>
+                            <span>How easy is it to integrate with Sika Health?</span>
+                        </button>
+                        <div id="item3" class="hidden ps-[60px] lg:ps-[100px] mt-[20px] lg:mt-[25px] lg:max-w-[80%]">
+                            <p
+                                class="text-gray-light text-[15px] leading-[20px] lg:text-[17px] lg:leading-[24px] font-[400] mt-0 mb-3 lg:mb-4">
+                                Our integration process is designed to be fast and simple (no, really). Most merchants
+                                are up and running within 15 minutes, and we provide full support throughout the
+                                process.</p>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 4 -->
+                    <div class="accordion-item">
+                        <button
+                            class="flex items-center justify-start w-full ps-[60px] lg:ps-[100px] relative text-left focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 text-[17px] leading-[22px] md:text-[20px] md:leading-[25px]  lg:text-[25px] lg:leading-[28px] text-black  font-[600]"
+                            onclick="toggleAccordion('item4')">
+                            <span class="inline-block absolute left-0"><img
+                                    class="w-[38px] h-[38px] lg:w-[45px] lg:h-[45px]" id="icon-item4"
+                                    src="images/plus.png" alt="plus icon"></span>
+                            <span>Can I sell my products on my site and Sika’s marketplace?</span>
+                        </button>
+                        <div id="item4" class="hidden ps-[60px] lg:ps-[100px] mt-[20px] lg:mt-[25px] lg:max-w-[80%]">
+                            <p
+                                class="text-gray-light text-[15px] leading-[20px] lg:text-[17px] lg:leading-[24px] font-[400] mt-0 mb-3 lg:mb-4">
+                                Absolutely! By selling your products both on your own website and through Sika’s
+                                marketplace, you’re giving your customers more flexibility and convenience in how they
+                                shop. This dual approach not only makes it easier for customers to find and buy your
+                                products, but also expands your reach, exposing your brand to a larger audience on a
+                                trusted platform.</p>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 5 -->
+                    <div class="accordion-item">
+                        <button
+                            class="flex items-center justify-start w-full ps-[60px] lg:ps-[100px] relative text-left focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 text-[17px] leading-[22px] md:text-[20px] md:leading-[25px]  lg:text-[25px] lg:leading-[28px] text-black  font-[600]"
+                            onclick="toggleAccordion('item5')">
+                            <span class="inline-block absolute left-0"><img
+                                    class="w-[38px] h-[38px] lg:w-[45px] lg:h-[45px]" id="icon-item5"
+                                    src="images/plus.png" alt="plus icon"></span>
+                            <span>Do my products need a Letter of Medical Necessity (LMN)?</span>
+                        </button>
+                        <div id="item5" class="hidden ps-[60px] lg:ps-[100px] mt-[20px] lg:mt-[25px] lg:max-w-[80%]">
+                            <p
+                                class="text-gray-light text-[15px] leading-[20px] lg:text-[17px] lg:leading-[24px] font-[400] mt-0 mb-3 lg:mb-4">
+                                If your product addresses a medical condition, but is also applied for general
+                                wellness—such as massage devices for back pain—customers might require an LMN to utilize
+                                their HSA/FSA. Sika streamlines this process by QUICKLY connecting them with a
+                                healthcare provider for approval.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end question -->
+        <!-- end question -->
+
+
+        <div class="bg-white py-[50px] md:py-[100px]">
             <div class="container centre">
-                <h2 class="sectionheader centre">Frequently asked questions</h2>
-                <div class="collection-list-wrapper-3 w-dyn-list">
-                    <div role="list" class="faqwrapper w-dyn-items">
-                        <div role="listitem" class="w-dyn-item">
-                            <div data-w-id="6706eed3-6bca-d978-3e2d-61facc3bf4a9" class="faq">
-                                <div class="faqheader">
-                                    <div>Why should I use Sika Health to accept HSA/FSA payments?</div>
-                                    <div style="
-                                          -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                      " class="faqplus">
-                                        <div class="faqplusline _2"></div>
-                                        <div class="faqplusline"></div>
-                                    </div>
-                                </div>
-                                <div class="faqbody">
-                                    <div class="paragraph faq w-richtext">
-                                        <p>
-                                            Sika Health makes the entire process of accepting HSA/FSA payments simple
-                                            and easy. When you install the Sika Health payment method, your customers
-                                            can pay using their HSA/FSA debit cards right
-                                            away.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="listitem" class="w-dyn-item">
-                            <div data-w-id="6706eed3-6bca-d978-3e2d-61facc3bf4a9" class="faq">
-                                <div class="faqheader">
-                                    <div>I’m a healthcare company that processes HSA/FSA cards already today – what is
-                                        Sika Health doing differently?</div>
-                                    <div style="
-                                          -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                      " class="faqplus">
-                                        <div class="faqplusline _2"></div>
-                                        <div class="faqplusline"></div>
-                                    </div>
-                                </div>
-                                <div class="faqbody">
-                                    <div class="paragraph faq w-richtext">
-                                        <!-- <p>
-                                            We work with many retailers who previously processed HSA/FSA cards on their
-                                            own but made the switch to Sika for a more seamless customer experience and
-                                            to adhere with the latest compliance
-                                            guidelines. Specifically, companies billing HSA/FSA cards for anything other
-                                            than check-ups and co-pays are required to implement and operate an
-                                            inventory management system (IIAS). That
-                                            requirement applies to retailers of glasses, sunscreens, hearing aids,
-                                            exercise equipment, and more. In fact, the IRS recently called for audits of
-                                            HSA/FSA purchases from healthcare service
-                                            providers related to this very issue - <a
-                                                href="https://www.irs.gov/pub/irs-wd/202317020.pdf">See IRS
-                                                Memorandum</a>. With Sika, there&#x27;s no need to change your Merchant
-                                            Category Codes (MCC)
-                                            to work around this — any business selling eligible items can compliantly
-                                            accept these regulated funds through our platform.
-                                        </p> -->
-                                        <p>
-                                            We work with many retailers who previously processed HSA/FSA cards on their
-                                            own but made the switch to Sika for a more seamless customer experience.
-                                            When merchants accept HSA/FSA funds, their customers can shop with HSA/FSA
-                                            cards without worrying about purchase eligibility. In the event that an
-                                            HSA/FSA administrator requests additional substantiation, Sika will be there
-                                            to support your customers.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div role="listitem" class="w-dyn-item">
-                            <div data-w-id="6706eed3-6bca-d978-3e2d-61facc3bf4a9" class="faq">
-                                <div class="faqheader">
-                                    <div>How does Sika Health handle necessary compliance?</div>
-                                    <div style="
-                                          -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                      " class="faqplus">
-                                        <div class="faqplusline _2"></div>
-                                        <div class="faqplusline"></div>
-                                    </div>
-                                </div>
-                                <div class="faqbody">
-                                    <div class="paragraph faq w-richtext">
-                                        <p>
-                                            Compliance is the backbone of our offering. As a SIGIS member and Integrated
-                                            Payment Provider, we help merchants navigate the latest industry standards
-                                            to ensure proper certifications to accept
-                                            HSA/FSA funds. When merchants compliantly accept HSA/FSA funds, their
-                                            customers can shop with HSA/FSA cards without worrying about purchase
-                                            eligibility. In the event that an HSA/FSA administrator
-                                            requests additional substantiation, Sika will be there to support your
-                                            customers.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div role="listitem" class="w-dyn-item">
-                            <div data-w-id="6706eed3-6bca-d978-3e2d-61facc3bf4a9" class="faq">
-                                <div class="faqheader">
-                                    <div>I’ve heard that mattresses and massages are HSA/FSA eligible. Is that true?
-                                    </div>
-                                    <div style="
-                                          -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                      " class="faqplus">
-                                        <div class="faqplusline _2"></div>
-                                        <div class="faqplusline"></div>
-                                    </div>
-                                </div>
-                                <div class="faqbody">
-                                    <div class="paragraph faq w-richtext">
-                                        <p>
-                                            From mattresses to skincare, supplements to fitness equipment, there’s a
-                                            slew of products that shoppers can purchase with their HSA/FSA funds. Sika
-                                            Health’s team of medical and legal experts work
-                                            with appropriate authorities to determine the eligibility of the products in
-                                            your portfolio on an ongoing basis. This is all part of our offering.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="listitem" class="w-dyn-item">
-                            <div data-w-id="6706eed3-6bca-d978-3e2d-61facc3bf4a9" class="faq">
-                                <div class="faqheader">
-                                    <div>Let’s do this. How easy is it to integrate with Sika Health?</div>
-                                    <div style="
-                                          -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                      " class="faqplus">
-                                        <div class="faqplusline _2"></div>
-                                        <div class="faqplusline"></div>
-                                    </div>
-                                </div>
-                                <div class="faqbody">
-                                    <div class="paragraph faq w-richtext">
-                                        <p>
-                                            Sika Health works with many e-commerce platforms out of the box such as
-                                            <strong>Shopify</strong> and <strong>WooCommerce</strong>. If you have a
-                                            Custom checkout, we offer white-glove installation
-                                            as well. Whatever your needs, we will help you be successful.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="listitem" class="w-dyn-item">
-                            <div data-w-id="6706eed3-6bca-d978-3e2d-61facc3bf4a9" class="faq">
-                                <div class="faqheader">
-                                    <div>Why was my HSA/FSA transaction declined when I tried to purchase an item marked
-                                        “HSA/FSA accepted”?</div>
-                                    <div style="
-                                          -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                          transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                                      " class="faqplus">
-                                        <div class="faqplusline _2"></div>
-                                        <div class="faqplusline"></div>
-                                    </div>
-                                </div>
-                                <div class="faqbody">
-                                    <div class="paragraph faq w-richtext">
-                                        <p>
-                                            Sika and its partner retailers endeavor to provide high transaction
-                                            authorization rates for HSA and FSA shoppers. However, some HSA and FSA
-                                            plans are not currently configured to accept charges
-                                            from certain retailers based on the retailers’ Merchant Category Code,
-                                            meaning that cards issued by those plans may be declined for eligible
-                                            transactions. Sika is working with plan administrators
-                                            to address this for a better customer experience. In the meantime, please
-                                            pay for your purchase with your debit or credit card and use your receipt to
-                                            file for reimbursement.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section dark">
-            <div class="container centre">
-                <h2 class="sectionheader centre reverse">Get started</h2>
-                <div class="subtitle _500">Ready to find out more? Sign up below to start your Sika Health HSA/FSA
-                    payment journey.</div>
-                <a href="get-started" class="button green w-button">GET STARTED</a>
+                <h2
+                    class="text-[30px] leading-[33px] md:text-[34px] md:leading-[44px]  lg:text-[51px] lg:leading-[61px] font-semibold !text-black ">
+                    Ready to grow your <br> business with HSA/FSA?</h2>
+                <a href="lmn#DEMO" class="button black w-button">Book My Demo </a>
             </div>
         </div>
 
 
-        <footer class="border-t border-[#454545] border-solid">
-            <div class="bg-[#0E0E0E] py-14">
+        <!-- start footer -->
+        <!-- <footer class="">
+            <div class="bg-[#F7F9FB] py-14">
                 <div class="w-full max-w-[1208px] mx-auto px-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-16">
                         <div>
                             <div class="mb-4">
-                                <div class="text-green font-[700] text-[13px] uppercase tracking-[2px]">Platform</div>
+                                <div
+                                    class="text-black font-[700] text-[13px] uppercase tracking-[2px] border-b border-[#252525] inline-block">
+                                    GET STARTED</div>
                             </div>
                             <a href="/get-started?tab=merchant"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
-                                <div>MERCHANTS</div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
+                                class="flex items-center justify-between w-full h-10 text-black/80 hover:text-black hover:pl-1 transition-all  text-[13px] font-[700] tracking-[2px]">
+                                <div>FOR MERCHANTS</div>
+                                <img src="images/arrow-right-black.svg" loading="" alt="" class="w-1.5 h-3">
                             </a>
                             <a href="/get-started?tab=shopper"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
-                                <div>SHOPPERS</div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
-                            </a>
-                            <a href="/get-started?tab=provider"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
-                                <div>PROVIDERS</div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
-                            </a>
-                            <a href="/lmn"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
-                                <div>LMN</div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
+                                class="flex items-center justify-between w-full h-10 text-black/80 hover:text-black hover:pl-1 transition-all  text-[13px] font-[700] tracking-[2px]">
+                                <div>FOR SHOPPERS</div>
+                                <img src="images/arrow-right-black.svg" loading="" alt="" class="w-1.5 h-3">
                             </a>
                         </div>
                         <div>
                             <div class="mb-4">
-                                <div class="text-green font-[700] text-[13px] uppercase tracking-[2px]">SOLUTION</div>
+                                <div
+                                    class="text-black font-[700] text-[13px] uppercase tracking-[2px] border-b border-[#252525] inline-block">
+                                    RESOURCES</div>
                             </div>
-                            <a href="/features#Features"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
-                                <div>FEATURES</div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
-                            </a>
-                            <a href="/features#Benefits"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
-                                <div>BENEFITS</div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
-                            </a>
-                            <a href="/features#Overview"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
-                                <div>OVERVIEW</div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
-                            </a>
-                            <a href="/#Testimonials"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
-                                <div>TESTIMONIALS</div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
-                            </a>
-                        </div>
-                        <div>
-                            <div class="mb-4">
-                                <div class="text-green font-[700] text-[13px] uppercase tracking-[2px]">ABOUT</div>
-                            </div>
+
                             <a href="about"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
-                                <div>ABOUT&nbsp;US</div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
-                            </a>
-                            <a href="/about#Team"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
-                                <div>TEAM</div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
-                            </a>
-                            <!-- <a href="/about#Roles"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
-                                <div>OPEN&nbsp;ROLES</div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
-                            </a> -->
-                            <a href="https://sika-health.breezy.hr/p/116a6f3083e5-sales-director" target="_blank"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
-                                <div>OPEN&nbsp;ROLES</div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
-                            </a>
-                            <a href="press"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
-                                <div>PRESS</div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
+                                class="flex items-center justify-between w-full h-10 text-black/80 hover:text-black hover:pl-1 transition-all  text-[13px] font-[700] tracking-[2px]">
+                                <div>ABOUT SIKA </div>
+                                <img src="images/arrow-right-black.svg" loading="" alt="" class="w-1.5 h-3">
                             </a>
                             <a href="blog"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
+                                class="flex items-center justify-between w-full h-10 text-black/80 hover:text-black hover:pl-1 transition-all  text-[13px] font-[700] tracking-[2px]">
                                 <div>BLOG</div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
+                                <img src="images/arrow-right-black.svg" loading="" alt="" class="w-1.5 h-3">
                             </a>
+
                         </div>
                         <div>
                             <div class="mb-4">
-                                <div class="text-green font-[700] text-[13px] uppercase tracking-[2px]">CONTACT</div>
-                            </div>
-                            <div class="mb-4">
-                                <div class="text-white text-[13px] font-[700]">Sika Health Inc.<br>&zwj;</div>
-                                <div class="text-white text-[13px]">2196 Third Ave, Unit 10039<br>New York, NY 10035
-                                </div>
+                                <div
+                                    class="text-black font-[700] text-[13px] uppercase tracking-[2px] border-b border-[#252525] inline-block">
+                                    CONNECT</div>
                             </div>
                             <a href="https://www.linkedin.com/company/sikahealth"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
+                                class="flex items-center justify-between w-full h-10 text-black/80 hover:text-black hover:pl-1 transition-all  text-[13px] font-[700] tracking-[2px]">
                                 <div class="flex items-center gap-2">
-                                    <img src="images/linkedin.svg" loading="" alt="" class="w-5 h-5">
+                                    <img src="images/linkedin-black.svg" loading="" alt="" class="w-5 h-5">
                                     <div>LINKEDIN</div>
                                 </div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
+                                <img src="images/arrow-right-black.svg" loading="" alt="" class="w-1.5 h-3">
                             </a>
-                            <!-- <a href="https://twitter.com/sikahealth"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
-                                <div class="flex items-center gap-2">
-                                    <img src="images/x.svg" loading="" alt="" class="w-5 h-5">
-                                    <div>TWITTER/X</div>
-                                </div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
-                            </a> -->
                             <a href="https://www.instagram.com/sika_health/"
-                                class="flex items-center justify-between w-full h-10 text-white/80 hover:text-white hover:pl-1 transition-all border-b border-[#252525] text-[13px] font-[700] tracking-[2px]">
+                                class="flex items-center justify-between w-full h-10 text-black/80 hover:text-black hover:pl-1 transition-all  text-[13px] font-[700] tracking-[2px]">
                                 <div class="flex items-center gap-2">
-                                    <img src="images/instagram.svg" loading="" alt="" class="w-5 h-5">
+                                    <img src="images/instagram-black.svg" loading="" alt="" class="w-5 h-5">
                                     <div>INSTAGRAM</div>
                                 </div>
-                                <img src="images/arrow-right.svg" loading="" alt="" class="w-1.5 h-3">
+                                <img src="images/arrow-right-black.svg" loading="" alt="" class="w-1.5 h-3">
+                            </a>
+
+                        </div>
+                        <div>
+                            <div class="mb-4">
+                                <div
+                                    class="text-black font-[700] text-[13px] uppercase tracking-[2px] border-b border-[#252525] inline-block">
+                                    DeTAILS</div>
+                            </div>
+
+                            <a href="agreement"
+                                class="flex items-center justify-between w-full h-10 text-black/80 hover:text-black hover:pl-1 transition-all  text-[13px] font-[700] tracking-[2px]">
+                                <div>MERCHANT AGREEMENT </div>
+                                <img src="images/arrow-right-black.svg" loading="" alt="" class="w-1.5 h-3">
+                            </a>
+                            <a href=""
+                                class="flex items-center justify-between w-full h-10 text-black/80 hover:text-black hover:pl-1 transition-all  text-[13px] font-[700] tracking-[2px]">
+                                <div>API DOCUMENTATION</div>
+                                <img src="images/arrow-right-black.svg" loading="" alt="" class="w-1.5 h-3">
                             </a>
                         </div>
                     </div>
@@ -1091,28 +843,93 @@
             <div class="bg-black w-full ">
                 <div
                     class="w-full max-w-[1208px] mx-auto px-6 flex flex-col md:flex-row justify-center md:justify-between items-center  h-[120px] md:h-10 ">
-                    <div class="text-white text-[11px] font-normal order-2 md:order-">© Sika Health 2024. All rights
+                    <div class="text-white text-[11px] font-normal order-2 md:order-1">© Sika Health 2024. All rights
                         reserved.</div>
-                    <div class="flex items-center space-x-5 mb-5 md:mb-0">
+                    <div class="flex items-center order-1 md:order-2 space-x-5 mb-3 md:mb-0">
                         <a href="terms-of-service"
-                            class="flex items-center h-full text-white/80 hover:text-green  text-[11px] font-[500] uppercase">
+                            class="flex items-center h-full text-white hover:text-white/80  text-[11px] font-[500] uppercase border-b border-white/60 lg:border-black">
                             <div>TERMS&nbsp;OF&nbsp;SERVICE</div>
                         </a>
                         <a href="privacy-policy"
-                            class="flex items-center h-full text-white/80 hover:text-green  text-[11px] font-[500] uppercase">
+                            class="flex items-center h-full text-white hover:text-white/80  text-[11px] font-[500] uppercase border-b border-white/60 lg:border-black">
                             <div>PRIVACY&nbsp;POLICY</div>
-                        </a>
-                        <a href="agreement"
-                            class="flex items-center h-full text-white/80 hover:text-green  text-[11px] font-[500] uppercase">
-                            <div>MERCHANT &nbsp;AGREEMENT</div>
                         </a>
                     </div>
                 </div>
             </div>
 
+        </footer> -->
+
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div>
+                            <h4 class="footer-heading">GET STARTED</h4>
+                            <a href="/get-started?tab=merchant" class="footer-link">
+                                <span>FOR MERCHANTS</span>
+                                <img src="images/arrow-right-black.svg" alt="arrow" class="arrow-icon">
+                            </a>
+                            <a href="/get-started?tab=shopper" class="footer-link">
+                                <span>FOR SHOPPERS</span>
+                                <img src="images/arrow-right-black.svg" alt="arrow" class="arrow-icon">
+                            </a>
+                        </div>
+                        <div>
+                            <h4 class="footer-heading">RESOURCES</h4>
+                            <a href="about" class="footer-link">
+                                <span>ABOUT SIKA</span>
+                                <img src="images/arrow-right-black.svg" alt="arrow" class="arrow-icon">
+                            </a>
+                            <a href="blog" class="footer-link">
+                                <span>BLOG</span>
+                                <img src="images/arrow-right-black.svg" alt="arrow" class="arrow-icon">
+                            </a>
+                        </div>
+                        <div>
+                            <h4 class="footer-heading">CONNECT</h4>
+                            <a href="https://www.linkedin.com/company/sikahealth" class="footer-link">
+                                <div class="flex">
+                                    <img src="images/linkedin-black.svg" alt="LinkedIn" class="social-icon">
+                                    <span>LINKEDIN</span>
+                                </div>
+                                <img src="images/arrow-right-black.svg" alt="arrow" class="arrow-icon">
+                            </a>
+                            <a href="https://www.instagram.com/sika_health/" class="footer-link">
+                                <div class="flex">
+                                    <img src="images/instagram-black.svg" alt="Instagram" class="social-icon">
+                                    <span>INSTAGRAM</span>
+                                </div>
+                                <img src="images/arrow-right-black.svg" alt="arrow" class="arrow-icon">
+                            </a>
+                        </div>
+                        <div>
+                            <h4 class="footer-heading">DETAILS</h4>
+                            <a href="agreement" class="footer-link">
+                                <span>MERCHANT AGREEMENT</span>
+                                <img src="images/arrow-right-black.svg" alt="arrow" class="arrow-icon">
+                            </a>
+                            <a href="https://sika-health.stoplight.io/docs/sika-health-api-docs/0a26bfb099549-overview"
+                                class="footer-link">
+                                <span>API DOCUMENTATION</span>
+                                <img src="images/arrow-right-black.svg" alt="arrow" class="arrow-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container footer-bottom-content">
+                    <p class="mb-0">© Sika Health 2024. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="terms-of-service">TERMS OF SERVICE</a>
+                        <a href="privacy-policy">PRIVACY POLICY</a>
+                    </div>
+                </div>
+            </div>
         </footer>
 
-
+        <!-- end footer -->
     </main>
 
 
@@ -1124,6 +941,7 @@
         type="text/javascript"></script>
     <script src="js/slick.min.js" type="text/javascript"></script>
     <script src="js/custom.js"></script>
+
 
 
 </body>
