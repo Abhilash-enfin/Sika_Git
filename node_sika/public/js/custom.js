@@ -45,6 +45,7 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 1000,
         speed: 1000,
+        adaptiveHeight: true,
 
     });
 
