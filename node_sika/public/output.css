@@ -3086,3 +3086,10 @@ footer {
     transform: translateX(-50%);
   }
 }
+
+
+.required-asterisk {
+  color: red;
+  font-weight: bold;
+  margin-left: 2px;
+}
