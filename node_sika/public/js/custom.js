@@ -160,3 +160,59 @@ document.addEventListener("DOMContentLoaded", function() {
         tabHeader.classList.add('hidden');
     }
 });
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".tab-btn");
+    const contents = document.querySelectorAll(".tab-content");
+  
+    let currentTab = 0;
+  
+    // Function to show a specific tab
+    const showTab = (index) => {
+      tabs.forEach((tab, i) => {
+        tab.classList.toggle("tabActive", i === index);
+      });
+      contents.forEach((content, i) => {
+        content.classList.toggle("hidden", i !== index);
+      });
+    };
+  
+    // Auto-cycle logic
+    const cycleTabs = () => {
+      currentTab = (currentTab + 1) % tabs.length;
+      showTab(currentTab);
+    };
+  
+    // Initial tab setup
+    showTab(currentTab);
+  
+    // Start cycling
+    setInterval(cycleTabs, 5000); // Change tab every 3 seconds
+  
+    // Allow manual tab switching
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => {
+        currentTab = index;
+        showTab(currentTab);
+      });
+    });
+  });
+  
+
+
+
+// document.querySelectorAll('.tab-btn').forEach(button => {
+//     button.addEventListener('click', () => {
+//         const target = button.getAttribute('data-target');
+//         document.querySelectorAll('.tab-content').forEach(content => {
+//             content.classList.add('hidden'); // Hide all tabs
+//         });
+//         document.getElementById(target).classList.remove('hidden'); // Show selected tab
+//     });
+// });

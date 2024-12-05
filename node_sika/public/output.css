@@ -1683,7 +1683,7 @@ footer .container {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   font-family: Outfit, sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 1px;
   --tw-text-opacity: 1;
   color: rgb(14 14 14 / var(--tw-text-opacity));
@@ -1747,7 +1747,7 @@ footer .container {
   padding: 0px !important;
   font-family: Outfit, sans-serif;
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 15px;
   letter-spacing: 1px;
@@ -2908,7 +2908,7 @@ footer {
 }
 
 .footer-heading {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -2923,7 +2923,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -3092,4 +3092,16 @@ footer {
   color: red;
   font-weight: bold;
   margin-left: 2px;
+}
+
+.tabActive {
+  font-weight: 600 !important;
+  opacity: 1 !important;
+}
+
+ button.lmnTabbtn svg {
+  fill: #949494;
+}
+button.tabActive svg {
+  fill: #000 !important;
 }
