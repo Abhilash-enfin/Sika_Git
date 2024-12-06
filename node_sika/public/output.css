@@ -3109,7 +3109,7 @@ button.tabActive svg {
 @media (min-width: 768px) {
   .lmnTab .tab-content {
     position: absolute;
-    top: -30px;
+    top: 0;
     right: 0;
     width: 50%;
     min-height: 100%;
