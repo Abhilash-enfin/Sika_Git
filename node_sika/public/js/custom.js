@@ -207,12 +207,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// document.querySelectorAll('.tab-btn').forEach(button => {
-//     button.addEventListener('click', () => {
-//         const target = button.getAttribute('data-target');
-//         document.querySelectorAll('.tab-content').forEach(content => {
-//             content.classList.add('hidden'); // Hide all tabs
-//         });
-//         document.getElementById(target).classList.remove('hidden'); // Show selected tab
-//     });
-// });
+  

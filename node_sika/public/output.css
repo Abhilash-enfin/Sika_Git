@@ -3105,3 +3105,14 @@ footer {
 button.tabActive svg {
   fill: #000 !important;
 }
+
+@media (min-width: 768px) {
+  .lmnTab .tab-content {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 50%;
+    min-height: 100%;
+    overflow-y: auto;
+  }
+}
