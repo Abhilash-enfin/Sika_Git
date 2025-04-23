@@ -1,0 +1,465 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import './fonts.css'; */
+
+
+
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./fonts/Outfit-Bold.woff2') format('woff2'),
+        url('./fonts/Outfit-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./fonts/Outfit-ExtraBold.woff2') format('woff2'),
+        url('./fonts/Outfit-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./fonts/Outfit-Black.woff2') format('woff2'),
+        url('./fonts/Outfit-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./fonts/Outfit-Regular.woff2') format('woff2'),
+        url('./fonts/Outfit-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./fonts/Outfit-Thin.woff2') format('woff2'),
+        url('./fonts/Outfit-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./fonts/Outfit-SemiBold.woff2') format('woff2'),
+        url('./fonts/Outfit-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./fonts/Outfit-ExtraLight.woff2') format('woff2'),
+        url('./fonts/Outfit-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./fonts/Outfit-Medium.woff2') format('woff2'),
+        url('./fonts/Outfit-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./fonts/Outfit-Light.woff2') format('woff2'),
+        url('./fonts/Outfit-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+
+.btn-green {
+    @apply font-custom bg-green text-primary-black md:text-[11px] lg:text-[13px] font-[800] py-2.5 md:px-4 lg:px-8 rounded-[28px] tracking-[1px];
+}
+.btn-black {
+    @apply font-custom bg-black text-white text-[12px] md:text-[15px] lg:text-[18px] font-[600] py-2.5 md:px-4 lg:px-8 rounded-[28px] tracking-[0] min-w-[123px] min-h-[37px] md:min-w-[170px] max-w-[120px] md:max-w-[auto] md:min-h-[50px] lg:min-w-[192px] lg:min-h-[58px];
+}
+
+
+
+.nav-link {
+    @apply font-custom !p-0 text-primary-black text-[13px] md:text-[11px] lg:text-[13px] leading-[15px] font-[800] uppercase tracking-[1px];
+}
+
+.scroll-img {
+    @apply max-h-[38px] min-h-[38px]
+}
+
+.category-img {
+    @apply max-w-[87px] max-h-[58px] md:max-w-[129px] md:max-h-[86px] block w-full h-full object-contain rounded-[15px] lg:rounded-[25px] overflow-hidden flex-shrink-0
+}
+
+
+.category-para {
+    @apply inline-block mx-8 text-[18px] leading-[24px] md:text-[21px] md:leading-[27px] font-normal mb-0 text-black    
+} 
+
+  /* @layer components {
+    .my-custom-style {
+
+    }
+  } */
+
+
+  /* @layer base {
+    h1 {
+      @apply text-2xl;
+    }
+    h2 {
+      @apply text-xl;
+    }
+
+  } */
+
+  .scrolled {
+    top: 0 !important;
+  }
+  .sidebar {
+    right: 0; 
+    display: flex;
+    flex-direction: column;
+    transform: translatex(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+
+
+.sidebar.open {
+    transform: translatex(0);
+  }
+
+  .hamburger {
+    transition: transform 0.3s ease-in-out;
+  }
+  .line {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  .open .line1 {
+    transform: translateY(6px) rotate(45deg);
+  }
+  .open .line2 {
+    opacity: 0;
+  }
+  .open .line3 {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+   /* end sidebar */
+
+
+
+  .carousel {
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+}
+.carousel-item {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+}
+
+
+
+
+
+
+
+
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-150px * 6));
+    }
+  }
+  .slider {
+    /* background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
+    /* height: 100px; */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .slider::before, .slider::after {
+    background: linear-gradient(to right, #f2f2f2 0%, rgba(242, 242, 242, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .slider .slide-track {
+    animation: scroll 10s linear infinite;
+    display: flex;
+    width: calc(150px * 12);
+  }
+  .slider .slide {
+    /* height: 100px; */
+    width: 150px;
+  }
+
+
+
+  
+  /* marquee */
+  
+  .marquee {
+    display: flex;
+    width: 200%;
+    animation: bannermove 20s linear infinite;
+  }
+  .marquee.riverse {
+    animation: bannerReverse  20s linear infinite;
+  }
+  
+
+
+
+  .marquee.paused {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
+  .marquee ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  .marquee li {
+    width: max-content;
+  }
+
+
+/* Forward animation */
+@keyframes bannermove {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Reverse animation */
+  @keyframes bannerReverse {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+
+  @media only screen and (max-width: 767px) {
+    .marquee {
+      width: 300%;
+      animation: bannermove 15s linear infinite;
+    }
+    .marquee.riverse {
+      animation: bannerReverse  15s linear infinite;
+    }
+
+    @keyframes bannermove {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+      /* Reverse animation */
+  @keyframes bannerReverse {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+    
+    
+  }
+
+  
+
+  .custom-arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .custom-arrow:hover {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+  }
+
+  .slick-disabled {
+    cursor: default;
+  }
+
+
+
+
+
+
+
+
+  .quote-paragraph {
+    position: relative;
+    padding-left: 0;
+}
+.quote-paragraph::before {
+    content: '“';
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+.slick-slide {
+  overflow: hidden;
+}
+
+
+.quote-paragraph::after {
+  content: '”';
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+}
+
+
+/* <br class="hidden lg:block"> */
+
+
+#tabWraper {
+  display: flex;
+}
+
+.sub-banner {
+  /* background-color: red !important; */
+  padding-bottom: 50px !important;
+  min-height: 300px !important;
+}
+.sub-content {
+  margin-top: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo-slider {
+  --slider-duration: 10s;
+  --slider-gap: max(16px, max(16px, 2vw));
+  --min-width: 320;
+  --max-width: 1400;
+  
+  overflow: hidden;
+  max-width: 1400px;
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  padding-block: 5px;
+  margin: 0 auto;
+}
+
+@keyframes marquee-1 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-50% - (var(--slider-gap) * 2)));
+  }
+}
+
+.logo-slider > div {
+  display: flex;
+  align-items: center;
+  animation: marquee-1 calc(var(--slider-duration) + (var(--variable-duration, 0s) * 10)) linear infinite;
+  justify-content: space-between;
+  gap: var(--slider-gap);
+}
+
+.logo-slider > div img {
+  height: clamp(50%, 10vw, 100%);
+  max-width: 150px;
+  max-height: 100px;
+  object-fit: contain;
+  display: block;
+}
+
+
+.logo-slider > div:hover {
+  animation-play-state: paused;
+}
+
+/* @media (min-width: 1000px) {
+  .logo-slider {
+    -webkit-mask-image: linear-gradient(to right, transparent, white 10vw, white calc(100% - 10vw), transparent);
+  }
+} */
+
+
+
+
+
+
