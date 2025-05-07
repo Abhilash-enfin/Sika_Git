@@ -52,17 +52,28 @@
 
   
   .top-section .menu-list li.active  a {
-    color: #22c55e !important;
+    color: #84ef84 !important;
   }
   
   
   .top-section .menu-list li.active::before {
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: -13px;
     height: 4px;
     width: 100%;
-    background-color: #22c55e;
+    background-color: #84ef84;
+  }
+  .top-section .menu-list li:hover  a {
+    color: #84ef84 !important;
+  }
+  .top-section .menu-list li:hover::before {
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    height: 4px;
+    width: 100%;
+    background-color: #84ef84;
   }
   
   .top-section .announcement {

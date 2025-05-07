@@ -2210,25 +2210,46 @@ body {
   bottom: 0;
 }
 .menu-list li {
+  /* position: relative;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer; */
   position: relative;
+}
+.menu-list li a {
   font-size: 1rem;
   color: white;
   cursor: pointer;
+  line-height: 28px;
+  font-weight: 500;
 }
-.menu-list li.active {
-  color: #22c55e;
+.menu-list li.active a {
+  color: #84ef84;
 }
+
+.menu-list li:hover a {
+  color: #84ef84 !important;
+}
+.menu-list li:hover::before {
+  content: '';
+  position: absolute;
+  bottom: -13px;
+  height: 4px;
+  width: 100%;
+  background-color: #84ef84;
+}
+
 .menu-list li.active::before {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: -13px;
   height: 4px;
   width: 100%;
-  background-color: #22c55e;
+  background-color: #84ef84;
 }
 @media (min-width: 768px) {
   .menu-list li.active::before {
-    bottom: -15px;
+    bottom: -13px;
   }
 }
 @layer utilities {
