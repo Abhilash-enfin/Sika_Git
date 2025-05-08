@@ -61,7 +61,7 @@
 
     <!-- start header -->
     <section class="top-section">
-        <div class="container">
+        <div class="custom-container">
             <div class="top-content">
                 <ul class="menu-list">
                     <li class=""><a href="https://shop.sikahealth.com/password"> For Shoppers </a></li>
@@ -74,19 +74,19 @@
         </div>
     </section>
 
-    
     <section class="top-bar">
         <div class="top-bar-inner">
-            <div class="container">
+            <div class="custom-container">
                 <div class="top-bar-content">
                     <a href="">
                         <img src="images/main-logo.svg" alt="SIKA Logo" class="logo" />
                     </a>
-                    <a href="get-started" class="custom-button">GET STARTED WITH SIKA</a>
+                    <!-- <a href="get-started" class="custom-button">GET STARTED WITH SIKA</a> -->
                 </div>
             </div>
         </div>
     </section>
+  
     
     <!-- <section class="top-bar top-bar-search">
         <div class="top-bar-inner">
@@ -169,9 +169,9 @@
                             <div class="subtitle reverse">Ready to start accepting HSA and FSA funds online? Complete
                                 the form and our team will reach out to you soon.</div>
                             <div class="form w-form">
-                                <form id="wf-form-Merchant" name="wf-form-Merchant" data-name="Merchant" method="POST"
+                                <form id="wf-form-Merchant" onsubmit="handleSubmit(event, 'wf-form-Merchant')" name="wf-form-Merchant" data-name="Merchant" method="POST"
                                     class="form-3" data-wf-page-id="64de6dd68c22af95553e578d"
-                                    action="https://stage.ohai.sikahealth.com/v3/enquiry"
+                                    action="https://api.sika.health/v3/enquiry"
                                     data-wf-element-id="e4f83720-b26c-b778-cdd0-7cbecabec482">
                                     <div class="w-layout-grid formgrid">
                                         <div id="w-node-e4f83720-b26c-b778-cdd0-7cbecabec484-553e578d" class="formcell">
@@ -202,7 +202,7 @@
                                             <input class="formfield reverse w-input" maxlength="256" name="phone"
                                                 data-name="Phone" placeholder="Your phone number" type="text"
                                                 pattern="^\d{10}$" title="Please enter a 10-digit phone number."
-                                                id="phone" />
+                                                id="phone" required/>
                                         </div>
                                     </div>
                                     <div class="formdividr"></div>
@@ -288,6 +288,41 @@
                                             <p style="padding: 0px;margin: 0px;color: red;font-size: small;"
                                                 class="errorannrev" hidden>Please select the Annual Revenue</p>
                                         </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="formdividr"></div>
+                                    <p style="padding: 0px;margin: 0px;text-align: left;width: 100%;">What type of products are you looking to sell – always eligible or LMN products?</p>
+
+                                    <div class="w-layout-grid formgrid">
+
+                                        <div class="formcell">
+                                            <label for="category" class="fieldlabel reverse">Please select the category that best represents your primary line of business:</label>
+                                            <select id="category" name="category" class="dropdown w-select">
+                                                <option value="">Select Category...</option>
+                                            </select>
+                                            <p style="padding: 0px;margin: 0px;color: red;font-size: small;margin-top: -10px; padding-bottom: 35px;" id="categoryError" hidden>Please select a category</p>
+                                        </div>
+                                        
+                                        <div class="formcell" id="subcategory-container">
+                                            <label for="subcategory" class="fieldlabel reverse">Please select the sub-category that most accurately describe your primary line of business:</label>
+                                            <select id="subcategory" name="subcategory" class="dropdown w-select">
+                                                <option value="">Select Subcategory...</option>
+                                            </select>
+                                            <p style="padding: 0px;margin: 0px;color: red;font-size: small;margin-top: -10px; padding-bottom: 35px;" id="subcategoryError" hidden>Please select a subcategory</p>
+                                        </div>
+                                        
+                                        <div class="formcell" id="category-text-container" style="display: none;">
+                                            <label for="category-text" class="fieldlabel reverse">Describe Category</label>
+                                            <input type="text" id="category-text" name="category_text" class="dropdown w-select" placeholder="Enter your category">
+                                            <p style="padding: 0px;margin: 0px;color: red;font-size: small;margin-top: -10px; padding-bottom: 35px;" id="categorytextError" hidden>Please enter a category description</p>
+                                        </div>
+
+
+
                                         <input type="hidden" name="source" value="merchant">
                                     </div>
                                     <div class="formdividr"></div>
@@ -296,7 +331,7 @@
                                         </div>
                                         <input type="checkbox" name="opt_in" id="opt_in" data-name="Opt In 3"
                                             style="opacity: 0; position: absolute; z-index: -1;" />
-                                        <span class="checkbox-label w-form-label" for="Opt-in-3">
+                                            <span class="checkbox-label w-form-label" for="Opt-in-3" style="display: block; width: 100%;">
                                             By checking this box, I consent to receive emails from Sika Health Inc.
                                             regarding its products, services, and promotions. I understand that I may
                                             withdraw my authorization at any time.
@@ -316,8 +351,8 @@
                         <span id="email-errors" style="color: red; display: none;">Please enter a valid email
                             address.</span>
                         <div class="success-message-2 w-form-done"
-                            style="background-color: transparent; padding-bottom: 4rem; font-size: larger;">
-                            <div>Thank you! Your submission has been received!</div>
+                            style="background-color: transparent; padding-bottom: 4rem; font-size: larger; color:black">
+                            <div>Thank you for providing the details! One of our team members will reach out shortly to schedule a demo.</div>
                         </div>
                         <div class="error-message-2 w-form-fail"
                             style="background-color: transparent; padding-bottom: 4rem; color: red; font-size: larger;">
@@ -393,7 +428,7 @@
                     </button>
                     </form>
                     <p class="terms">
-                    By signing up, you agree to Sko Health's 
+                    By signing up, you agree to Sika Health's 
                     <a  href="terms-of-service">Terms of Service</a> and 
                     <a href="privacy-policy">Privacy Policy</a>.
                     </p>
@@ -458,6 +493,9 @@
             let hfpvalid = true;
             let hfvalid = true;
             let iscnameValid = true;
+            let isCategoryValid = false;
+            let isSubcategoryValid = false;
+            let isCategoryTextValid = false;
 
             // //privacy optin checkbox validation
             // const erroroptin = document.querySelectorAll('.erroroptin');
@@ -573,6 +611,46 @@
                     iscnameValid = true;
                 }
 
+                  //Category Validation
+
+            const category = formData.get('category');
+            const subcategory = formData.get('subcategory');
+            let categoryText = formData.get('category_text')?.trim();
+
+            const subcatInput = form.querySelector('[name="subcategory"]');
+            const catTextInput = form.querySelector('[name="category_text"]');
+            const categoryErrorElement = document.getElementById('categoryError');
+            const subcategoryErrorElement = document.getElementById('subcategoryError');
+            const categorytextErrorElement = document.getElementById('categorytextError');
+
+            if (category === "") {
+                isCategoryValid = false
+                categoryErrorElement.hidden = false;
+            }
+            else{
+                isCategoryValid = true;
+                categoryErrorElement.hidden = true;
+            }
+            if (category === "Don't see your Category?") {
+                if (!categoryText) {
+                    categorytextErrorElement.hidden = false;
+                    isCategoryTextValid = false;
+                    catTextInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    categorytextErrorElement.hidden = true;
+                    isCategoryTextValid = true;
+                }
+            } else {
+                if (!subcategory) {
+                    isSubcategoryValid = false;
+                    subcategoryErrorElement.hidden = false;
+                    subcatInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    isSubcategoryValid = true;
+                    subcategoryErrorElement.hidden = true;
+                    categoryText = ""
+                }
+            }
 
             }
             // if(formId=="provider-form" || formId=="wf-form-Merchant")
@@ -620,12 +698,19 @@
             // console.log("hfp",hfpvalid)
             // console.log("hsfs?",hfvalid)
 
-            if (optinvalid == true && isValid == true && ecomvalid == true && annualrevvalid == true && hfpvalid == true && hfvalid == true && iscnameValid == true) {
-                return true;
-            }
-            else {
-                return false;
-            }
+          
+            console.log("category valid",isCategoryValid)
+            console.log("subcategory valid",isSubcategoryValid)
+            console.log("category text valid",isCategoryTextValid)
+
+                    if (optinvalid == true && isValid == true && ecomvalid == true && annualrevvalid == true && hfpvalid == true && hfvalid == true && iscnameValid == true && isCategoryValid== true &&  (isCategoryTextValid||isSubcategoryValid)){
+                        console.log("Optionvalid-valid",optinvalid)
+                        return true;
+                    } 
+                    else{
+                        console.log("Optionvalid-invalid",optinvalid)
+                        return false;
+                    }
         }
 
         function handleFormSubmit(event, formId) {
@@ -652,6 +737,7 @@
             const errorMessage = document.querySelector('.error-message-2');
             successMessage.style.display = 'none';
             errorMessage.style.display = 'none';
+            console.log("formdata---->", data)
 
             fetch('https://api.sika.health/v3/enquiry', {
                 method: 'POST',
@@ -681,9 +767,9 @@
             }
         }
 
-        document.getElementById('shopper-form').addEventListener('submit', function (event) {
-            handleSubmit(event, 'shopper-form');
-        });
+        // document.getElementById('shopper-form').addEventListener('submit', function (event) {
+        //     handleSubmit(event, 'shopper-form');
+        // });
 
         document.getElementById('provider-form').addEventListener('submit', function (event) {
             handleSubmit(event, 'provider-form');
@@ -693,6 +779,73 @@
             handleSubmit(event, 'wf-form-Merchant');
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryData = { 
+                "Alternative & Integrative Medicine": ["Acupuncture, Cuppling, Reflexology", "Chiropractic care", "Naturopathic services", "Massage therapy"],
+                "Baby, Infant & Maternal Health": ["Breast pumps", "Nursing pads / accessories", "Baby monitors", "Diapers", "Postpartum ergnonomics"],
+                "Behavioral & Mental Health": ["Psychotherapy / counseling", "Psychiatry", "Meditation / mindfulness apps"],
+                "Dental & Oral Care": ["Dental cleanings, fillings, braces", "Orthodontics", "Toothbrushes / toothpaste"],
+                "Diagnostic Testing & Services": ["Lab tests (e.g., blood, urine)", "Imaging and Body Scan (e.g., MRI, X-ray)", "At-home testing kits (COVID, STI)"],
+                "Digital Health & Telemedicine": ["Virtual primary care", "Remote patient monitoring"],
+                "Durable Medical Equipment & Accessibility": ["Wheelchairs, walkers, canes", "Home modifications (e.g., grab bars)", "CPAP machines"],
+                "Environmental & Public Health": ["Air purifiers and Humidifiers", "Water filtration systems"],
+                "Fitness, Recovery & Physical Therapy": ["Physical therapy", "Massage tools / foam rollers", "Gym memberships"],
+                "Foot Health & Orthotics": ["Custom footware and orthotics", "Diabetic foot care products", "Insoles / non-custom inserts"],
+                "Health Education & Coaching": ["Disease-specific education (e.g. Diabetes or asthma)", "General wellness coaching"],
+                "Hearing & Audiology": ["Hearing aids", "Hearing exams"]
+            };
+
+            const categorySelect = document.getElementById("category"); 
+            const subcategorySelect = document.getElementById("subcategory");
+            const subcategoryContainer = document.getElementById("subcategory-container");
+            const categoryTextContainer = document.getElementById("category-text-container");
+            
+            // Add "Don't see your Category?" option
+            const categories = Object.keys(categoryData);
+            categories.push("Don't see your Category?");
+            
+            // Populate Category dropdown
+            categories.forEach(category => {
+                const option = document.createElement("option");
+                option.value = category;
+                option.textContent = category;
+                categorySelect.appendChild(option);
+            });
+            
+            // Category change event listener
+            categorySelect.addEventListener("change", function() { 
+                const selectedCategory = this.value;
+                
+                if (selectedCategory === "Don't see your Category?") {
+                    subcategoryContainer.style.display = "none";
+                    categoryTextContainer.style.display = "block";
+                } else if (selectedCategory === "") {
+                    // If "Select Category..." is chosen
+                    subcategoryContainer.style.display = "block";
+                    categoryTextContainer.style.display = "none";
+                    subcategorySelect.innerHTML = '<option value="">Select Subcategory...</option>';
+                } else {
+                    // Normal category selection
+                    subcategoryContainer.style.display = "block";
+                    categoryTextContainer.style.display = "none";
+                    
+                    // Clear and repopulate subcategory dropdown
+                    subcategorySelect.innerHTML = '<option value="">Select Subcategory...</option>';
+                    
+                    if (categoryData[selectedCategory]) {
+                        categoryData[selectedCategory].forEach(sub => {
+                            const option = document.createElement("option");
+                            option.value = sub;
+                            option.textContent = sub;
+                            subcategorySelect.appendChild(option);
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+
     <script src="https://cdn.prod.website-files.com/63979d3ce779b679241436ec/js/webflow.37c5f454a.js"
         type="text/javascript"></script>
     <script src="js/custom.js"></script>

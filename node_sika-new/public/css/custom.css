@@ -345,7 +345,7 @@
   margin-top: 10px;
   font-size: 12px;
   line-height: 18px;
-  color: #888;
+  color: #888 !important;
 }
 
 .subscribe-section .terms a {
