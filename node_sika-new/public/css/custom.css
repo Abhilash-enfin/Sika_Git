@@ -701,3 +701,313 @@
 
 
 
+
+/*---------------------------------------------------------------------*/
+
+.card-container {
+  position: relative;
+  max-width: 400px;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-container .background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.card-container:hover .background-image {
+  transform: scale(1.10);
+  filter: brightness(1.1);
+}
+
+.card-container .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.card-container:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card-container .logo-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container .logo-image {
+  max-height: 30px;
+  transition: transform 0.5s ease;
+}
+
+
+.card-container:hover .logo-image {
+  transform: scale(0.6);
+}
+
+.card-container .arrow-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  opacity: 0;
+  transform: scale(0.75);
+  transition: all 0.5s ease-out;
+}
+
+.card-container:hover .arrow-icon {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.card-container .icon {
+  width: 24px;
+  height: 24px;
+  color: white;
+  transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+  .card-container .logo-image {
+    max-height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-container .logo-image {
+    max-height: 64px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 12px;
+  min-height: 276px;
+  padding: 25px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); */
+  border: 1px solid #086108;
+  /* border-image-source: linear-gradient(104.81deg, rgba(8, 97, 8, 0.4) 0%, rgba(22, 42, 22, 0.4) 100%); */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Hover states */
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(107.7deg, #162716 1.89%, #066706 100%);
+  color: white;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 70%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  /* opacity: 0.05; */
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card:nth-child(1)::before{
+  background-image: url('../images/merchants-img/grid-icons-bg/payments.webp');
+  margin: 20px 0px 20px 20px; 
+  background-size: contain;
+}
+.feature-card:nth-child(2)::before{
+  background-image: url('../images/merchants-img/grid-icons-bg/news.webp');
+    margin: 20px 0px 20px 20px; 
+  background-size: contain;
+}
+.feature-card:nth-child(3)::before{
+  background-image: url('../images/merchants-img/grid-icons-bg/card_membership.webp');
+    margin: 20px 0px 20px 20px; 
+  background-size: contain;
+}
+.feature-card:nth-child(4)::before{
+  background-image: url('../images/merchants-img/grid-icons-bg/handshake.webp');
+    margin: 20px 0px 20px 20px; 
+  background-size: contain;
+}
+.feature-card:nth-child(5)::before{
+  background-image: url('../images/merchants-img/grid-icons-bg/design_services.webp');
+    margin: 20px 0px 20px 20px; 
+  background-size: contain;
+}
+.feature-card:nth-child(6)::before{
+  background-image: url('../images/merchants-img/grid-icons-bg/health_and_safety.webp');
+    margin: 20px 0px 20px 20px; 
+  background-size: contain;
+}
+.feature-card:nth-child(7)::before{
+  background-image: url('../images/merchants-img/grid-icons-bg/fact_check.webp');
+    margin: 20px 0px 20px 20px; 
+  background-size: contain;
+}
+.feature-card:nth-child(8)::before{
+  background-image: url('../images/merchants-img/grid-icons-bg/workspace_premium.webp');
+    margin: 20px 0px 20px 20px; 
+  background-size: contain;
+}
+.feature-card:nth-child(9)::before{
+  background-image: url('../images/merchants-img/grid-icons-bg/support_agent.webp');
+    margin: 20px 0px 20px 20px; 
+  background-size: contain;
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}
+.feature-card:hover .feature-icon img{
+  filter: brightness(100) contrast(100) !important;
+  width: 40px;
+  height: 40px;
+  transform: 0.3s ease;
+}
+
+
+/* Make first card active by default */
+.feature-card:first-child {
+  /* background-color: #0d5d31;
+  color: white; */
+}
+
+.feature-card:first-child::before {
+  opacity: 0.8;
+}
+
+.feature-icon {
+  margin-bottom: 15px;
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+}
+
+.feature-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: #075e29;
+  transition: fill 0.3s ease;
+}
+
+.feature-card:hover .feature-icon svg,
+.feature-card:first-child .feature-icon svg {
+  fill: white;
+}
+
+.feature-title {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
+    transition: transform 0.3s ease, color 0.3s ease;
+  transform: translateY(10px);
+}
+.feature-card:hover .feature-title {
+  color: rgba(255, 255, 255, 1);
+  transform: translateY(-10px);
+}
+
+.feature-description {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #666;
+  position: relative;
+  z-index: 1;
+  max-height: 0;
+  /* opacity: 0; */
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+.feature-card:hover .feature-description {
+  /* opacity: 1; */
+  max-height: 100px;
+  color: rgba(255, 255, 255, 1);
+  display: block;
+}
+/* .feature-card:first-child .feature-description {
+  opacity: 1;
+  max-height: 100px;
+  color: rgba(255, 255, 255, 0.8);
+} */
+
+/* Status Indicator */
+.status-indicator {
+  font-size: 12px;
+  color: #069a3e;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.feature-card:hover .status-indicator,
+.feature-card:first-child .status-indicator {
+  color: #9fffc0;
+}
+
+/* Responsive design */
+@media (max-width: 920px) {
+  .features-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .features-container {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
