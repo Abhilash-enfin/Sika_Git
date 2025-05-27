@@ -995,6 +995,32 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .feature-title {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+      transition: transform 0.3s ease, color 0.3s ease;
+    transform: translateY(10px);
+  }
+  .feature-description {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #666;
+    position: relative;
+    z-index: 1;
+    max-height: 0;
+    /* opacity: 0; */
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   .features-container {
       grid-template-columns: 1fr;
