@@ -843,7 +843,7 @@
   background-size: 70%;
   background-position: right bottom;
   background-repeat: no-repeat;
-  /* opacity: 0.05; */
+  opacity: 0.3 !important;
   z-index: 0;
   transition: opacity 0.3s ease;
 }
