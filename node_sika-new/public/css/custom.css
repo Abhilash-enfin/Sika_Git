@@ -843,7 +843,7 @@
   background-size: 70%;
   background-position: right bottom;
   background-repeat: no-repeat;
-  opacity: 0.3 !important;
+  opacity: 0.6 !important;
   z-index: 0;
   transition: opacity 0.3s ease;
 }
@@ -895,7 +895,8 @@
 }
 
 .feature-card:hover::before {
-  opacity: 1;
+  opacity: 1 !important;
+  filter: contrast(5) !important;
 }
 .feature-card:hover .feature-icon img{
   filter: brightness(100) contrast(100) !important;
