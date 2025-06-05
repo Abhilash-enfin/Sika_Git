@@ -163,11 +163,11 @@
   .footer {
       background-color: black;
       color: white !important;
-      padding: 80px 0 0 0;
+      padding: 60px 0 0 0;
   }
   
   .footer .footer-grid {
-      margin-bottom: 60px;
+      margin-bottom: 117px;
   }
 
 }
@@ -360,7 +360,9 @@
   text-decoration: underline;
 }
 
-
+#subscribe-message{
+    color: #84EF84 !important;
+}
 
 
 
@@ -1027,14 +1029,5 @@
       grid-template-columns: 1fr;
   }
 }
-
-
-
-
-
-
-
-
-
 
 
