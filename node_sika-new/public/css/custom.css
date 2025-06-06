@@ -1039,6 +1039,7 @@
 .rich-text-block ol{padding-left: 30px !important;}
 .privacy-policy .rich-text-block p{padding-left: 15px !important;}
 .privacy-policy .rich-text-block ul{padding-left: 35px !important;}
+.privacy-policy .rich-text-block ol li::marker{font-weight: bold !important;}
 .merchants-banner{background-image: url('../images/merchants-img/main-banner.jpg'); background-position: right;}
 @media screen and (max-width: 768px) {
   .merchants-banner{background-image: url('../images/merchants-img/main-banner.jpg'); background-position: 85% !important; background-size: cover !important;}
