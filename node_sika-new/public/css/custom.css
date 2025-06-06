@@ -667,10 +667,10 @@
    /* transition: width 0.5s ease, max-height 0.5s ease;   */
   /* transform-style: preserve-3d;*/
   /* transition: transform 0.5s ease;  */
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: .06s ease-in-out;
+  -moz-transition: .06s ease-in-out;
+  -o-transition: .06s ease-in-out;
+  transition: .06s ease-in-out;
 }
 
 #founder-quote-1.expanded {
@@ -1029,5 +1029,13 @@
       grid-template-columns: 1fr;
   }
 }
+
+.ml-40{margin-left: 40px;}
+.text-link{text-decoration: underline !important; color: #6060e9;}
+.terms-of-service p{color: #000;}
+.terms-of-service ul{color: #000;}
+.rich-text-block ol{padding-left: 30px !important;}
+.privacy-policy p{padding-left: 15px !important;}
+.privacy-policy ul{padding-left: 35px !important;}
 
 
