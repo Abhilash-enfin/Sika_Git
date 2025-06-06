@@ -407,12 +407,14 @@
  
 /* Logo image styles */
 .top-bar .logo {
-  max-height: 40px;
+  max-height: 35px;
+  margin-top: 3px;
 }
 
 @media (min-width: 768px) {
   .top-bar .logo {
-    max-height: 45px;
+    max-height: 35px;
+    margin-top: 3px;
   }
 }
 
@@ -1032,10 +1034,14 @@
 
 .ml-40{margin-left: 40px;}
 .text-link{text-decoration: underline !important; color: #6060e9;}
-.terms-of-service p{color: #000;}
-.terms-of-service ul{color: #000;}
+.terms-of-service .rich-text-block p{color: #000;}
+.terms-of-service .rich-text-block ul{color: #000;}
 .rich-text-block ol{padding-left: 30px !important;}
-.privacy-policy p{padding-left: 15px !important;}
-.privacy-policy ul{padding-left: 35px !important;}
+.privacy-policy .rich-text-block p{padding-left: 15px !important;}
+.privacy-policy .rich-text-block ul{padding-left: 35px !important;}
+.merchants-banner{background-image: url('../images/merchants-img/main-banner.jpg'); background-position: right;}
+@media screen and (max-width: 768px) {
+  .merchants-banner{background-image: url('../images/merchants-img/main-banner.jpg'); background-position: 85% !important; background-size: cover !important;}
+}
 
 
