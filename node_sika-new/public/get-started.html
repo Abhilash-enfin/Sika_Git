@@ -166,7 +166,11 @@
                     <div data-w-tab="merchant" class="tabpane w-tab-pane w--tab-active">
                         <div class="tabcontentwrapper">
                             <!-- <h2 class="sectionheader centre" id="tabHeader">I am a merchant</h2> -->
-                            <div class="subtitle reverse">Complete the form and a member of our team will reach out to guide you through the next steps.</div>
+                            <div id="tabHeader10" class="subtitle reverse">Complete the form and a member of our team will reach out to guide you through the next steps.</div>
+                            <div class="success-message-2 w-form-done"
+                            style="background-color: transparent; padding-bottom: 4rem; font-size: 25px; color:black">
+                            <div>Thank you for providing the details! One of our team members will reach out shortly to schedule a demo.</div>
+                        </div>
                             <div class="form w-form">
                                 <form id="wf-form-Merchant" onsubmit="handleSubmit(event, 'wf-form-Merchant')" name="wf-form-Merchant" data-name="Merchant" method="POST"
                                     class="form-3" data-wf-page-id="64de6dd68c22af95553e578d"
@@ -345,18 +349,13 @@
                             </div>
                         </div>
                     </div>
-    
+                    <div class="error-message-2 w-form-fail"
+                            style="background-color: transparent; padding-bottom: 4rem; color: red; font-size:larger;">
+                            <div>Oops! Something went wrong while submitting the form.</div>
+                        </div>
                     <div>
                         <span id="email-errors" style="color: red; display: none;">Please enter a valid email
                             address.</span>
-                        <div class="success-message-2 w-form-done"
-                            style="background-color: transparent; padding-bottom: 4rem; font-size: larger; color:black">
-                            <div>Thank you for providing the details! One of our team members will reach out shortly to schedule a demo.</div>
-                        </div>
-                        <div class="error-message-2 w-form-fail"
-                            style="background-color: transparent; padding-bottom: 4rem; color: red; font-size: larger;">
-                            <div>Oops! Something went wrong while submitting the form.</div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -773,8 +772,8 @@
 
             const successMessage = document.querySelector('.success-message-2');
             const errorMessage = document.querySelector('.error-message-2');
-            const contenttochange = document.getElementById('content');
-            const tabtohide = document.querySelector('.tabpane');
+            const contenttochange = document.querySelector('#content .tabpane');
+            const changeHeadinf = document.getElementById('tabHeader10');
             successMessage.style.display = 'none';
             errorMessage.style.display = 'none';
             console.log("formdata---->", data)  
@@ -790,19 +789,19 @@
 
                     if (response.ok) {
                         form.style.display = 'none';
-                        contenttochange.style.minHeight = '0px';
-                        tabtohide.style.display = 'none';
+                        contenttochange.style.backgroundColor = 'transparent';
+                        changeHeadinf.style.display="none"
                         successMessage.style.display = 'block';
                     } else {
                         errorMessage.style.display = 'block';
-                        contenttochange.style.minHeight = '0px';
-                        tabtohide.style.display = 'none';
+                        // contenttochange.style.backgroundColor = 'transparent';
+                        // changeHeadinf.style.display="none"
                     }
                 })
                 .catch(error => {
                     console.error('Error:', error);
-                    contenttochange.style.minHeight = '0px';
-                    tabtohide.style.display = 'none';
+                    // contenttochange.style.backgroundColor = 'transparent';
+                    // changeHeadinf.style.display="none"
                     errorMessage.style.display = 'block';
                 });
         }
