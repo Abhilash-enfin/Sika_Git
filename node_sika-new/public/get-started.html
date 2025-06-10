@@ -78,7 +78,7 @@
         <div class="top-bar-inner">
             <div class="custom-container">
                 <div class="top-bar-content">
-                    <a href="https://partners.sikahealth.com/">
+                    <a href="">
                         <img src="images/main-logo.svg" alt="SIKA Logo" class="logo" />
                     </a>
                     <!-- <a href="get-started" class="custom-button">GET STARTED WITH SIKA</a> -->
@@ -773,9 +773,11 @@
 
             const successMessage = document.querySelector('.success-message-2');
             const errorMessage = document.querySelector('.error-message-2');
+            const contenttochange = document.getElementById('content');
+            const tabtohide = document.querySelector('.tabpane');
             successMessage.style.display = 'none';
             errorMessage.style.display = 'none';
-            console.log("formdata---->", data)
+            console.log("formdata---->", data)  
 
             fetch('https://api.sika.health/v3/enquiry', {
                 method: 'POST',
@@ -788,13 +790,19 @@
 
                     if (response.ok) {
                         form.style.display = 'none';
+                        contenttochange.style.minHeight = '0px';
+                        tabtohide.style.display = 'none';
                         successMessage.style.display = 'block';
                     } else {
                         errorMessage.style.display = 'block';
+                        contenttochange.style.minHeight = '0px';
+                        tabtohide.style.display = 'none';
                     }
                 })
                 .catch(error => {
                     console.error('Error:', error);
+                    contenttochange.style.minHeight = '0px';
+                    tabtohide.style.display = 'none';
                     errorMessage.style.display = 'block';
                 });
         }
