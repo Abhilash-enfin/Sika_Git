@@ -1041,8 +1041,189 @@
 .privacy-policy .rich-text-block ul{padding-left: 35px !important;}
 .privacy-policy .rich-text-block ol li::marker{font-weight: bold !important;}
 .merchants-banner{background-image: url('../images/merchants-img/main-banner.jpg'); background-position: right;}
+.lmn-banner{background-image: url('../images/merchants-img/lmn_header.webp'); background-position: right; background-size: cover;}
 @media screen and (max-width: 768px) {
   .merchants-banner{background-image: url('../images/merchants-img/main-banner.jpg'); background-position: 85% !important; background-size: cover !important;}
+  .lmn-banner{background-image: url('../images/merchants-img/lmn_header.webp'); background-position: 85% !important; background-size: cover !important;}
 }
+
+
+/* Accordion Styling */
+.accordion-sec {
+    padding: 60px 0;
+}
+.accordion-sec .merchant-accordion {
+    margin-top: 0;
+    position: relative;
+    width: 50%;
+    counter-reset: item;
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.accordion-sec .accordion-item {
+    border-bottom: none;
+    margin-bottom: 60px;
+    /* margin-bottom: 32px; */
+    position: relative;
+    counter-increment: item;
+}
+
+.accordion-sec .accordion-item:last-child {
+    border-bottom: none;
+}
+.accordion-sec .accordion-item:last-child::after {
+    content: '';
+    background: #ffffff;
+    width: 1px;
+    height: calc(100% - 60px);
+    position: absolute;
+    top: 44px;
+    left: 15px; 
+}
+
+.accordion-sec .accordion-item button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 70px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+}
+
+
+
+.accordion-sec .accordion-content {
+    padding-left: 70px;
+    max-width: 80%;
+    display: none;
+}
+
+.accordion-sec .accordion-item.active .accordion-content {
+    display: block;
+}
+
+.accordion-sec .accordion-content p {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000;
+}
+
+/* Images Slider */
+.accordion-sec .image-slider {
+    position: relative;    
+    width: 50%;
+    overflow: hidden;
+}
+
+.accordion-sec .slide {
+    display: none;
+    width: 100%;
+}
+
+.accordion-sec .slide.active {
+    display: block;
+}
+
+.accordion-sec .slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.accordion-sec .accordion-inner {
+    display: flex;
+    align-items: start;
+    margin: 60px 0;
+}
+
+
+.accordion-sec .accordion-item {
+    position: relative;
+  }
+  
+  .accordion-sec .accordion-item::before {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    background-color: #fff;
+    position: absolute;
+    font-size: 28px;
+    font-weight: 400;
+    left: -6px;
+    top: 0;
+    content: counter(item);
+    color: #000;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .accordion-sec .accordion-item.active::before {
+    background-color: #84EF84;
+    color: #000;
+    border: 1px solid #84EF84;
+  }
+  
+  .accordion-sec .accordion-item.active button {
+    color: #000;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+  /* .accordion-sec .accordion-item button {
+    color: #AFAFAF;
+  } */
+  .accordion-sec .merchant-accordion::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    border-left: 2px dashed #AFAFAF !important;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    max-height: calc(100% - 80px);
+}
+.accordion-head h3 {
+    color: #000;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    font-weight: 700;   
+}
+@media screen and (max-width: 768px) {
+  .accordion-sec .accordion-inner {
+      display: flex;
+      align-items: start;
+      margin: 60px 0;
+      flex-direction: column-reverse;
+  }
+  .accordion-sec .merchant-accordion {
+    margin-top: 40px !important;
+    position: relative;
+    width: 100% !important;
+    counter-reset: item;
+    list-style: none;
+    padding-left: 0;
+  }
+  .accordion-sec .image-slider {
+    position: relative;
+    left: 0;
+    width: 100% !important;
+    overflow: hidden;
+  }
+}
+
+
 
 
