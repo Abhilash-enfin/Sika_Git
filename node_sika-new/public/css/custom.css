@@ -1041,10 +1041,10 @@
 .privacy-policy .rich-text-block ul{padding-left: 35px !important;}
 .privacy-policy .rich-text-block ol li::marker{font-weight: bold !important;}
 .merchants-banner{background-image: url('../images/merchants-img/main-banner.jpg'); background-position: right;}
-.lmn-banner{background-image: url('../images/merchants-img/lmn_header.webp'); background-position: right; background-size: cover;}
+.lmn-banner{background-image: url('../images/merchants-img/lmn-banner.webp'); background-position: right; background-size: cover;}
 @media screen and (max-width: 768px) {
   .merchants-banner{background-image: url('../images/merchants-img/main-banner.jpg'); background-position: 85% !important; background-size: cover !important;}
-  .lmn-banner{background-image: url('../images/merchants-img/lmn_header.webp'); background-position: 85% !important; background-size: cover !important;}
+  .lmn-banner{background-image: url('../images/merchants-img/lmn-banner.webp'); background-position: 85% !important; background-size: cover !important;}
 }
 
 
@@ -1223,6 +1223,88 @@
     overflow: hidden;
   }
 }
+
+
+
+  .form-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 60px 20px 0px 20px;
+    text-align: center;
+  }
+
+  .form-container h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #fff;
+  }
+
+  .form-container p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 768px) {
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px !important;
+        justify-content: center;
+      }
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: center;
+  }
+  .form-group {
+    flex: 1 1 40%;
+    min-width: 250px;
+  }
+
+  .form-container input[type="text"],
+  .form-container input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    background: #fff;
+  }
+
+  .form-container .submit-btn {
+    margin-top: 30px;
+    padding: 16px 80px;
+    background-color: #84EF84;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .submit-btn:hover {
+    background-color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .form-group {
+      flex: 1 1 100%;
+    }
+  }
 
 
 
