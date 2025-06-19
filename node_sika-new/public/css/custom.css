@@ -1044,7 +1044,10 @@
 .lmn-banner{background-image: url('../images/merchants-img/lmn-banner.webp'); background-position: right; background-size: cover;}
 @media screen and (max-width: 768px) {
   .merchants-banner{background-image: url('../images/merchants-img/main-banner.jpg'); background-position: 85% !important; background-size: cover !important;}
-  .lmn-banner{background-image: url('../images/merchants-img/lmn-banner.webp'); background-position: 85% !important; background-size: cover !important;}
+  .lmn-banner{background-image: url('../images/merchants-img/lmn-bg-mob.webp'); background-position: 100% !important; background-size: cover !important; height: 100vh !important;}
+  .lmn-banner .pt-\[120px\] { padding-top: 40px;}
+  .lmn-banner .min-h-\[600px\] { min-height: 100vh !important; }
+  .lmn-banner .min-h-\[750px\] { min-height: 100vh !important; }
 }
 
 
