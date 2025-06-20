@@ -563,12 +563,6 @@
 
 
 
-
-
-
-
-
-
 .founder-quote {
   padding: 20px;
   position: relative;
@@ -790,14 +784,6 @@
     max-height: 64px;
   }
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -1311,6 +1297,8 @@
     }
   }
 
+.faq-sections{}
+.faq-sections .cursor-pointer{cursor: pointer !important;}
 
 
 
