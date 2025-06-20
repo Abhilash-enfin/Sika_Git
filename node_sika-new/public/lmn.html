@@ -206,9 +206,9 @@
                 <div class="md:w-1/2 order-2 md:order-1">
                     <div class="flex flex-col items-start">
                         <h4 class="text-[20px] leading-[26px] lg:text-[26px] lg:leading-[32px] text-black font-semibold mb-3 lg:mb-5">
-                            Capture customers'<br/>pre-tax spend</h4>
+                            Capture customers'<br/>pre-tax spend</h4>
                         <p class="text-[16px] leading-[23px] lg:text-[18px] lg:leading-[23px] font-normal text-black mb-5 md:mb-6 lg:mb-10">
-                            Sika's LMN service is an innovative approach that combines telehealth and payments to enable merchants to capture more share of customers' pre-tax wallet. </p>
+                            Sika's LMN service is an innovative approach that combines telehealth and payments to enable merchants to capture more share of customers' pre-tax wallet. </p>
                         <a href="#book-demo"
                             class="group justify-center flex items-center gap-2 px-6 py-2 border-2 min-w-[150px] lg:min-w-[190px] min-h-[24px] lg:min-h-[56px] border-black text-black uppercase text-xs lg:text-sm font-bold hover:border-[#84EF84] hover:bg-[#84EF84] hover:text-black transition rounded cursor-pointer">
                             Book a demo
@@ -242,7 +242,7 @@
                         <h4 class="text-[20px] leading-[26px] lg:text-[26px] lg:leading-[32px] text-black font-semibold mb-3 lg:mb-5">
                             Bring the healthcare benefits of your <br/>products to a broader audience and help <br/>customers save</h4>
                         <p class="text-[16px] leading-[23px] lg:text-[18px] lg:leading-[23px] font-normal text-black mb-5 md:mb-6 lg:mb-10">
-                            Retailers whose products address medical conditions such as hypertension, obesity, diabetes, anxiety, arthritis, chronic pain, sleep disorders, depression, stress, asthma, and more can help their customers save money by paying with pre-tax HSA and FSA funds through Sika's LMN process.</p>
+                            Retailers whose products address medical conditions such as hypertension, obesity, diabetes, anxiety, arthritis, chronic pain, sleep disorders, depression, stress, asthma, and more can help their customers save money by paying with pre-tax HSA and FSA funds through Sika's LMN process.</p>
                         <a href="#book-demo"
                             class="group justify-center flex items-center gap-2 px-6 py-2 border-2 min-w-[150px] lg:min-w-[190px] min-h-[24px] lg:min-h-[56px] border-black text-black uppercase text-xs lg:text-sm font-bold hover:border-[#84EF84] hover:bg-[#84EF84] hover:text-black transition rounded cursor-pointer">
                             Book a demo
@@ -732,22 +732,113 @@
                 <h2>Book A Demo</h2>
                 <p>Experience lightning-fast integration, seamless HSA/FSA checkout, <br/>and effortless growth to amplify your selling power.</p>
 
-                <form id="demoForm">
+                <form id="wf-form-LMN-Demo-Form"
+              name="wf-form-LMN-Demo-Form" data-name="LMN Demo Form" method="POST" class="form-2" data-wf-page-id="66338533c841934154575d8d" action="https://api.sika.health/v3/enquiry" data-wf-element-id="e02162e7-fee5-b98e-1b09-ebe960f11189">
                 <div class="form-group">
-                    <input type="text" placeholder="Your first name" required>
+                    <input
+                    class="formfield reverse w-input"
+                    maxlength="256"
+                    name="first_name"
+                    data-name="First Name"
+                    placeholder="Your first name"
+                    type="text"
+                    id="first_name"
+                    pattern="[A-Za-z]+"
+                    title="First name must contain only letters."
+                    required=""
+                  />
                 </div>
                 <div class="form-group">
-                    <input type="text" placeholder="Your last name" required>
+                    <input
+                    class="formfield reverse w-input"
+                    maxlength="256"
+                    name="last_name"
+                    data-name="Last Name"
+                    placeholder="Your last name"
+                    type="text"
+                    id="last_name"
+                    pattern="[A-Za-z]+"
+                    title="Last name must contain only letters."
+                    required=""
+                  />
                 </div>
                 <div class="form-group">
-                    <input type="text" placeholder="Your company name" required>
+                    <input
+                    class="formfield reverse w-input"
+                    maxlength="256"
+                    name="company_name"
+                    data-name="Email"
+                    placeholder="Your company name"
+                    type="text"
+                    id="company_name"
+                    required=""
+                  />
                 </div>
                 <div class="form-group">
-                    <input type="email" placeholder="Your email address" required>
+                    <input
+                    class="formfield reverse w-input"
+                    maxlength="256"
+                    name="email"
+                    data-name="Email"
+                    placeholder="Your email address"
+                    type="email"
+                    id="email"
+                    required=""
+                  />
+                  <p
+                    style="
+                      padding-top: 1rem;
+                      margin: 0px;
+                      color: red;
+                      font-size: 14px;
+                    "
+                    hidden
+                    class="email-error-text"
+                    
+                  >
+                    Please enter a valid email address
+                  </p>
                 </div>
-
+                <input type="hidden" id="phone" name="phone" value="0000000000" />
+              <input
+                type="hidden"
+                id="source"
+                name="source"
+                value="LMN (Book a Demo)"
+              />
                 <button type="submit" class="submit-btn">Book Demo</button> 
                 </form>
+                <div>
+            <span id="email-errors" style="color: red; display: none" 
+              >Please enter a valid email address.</span
+            >
+            <div
+              class="success-message-2 w-form-done"
+              style="
+                background-color: transparent;
+                color: #83ee83;
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+                font-size: larger;
+                display:none;
+              "
+            >
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div
+              class="error-message-2 w-form-fail"
+              style="
+                background-color: transparent;
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+                color: red;
+                font-size: larger;
+                display:none;
+              "
+            >
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
             </div>
         </div>
     </section>
@@ -1072,6 +1163,90 @@
     </script>
 
 
+<script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("wf-form-LMN-Demo-Form");
+        console.log(form);
+        form.addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission
+          let isValid = true;
+          let iscnameValid = true;
+          const formData = new FormData(form);
+
+          // Convert FormData to a JSON object
+          const data = {};
+          formData.forEach((value, key) => {
+            console.log(key, value);
+            if (key !== "Do-you-have-HSA-FSA" && key !== "Opt-in") {
+              data[key] = value;
+            }
+          });
+          const email = formData.get("email");
+          const emailError = document.getElementById("email-errors");
+          const emailInput = form.querySelector('[name="email"]');
+          const emailPattern =
+            /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+          const emailErrorTexts =
+            document.querySelectorAll(".email-error-text");
+          if (!emailPattern.test(email)) {
+            emailErrorTexts.forEach((element) => {
+              element.hidden = false;
+              element.style.display = "flex";
+            });
+            isValid = false;
+            emailInput.scrollIntoView({ behavior: "smooth", block: "center" });
+          } else {
+            emailErrorTexts.forEach((element) => {
+              element.hidden = true;
+            });
+            isValid = true;
+          }
+          // const cname = formData.get('company_name');
+          // const cnamePattern = /^[a-zA-Z0-9-@.{}#&!()]+(\s[a-zA-Z0-9-@{}.#&!()]+)+(\s[a-zA-Z-@.#&!()]+)?$/;
+          // const cnameErrorTexts= document.querySelectorAll('.cname-error-text')
+          // if (!cnamePattern.test(cname)) {
+          //       cnameErrorTexts.forEach(element => {
+          //           element.hidden=false
+          //       });
+          //       iscnameValid = false;
+          // } else {
+          //       cnameErrorTexts.forEach(element => {
+          //           element.hidden=true
+          //       });
+          //       iscnameValid = true;
+          // }
+          // Send the POST request
+
+          if (isValid == true) {
+            //&& iscnameValid == true
+            const successMessage = document.querySelector(".success-message-2");
+            const errorMessage = document.querySelector(".error-message-2");
+            successMessage.style.display = "none";
+            errorMessage.style.display = "none";
+
+            fetch("https://api.sika.health/v3/enquiry", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(data),
+            })
+              .then((response) => {
+                if (response.ok) {
+                  form.style.display = "none";
+                  successMessage.style.display = "block";
+                } else {
+                  errorMessage.style.display = "block";
+                }
+              })
+              .catch((error) => {
+                console.error("Error:", error);
+                errorMessage.style.display = "block";
+              });
+          }
+        });
+      });
+    </script>
 
 </body>
 
